@@ -1,0 +1,688 @@
+/*
+Lift
+
+-----------------------------------------
+
+Shadow
+
+-----------------------------------------
+
+Grayscale To Color
+
+-----------------------------------------
+
+Glow
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Scale
+
+=
+Zoom
+
+-----------------------------------------
+
+TranslateY(-)
+
+=
+Lift
+
+-----------------------------------------
+
+Rotate
+
+=
+Tilt
+
+-----------------------------------------
+
+Shadow
+
+=
+Depth
+
+-----------------------------------------
+
+Glow
+
+=
+Light
+
+-----------------------------------------
+
+Brightness
+
+=
+Lighter
+
+-----------------------------------------
+
+Contrast
+
+=
+Stronger Difference
+
+-----------------------------------------
+
+Grayscale
+
+=
+Black & White
+
+-----------------------------------------
+
+Sepia
+
+=
+Old Photo
+
+-----------------------------------------
+
+Scale
+
++
+
+Lift
+
++
+
+Shadow
+
+=
+Professional Card
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #5
+NAVIGATION BAR TRICKS
+PART 1
+FOUNDATIONS, LINKS, SPACING
+AND HOVER EFFECTS
+=========================================
+
+<<<<0-WHAT-IS-A-NAVBAR+0>>>>
+
+Navbar
+
+=
+Navigation Bar
+
+-----------------------------------------
+
+A section that contains links
+used to move around a website.
+
+-----------------------------------------
+
+Usually placed at the top
+of the page.
+
+-----------------------------------------
+
+Examples:
+
+Home
+
+About
+
+Services
+
+Contact
+
+=========================================
+
+<<<<0-WHY-NAVBARS-ARE-IMPORTANT+0>>>>
+
+The navbar is usually one of
+the first things users see.
+
+-----------------------------------------
+
+It acts as:
+
+Website Map
+
+-----------------------------------------
+
+A good navbar improves:
+
+Navigation
+
+Usability
+
+User Experience
+
+=========================================
+
+<<<<0-GOALS-OF-A-GOOD-NAVBAR+0>>>>
+
+Easy To Read
+
+Easy To Click
+
+Easy To Understand
+
+Easy To Navigate
+
+-----------------------------------------
+
+Users should immediately know
+where to go.
+
+=========================================
+
+<<<<0-BASIC-NAVBAR-STRUCTURE+0>>>>
+
+Common Layout:
+
+Logo
+
++
+
+Navigation Links
+
+-----------------------------------------
+
+Example:
+
+LOGO
+
+Home
+About
+Services
+Contact
+
+=========================================
+
+<<<<0-NAVBAR-SECTIONS+0>>>>
+
+Most navbars contain:
+
+Logo
+
+Navigation Links
+
+Optional CTA Button
+
+-----------------------------------------
+
+CTA
+
+=
+Call To Action
+
+=========================================
+
+<<<<0-NAVIGATION-LINKS+0>>>>
+
+Navigation Links
+
+=
+Links that connect pages.
+
+-----------------------------------------
+
+Common Examples:
+
+Home
+
+About
+
+Portfolio
+
+Services
+
+Contact
+
+=========================================
+
+<<<<0-HOW-MANY-LINKS+0>>>>
+
+Recommended:
+
+4–7 Links
+
+-----------------------------------------
+
+Too Many Links
+
+=
+Clutter
+
+-----------------------------------------
+
+Too Few Links
+
+=
+Limited Navigation
+
+=========================================
+
+<<<<0-LINK-STYLING+0>>>>
+
+Navigation links should
+look clean.
+
+-----------------------------------------
+
+Usually:
+
+No Underline
+
+Readable Color
+
+Consistent Size
+
+=========================================
+
+<<<<0-TEXT-DECORATION-NONE+0>>>>
+
+Most navbars remove
+the default underline.
+
+-----------------------------------------
+
+Purpose:
+
+Cleaner Appearance
+
+-----------------------------------------
+
+Very common practice.
+
+=========================================
+
+<<<<0-LINK-COLOR+0>>>>
+
+Link color should match
+the website theme.
+
+-----------------------------------------
+
+Examples:
+
+White
+
+Black
+
+Light Gray
+
+Cyan
+
+-----------------------------------------
+
+Avoid low contrast colors.
+
+=========================================
+
+<<<<0-FONT-WEIGHT+0>>>>
+
+Navigation links often use:
+
+500
+
+600
+
+700
+
+-----------------------------------------
+
+Reason:
+
+Improve readability.
+
+=========================================
+
+<<<<0-FONT-SIZE+0>>>>
+
+Common navbar sizes:
+
+14px
+
+16px
+
+18px
+
+-----------------------------------------
+
+Large enough to read.
+
+Small enough to fit.
+
+=========================================
+
+<<<<0-SPACING-BETWEEN-LINKS+0>>>>
+
+Very important.
+
+-----------------------------------------
+
+Without spacing:
+
+HomeAboutContact
+
+-----------------------------------------
+
+With spacing:
+
+Home  About  Contact
+
+-----------------------------------------
+
+Improves readability.
+
+=========================================
+
+<<<<0-PADDING-IN-NAVBARS+0>>>>
+
+Padding creates breathing room.
+
+-----------------------------------------
+
+Example:
+
+Top
+
+Bottom
+
+Left
+
+Right
+
+Spacing
+
+-----------------------------------------
+
+Makes navbar feel comfortable.
+
+=========================================
+
+<<<<0-NAVBAR-HEIGHT+0>>>>
+
+Navbar height should
+not be too small.
+
+-----------------------------------------
+
+Very Small Navbar
+
+=
+Cramped
+
+-----------------------------------------
+
+Balanced Navbar
+
+=
+Professional
+
+=========================================
+
+<<<<0-LOGO-PLACEMENT+0>>>>
+
+Most common:
+
+Left Side
+
+-----------------------------------------
+
+Reason:
+
+Users naturally look
+towards the left first.
+
+=========================================
+
+<<<<0-CENTERED-LOGOS+0>>>>
+
+Some websites place
+the logo in the center.
+
+-----------------------------------------
+
+Common For:
+
+Luxury Brands
+
+Fashion Sites
+
+=========================================
+
+<<<<0-NAVBAR-ALIGNMENT+0>>>>
+
+Common Layout:
+
+Logo Left
+
+Links Right
+
+-----------------------------------------
+
+Very popular pattern.
+
+=========================================
+
+<<<<0-HOVER-EFFECTS+0>>>>
+
+Navigation links should
+usually have hover effects.
+
+-----------------------------------------
+
+Purpose:
+
+Show Interactivity
+
+=========================================
+
+<<<<0-HOVER-COLOR-CHANGE+0>>>>
+
+Most common navbar effect.
+
+-----------------------------------------
+
+Normal:
+
+White
+
+-----------------------------------------
+
+Hover:
+
+Cyan
+
+-----------------------------------------
+
+Simple
+
+Clean
+
+Professional
+
+=========================================
+
+<<<<0-HOVER-UNDERLINES+0>>>>
+
+Very common.
+
+-----------------------------------------
+
+Normal:
+
+Home
+
+-----------------------------------------
+
+Hover:
+
+Home
+____
+
+-----------------------------------------
+
+Shows active interaction.
+
+=========================================
+
+<<<<0-ANIMATED-UNDERLINES+0>>>>
+
+Modern websites often
+animate underlines.
+
+-----------------------------------------
+
+Underline appears smoothly.
+
+-----------------------------------------
+
+Looks more professional.
+
+=========================================
+
+<<<<0-HOVER-SCALE+0>>>>
+
+Example Idea:
+
+Link grows slightly.
+
+-----------------------------------------
+
+Creates emphasis.
+
+-----------------------------------------
+
+Use small values only.
+
+=========================================
+
+<<<<0-HOVER-GLOW+0>>>>
+
+Popular on dark websites.
+
+-----------------------------------------
+
+Link gains glow effect.
+
+-----------------------------------------
+
+Can attract attention.
+
+=========================================
+
+<<<<0-HOVER-BACKGROUNDS+0>>>>
+
+Some navbars use:
+
+Transparent Background
+
+↓
+
+Colored Background On Hover
+
+-----------------------------------------
+
+Creates button-like links.
+
+=========================================
+
+<<<<0-ACTIVE-LINKS+0>>>>
+
+Active Link
+
+=
+Current Page
+
+-----------------------------------------
+
+Example:
+
+HOME
+
+About
+
+Services
+
+Contact
+
+-----------------------------------------
+
+User instantly knows
+their current location.
+
+=========================================
+
+<<<<0-WHY-ACTIVE-LINKS-MATTER+0>>>>
+
+Without Active Links:
+
+User may become confused.
+
+-----------------------------------------
+
+With Active Links:
+
+Clear Navigation
+
+=========================================
+
+<<<<0-ACTIVE-LINK-STYLING+0>>>>
+
+Common Techniques:
+
+Different Color
+
+Underline
+
+Border
+
+Background
+
+-----------------------------------------
+
+Should stand out slightly.
+
+=========================================
+
+<<<<0-NAVBAR-BACKGROUNDS+0>>>>
+
+Most navbars have
+a background.
+
+-----------------------------------------
+
+Purpose:
+
+Separate navbar from content.
+
+=========================================
+
+<<<<0-DARK-NAVBARS+0>>>>
+
+Common Example:
+
+rgb(30,30,30)
+
+-----------------------------------------
+
+Very popular.
+
+=========================================
+
+<<<<0-LIGHT-NAVBARS+0>>>>
+
+Common Example:
+
+White
+
+-----------------------------------------
+
+Popular on business websites.
+
+=========================================
+NEXT FILE
+*/

@@ -1,0 +1,1544 @@
+<!--
+
+==========================================================
+HTML FINAL BOSS NOTES
+==========================================================
+
+
+==========================================================
+HTML BASICS
+==========================================================
+
+
+HTML
+
+HTML stands for Hyper Text Markup Language.
+
+It is a markup language used to create the structure
+of webpages.
+
+HTML defines:
+
+Headings
+
+Paragraphs
+
+Images
+
+Links
+
+Tables
+
+Forms
+
+
+HTML is not a programming language.
+
+It creates structure, not logic.
+
+
+==========================================================
+DOCTYPE
+==========================================================
+
+
+<!DOCTYPE html>
+
+
+Tells the browser that the document uses HTML5.
+
+It should always be the first line.
+
+It prevents browsers from using old rendering modes.
+
+
+==========================================================
+HTML TAGS
+==========================================================
+
+
+Tags tell the browser what an element represents.
+
+
+Example:
+
+
+<h1>
+
+Creates a heading.
+
+
+<p>
+
+Creates a paragraph.
+
+
+==========================================================
+HTML ELEMENT
+==========================================================
+
+
+An element contains:
+
+Opening tag
+
+Content
+
+Closing tag
+
+
+Example:
+
+
+<p>Hello</p>
+
+
+==========================================================
+HTML ROOT
+==========================================================
+
+
+<html>
+
+
+The root element of an HTML document.
+
+All HTML code exists inside it.
+
+
+==========================================================
+HEAD SECTION
+==========================================================
+
+
+<head>
+
+
+Contains information about the webpage.
+
+This information is usually not visible.
+
+
+Contains:
+
+
+<title>
+
+<meta>
+
+<link>
+
+
+==========================================================
+BODY SECTION
+==========================================================
+
+
+<body>
+
+
+Contains everything visible on the webpage.
+
+
+Examples:
+
+
+Headings
+
+Paragraphs
+
+Images
+
+Tables
+
+Forms
+
+
+==========================================================
+TITLE TAG
+==========================================================
+
+
+<title>
+
+
+Sets the name shown on the browser tab.
+
+
+It also helps users identify the page.
+
+
+==========================================================
+SEO
+==========================================================
+
+
+SEO
+
+Search Engine Optimization.
+
+
+Helps search engines understand webpages.
+
+
+Important SEO factors:
+
+
+Title
+
+Description
+
+Semantic HTML
+
+Good structure
+
+
+==========================================================
+SEMANTIC HTML
+==========================================================
+
+
+Semantic HTML uses meaningful tags
+instead of only generic containers.
+
+
+Examples:
+
+
+<header>
+
+<main>
+
+<section>
+
+<article>
+
+<footer>
+
+
+Benefits:
+
+
+Better readability
+
+Better maintenance
+
+Better SEO
+
+Better accessibility
+
+
+==========================================================
+TEXT FORMATTING
+==========================================================
+
+
+Formatting tags give meaning
+and importance to text.
+
+
+==========================================================
+<strong>
+==========================================================
+
+
+<strong>
+
+
+Represents important text.
+
+
+Usually appears bold.
+
+
+It tells browser:
+
+"This text has importance."
+
+
+==========================================================
+<em>
+==========================================================
+
+
+<em>
+
+
+Represents emphasized text.
+
+
+Usually appears italic.
+
+
+==========================================================
+<mark>
+==========================================================
+
+
+<mark>
+
+
+Highlights text.
+
+
+Used to attract attention.
+
+
+==========================================================
+<sub>
+==========================================================
+
+
+<sub>
+
+
+Creates subscript text.
+
+
+Example:
+
+
+H₂O
+
+
+==========================================================
+<sup>
+==========================================================
+
+
+<sup>
+
+
+Creates superscript text.
+
+
+Example:
+
+
+x²
+
+
+==========================================================
+LISTS
+==========================================================
+
+
+Lists organize information.
+
+They make content easier to read.
+
+
+==========================================================
+<ul>
+==========================================================
+
+
+<ul>
+
+
+Creates an unordered list.
+
+
+Displays bullet points.
+
+
+Order does not matter.
+
+
+==========================================================
+<ol>
+==========================================================
+
+
+<ol>
+
+
+Creates an ordered list.
+
+
+Displays numbers.
+
+
+Order matters.
+
+
+==========================================================
+<li>
+==========================================================
+
+
+<li>
+
+
+Creates one list item.
+
+
+Used inside ul and ol.
+
+
+==========================================================
+<dl>
+==========================================================
+
+
+<dl>
+
+
+Creates a description list.
+
+
+Used for terms and explanations.
+
+
+==========================================================
+<dt>
+==========================================================
+
+
+<dt>
+
+
+Description term.
+
+
+The word being explained.
+
+
+==========================================================
+<dd>
+==========================================================
+
+
+<dd>
+
+
+Description detail.
+
+
+The explanation of the term.
+
+
+==========================================================
+LINKS
+==========================================================
+
+
+Links connect webpages
+and resources.
+
+
+==========================================================
+<a>
+==========================================================
+
+
+<a>
+
+
+Creates hyperlinks.
+
+
+Allows navigation between pages.
+
+
+==========================================================
+href ATTRIBUTE
+==========================================================
+
+
+href
+
+
+Defines where the link goes.
+
+
+Example:
+
+
+<a href="about.html">
+
+
+==========================================================
+ABSOLUTE URL
+==========================================================
+
+
+Complete website address.
+
+
+Example:
+
+
+https://google.com
+
+
+==========================================================
+RELATIVE URL
+==========================================================
+
+
+Points to files inside the same project.
+
+
+Example:
+
+
+about.html
+
+
+==========================================================
+mailto:
+==========================================================
+
+
+Creates email links.
+
+
+Opens email application.
+
+
+==========================================================
+tel:
+==========================================================
+
+
+Creates phone links.
+
+
+Opens calling application.
+
+
+==========================================================
+IMAGES
+==========================================================
+
+
+Images provide visual information.
+
+
+==========================================================
+<img>
+==========================================================
+
+
+<img>
+
+
+Displays images.
+
+
+It is a void element.
+
+It does not need a closing tag.
+
+
+==========================================================
+src ATTRIBUTE
+==========================================================
+
+
+src
+
+
+Source of image.
+
+
+Tells browser where the image exists.
+
+
+==========================================================
+alt ATTRIBUTE
+==========================================================
+
+
+alt
+
+
+Alternative text for images.
+
+
+Used when image fails to load.
+
+
+Improves accessibility.
+
+
+Helps screen readers.
+
+
+==========================================================
+TABLES
+==========================================================
+
+
+Tables display structured data.
+
+
+They should not be used for page layouts.
+
+
+==========================================================
+<table>
+==========================================================
+
+
+Creates a table.
+
+
+==========================================================
+<tr>
+==========================================================
+
+
+Table row.
+
+
+Creates horizontal rows.
+
+
+==========================================================
+<th>
+==========================================================
+
+
+Table heading.
+
+
+Used for titles of rows or columns.
+
+
+==========================================================
+<td>
+==========================================================
+
+
+Table data.
+
+
+Contains normal information.
+
+
+==========================================================
+FORMS
+==========================================================
+
+
+Forms collect information from users.
+
+
+Examples:
+
+
+Login
+
+Registration
+
+Feedback
+
+Search
+
+
+==========================================================
+<form>
+==========================================================
+
+
+Container for all form elements.
+
+
+==========================================================
+<input>
+==========================================================
+
+
+Takes user input.
+
+
+==========================================================
+type ATTRIBUTE
+==========================================================
+
+
+Controls the type of input.
+
+
+Examples:
+
+
+text
+
+password
+
+email
+
+number
+
+date
+
+checkbox
+
+radio
+
+
+==========================================================
+placeholder
+==========================================================
+
+
+Shows hint text inside input.
+
+
+==========================================================
+<label>
+==========================================================
+
+
+Describes an input field.
+
+
+Improves accessibility.
+
+
+==========================================================
+for ATTRIBUTE
+==========================================================
+
+
+Connects label with input id.
+
+
+==========================================================
+password INPUT
+==========================================================
+
+
+Hides entered characters.
+
+
+Used for passwords.
+
+
+==========================================================
+email INPUT
+==========================================================
+
+
+Used for email addresses.
+
+
+Browser can validate format.
+
+
+==========================================================
+number INPUT
+==========================================================
+
+
+Accepts numbers.
+
+
+==========================================================
+date INPUT
+==========================================================
+
+
+Creates date picker.
+
+
+==========================================================
+checkbox
+==========================================================
+
+
+Allows multiple selections.
+
+
+==========================================================
+radio
+==========================================================
+
+
+Allows only one selection
+from a group.
+
+
+==========================================================
+<textarea>
+==========================================================
+
+
+Creates a large text area.
+
+
+Used for messages and feedback.
+
+
+==========================================================
+<select>
+==========================================================
+
+
+Creates dropdown menus.
+
+
+==========================================================
+<option>
+==========================================================
+
+
+Creates choices inside dropdown.
+
+
+==========================================================
+required
+==========================================================
+
+
+Makes a field compulsory.
+
+
+==========================================================
+submit
+==========================================================
+
+
+Sends form data.
+
+
+==========================================================
+AUDIO AND VIDEO
+==========================================================
+
+
+HTML can directly include media.
+
+
+==========================================================
+<audio>
+==========================================================
+
+
+Embeds audio files.
+
+
+==========================================================
+<video>
+==========================================================
+
+
+Embeds video files.
+
+
+==========================================================
+controls ATTRIBUTE
+==========================================================
+
+
+Shows media controls.
+
+
+Example:
+
+
+Play
+
+Pause
+
+Volume
+
+
+==========================================================
+HTML ENTITIES
+==========================================================
+
+
+Entities display special characters.
+
+
+==========================================================
+&lt;
+==========================================================
+
+
+Displays:
+
+
+<
+
+
+==========================================================
+&gt;
+==========================================================
+
+
+Displays:
+
+
+>
+
+
+==========================================================
+&amp;
+==========================================================
+
+
+Displays:
+
+
+&
+
+
+==========================================================
+&nbsp;
+==========================================================
+
+
+Creates extra space.
+
+
+==========================================================
+SEMANTIC TAGS
+==========================================================
+
+
+==========================================================
+<header>
+==========================================================
+
+
+Represents introductory content.
+
+
+Usually contains:
+
+Logo
+
+Title
+
+Navigation
+
+
+==========================================================
+<nav>
+==========================================================
+
+
+Contains navigation links.
+
+
+==========================================================
+<main>
+==========================================================
+
+
+Contains the main content
+of webpage.
+
+
+==========================================================
+<section>
+==========================================================
+
+
+Groups related content.
+
+
+==========================================================
+<article>
+==========================================================
+
+
+Represents independent content.
+
+
+Examples:
+
+
+Blog post
+
+News article
+
+
+==========================================================
+<footer>
+==========================================================
+
+
+Represents bottom section.
+
+
+Usually contains:
+
+
+Copyright
+
+Contact
+
+Extra links
+
+
+==========================================================
+META TAGS
+==========================================================
+
+
+Meta tags provide information
+about webpages.
+
+
+==========================================================
+charset
+==========================================================
+
+
+Defines character encoding.
+
+
+Usually UTF-8.
+
+
+==========================================================
+viewport
+==========================================================
+
+
+Helps webpages work properly
+on different screen sizes.
+
+
+Important for responsive design.
+
+
+==========================================================
+description
+==========================================================
+
+
+Provides webpage summary.
+
+
+Can appear in search results.
+
+
+==========================================================
+author
+==========================================================
+
+
+Defines webpage creator.
+
+
+==========================================================
+keywords
+==========================================================
+
+
+Defines webpage topics.
+
+
+Less important in modern SEO.
+
+
+==========================================================
+LINK TAG
+==========================================================
+
+
+<link>
+
+
+Connects external resources.
+
+
+==========================================================
+rel ATTRIBUTE
+==========================================================
+
+
+Defines relationship
+between document and resource.
+
+
+==========================================================
+stylesheet
+==========================================================
+
+
+Connects CSS file.
+
+
+==========================================================
+icon
+==========================================================
+
+
+Connects favicon.
+
+
+==========================================================
+IFRAME
+==========================================================
+
+
+<iframe>
+
+
+Embeds another webpage
+inside the current webpage.
+
+
+Uses:
+
+
+YouTube videos
+
+Maps
+
+External content
+
+
+==========================================================
+width ATTRIBUTE
+==========================================================
+
+
+Controls iframe width.
+
+
+==========================================================
+height ATTRIBUTE
+==========================================================
+
+
+Controls iframe height.
+
+
+==========================================================
+IFRAME LIMITATION
+==========================================================
+
+
+Some websites block iframe embedding
+for security reasons.
+
+
+==========================================================
+HTML BEST PRACTICES
+==========================================================
+
+
+==========================================================
+MEANINGFUL NAMES
+==========================================================
+
+
+Use names that explain purpose.
+
+
+Good:
+
+
+navbar
+
+hero
+
+footer
+
+
+Bad:
+
+
+a
+
+abc
+
+x
+
+
+==========================================================
+INDENTATION
+==========================================================
+
+
+Makes code easier to read.
+
+
+Helps debugging.
+
+Helps maintenance.
+
+
+==========================================================
+COMMENTS
+==========================================================
+
+
+Comments explain code sections.
+
+
+Good:
+
+
+Navigation
+
+Hero Section
+
+Contact Form
+
+
+Bad:
+
+
+Comments that only repeat obvious code.
+
+
+==========================================================
+ALT TEXT
+==========================================================
+
+
+Always describe meaningful images.
+
+
+Improves accessibility.
+
+
+==========================================================
+LABELS
+==========================================================
+
+
+Important inputs should have labels.
+
+
+Improves user understanding.
+
+
+==========================================================
+AVOID UNNECESSARY NESTING
+==========================================================
+
+
+Avoid creating too many useless containers.
+
+
+Cleaner structure is easier to maintain.
+
+
+==========================================================
+CLEAN CODE RULE
+==========================================================
+
+
+Readable code
+
+>
+
+Clever code
+
+
+Simple code
+
+>
+
+Complicated code
+
+
+Clean code
+
+>
+
+Fancy code
+
+
+==========================================================
+FINAL MEMORY SHEET
+==========================================================
+
+
+HTML
+=
+Webpage structure
+
+
+head
+=
+Information about page
+
+
+body
+=
+Visible content
+
+
+title
+=
+Browser tab name
+
+
+strong
+=
+Important text
+
+
+em
+=
+Emphasized text
+
+
+mark
+=
+Highlight
+
+
+sub
+=
+Lower text
+
+
+sup
+=
+Higher text
+
+
+ul
+=
+Bullet list
+
+
+ol
+=
+Numbered list
+
+
+li
+=
+List item
+
+
+a
+=
+Link
+
+
+href
+=
+Link destination
+
+
+img
+=
+Image
+
+
+src
+=
+Source
+
+
+alt
+=
+Alternative description
+
+
+table
+=
+Table
+
+
+tr
+=
+Row
+
+
+th
+=
+Heading
+
+
+td
+=
+Data
+
+
+form
+=
+Input container
+
+
+input
+=
+User input
+
+
+label
+=
+Input description
+
+
+textarea
+=
+Large input
+
+
+select
+=
+Dropdown
+
+
+option
+=
+Choice
+
+
+audio
+=
+Sound
+
+
+video
+=
+Video
+
+
+meta
+=
+Page information
+
+
+link
+=
+External resource
+
+
+iframe
+=
+Webpage inside webpage
+
+
+header
+=
+Top section
+
+
+main
+=
+Main content
+
+
+section
+=
+Related group
+
+
+article
+=
+Independent content
+
+
+footer
+=
+Bottom section
+
+
+==========================================================
+END OF HTML FINAL BOSS NOTES
+==========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Vihaan">
+    <meta name = "description" content = "Final practical">
+    <title>HTML Final Boss</title>
+</head>
+<body>
+    <header>
+        <h1>
+            HTML Final Boss
+        </h1>
+        <nav>
+            <span>
+                <a href = "#home">Home</a>
+            </span>
+            <span>
+                <a href = "#topics">Topics</a>
+            </span>
+            <span>
+                <a href = "#about">About</a>
+            </span>
+            <span>
+                <a href = "#contact">Contact</a>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section id = "home">
+            <article>
+            <h3>About HTML</h3>
+            
+                <p><mark>HTML</mark> is the structure of the webpage. It is the <em>thing</em> on which CSS and JS works. HTML's fullform is <strong>Hyper Text Markup Language</strong>. Without it the webpage is <mark><strong><em>nothing</em></strong></mark>.</p>
+            </article>
+        </section>
+        <section id = "topics">
+            <h3>Topics Learned</h3>
+            <ul>
+                <li>Table</li>
+                <li>Iframe</li>
+                <li>Anchor</li>
+                <li>Form</li>
+            </ul>
+            <h3>Topics learned in order</h3>
+            <ol>
+                <li>Anchor</li>
+                <li>Table</li>
+                <li>Form</li>
+                <li>Iframe</li>
+            </ol>
+        </section>
+        <section id = "about">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vihaan</td>
+                        <td>V</td>
+                        <td>97.28%</td>
+                    </tr>
+                    <tr>
+                        <td>Satvik</td>
+                        <td>V</td>
+                        <td>95.59%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id = "contact">
+            <form>
+                <label for = "name">Name</label>
+                <input id = "name" type = "text" placeholder = "Name" value = "Alex">
+                <br />
+                <label for = "email">E-mail</label>
+                <input id = "email" type = "email" placeholder = "E-mail" value = "ABC123@example.com">
+                <br />
+                <label for = "message">Message</label>
+                <textarea id = "message"></textarea>
+                <br />
+                <button type = "submit"></button>
+            </form>
+        </section>
+    </main>
+    <footer>&copy;.......
+        Vihaan Kashyap
+    </footer>
+</body>
+</html>

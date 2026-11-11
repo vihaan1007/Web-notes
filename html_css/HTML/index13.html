@@ -1,0 +1,698 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 13 - FORMS PART 3
+══════════════════════════════════════════════════════════════
+
+So far:
+
+Users typed information.
+
+Examples:
+
+Name
+Email
+Password
+Phone Number
+Birth Date
+
+Today:
+
+Users can choose information.
+
+New Elements:
+
+radio
+checkbox
+select
+option
+textarea
+button
+
+══════════════════════════════════════════════════════════════
+RADIO BUTTON
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="radio">
+
+Purpose:
+
+Choose ONE option.
+
+Examples:
+
+Gender
+
+Payment Method
+
+Experience Level
+
+Result:
+
+( ) Option A
+
+( ) Option B
+
+( ) Option C
+
+Only one can be selected.
+
+══════════════════════════════════════════════════════════════
+WHY RADIO BUTTONS EXIST
+══════════════════════════════════════════════════════════════
+
+Without radio buttons:
+
+User must type:
+
+Male
+
+Female
+
+Other
+
+Typing causes mistakes.
+
+Radio buttons provide
+predefined choices.
+
+══════════════════════════════════════════════════════════════
+RADIO BUTTON EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input type="radio"
+       id="male">
+
+<label for="male">
+
+Male
+
+</label>
+
+Result:
+
+( ) Male
+
+══════════════════════════════════════════════════════════════
+THE NAME ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+Radio buttons usually need:
+
+name
+
+Example:
+
+<input type="radio"
+       name="gender">
+
+Purpose:
+
+Groups radio buttons.
+
+Without matching names:
+
+Multiple radios can be selected.
+
+══════════════════════════════════════════════════════════════
+RADIO GROUP EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input type="radio"
+       id="male"
+       name="gender">
+
+<label for="male">
+
+Male
+
+</label>
+
+<input type="radio"
+       id="female"
+       name="gender">
+
+<label for="female">
+
+Female
+
+</label>
+
+Result:
+
+( ) Male
+
+( ) Female
+
+Only one may be selected.
+
+══════════════════════════════════════════════════════════════
+RADIO RULE
+══════════════════════════════════════════════════════════════
+
+Same name:
+
+One selection.
+
+Different names:
+
+Independent selections.
+
+Remember:
+
+Radio buttons become useful
+when grouped.
+
+══════════════════════════════════════════════════════════════
+CHECKBOX
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="checkbox">
+
+Purpose:
+
+Choose multiple options.
+
+Examples:
+
+Sports
+
+Hobbies
+
+Interests
+
+Skills
+
+══════════════════════════════════════════════════════════════
+CHECKBOX EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input type="checkbox"
+       id="cricket">
+
+<label for="cricket">
+
+Cricket
+
+</label>
+
+Result:
+
+☐ Cricket
+
+══════════════════════════════════════════════════════════════
+CHECKBOX BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+User can select:
+
+One
+
+Two
+
+Three
+
+All
+
+None
+
+Checkboxes are not limited
+to one selection.
+
+══════════════════════════════════════════════════════════════
+RADIO VS CHECKBOX
+══════════════════════════════════════════════════════════════
+
+Radio:
+
+Choose one.
+
+Checkbox:
+
+Choose many.
+
+Examples:
+
+Gender:
+
+Radio
+
+Sports:
+
+Checkbox
+
+══════════════════════════════════════════════════════════════
+MEMORY TRICK
+══════════════════════════════════════════════════════════════
+
+Radio:
+
+One station at a time.
+
+Checkbox:
+
+Shopping list.
+
+Select everything you need.
+
+══════════════════════════════════════════════════════════════
+SELECT
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<select>
+
+</select>
+
+Purpose:
+
+Create a dropdown menu.
+
+Result:
+
+▼ Select Option
+
+══════════════════════════════════════════════════════════════
+WHY SELECT EXISTS
+══════════════════════════════════════════════════════════════
+
+Without select:
+
+User types:
+
+India
+
+USA
+
+Japan
+
+Mistakes possible.
+
+Examples:
+
+Inda
+
+Japn
+
+USA
+
+Select prevents such mistakes.
+
+══════════════════════════════════════════════════════════════
+OPTION
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<option>
+
+Purpose:
+
+Represents one choice
+inside a select element.
+
+══════════════════════════════════════════════════════════════
+OPTION EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<select>
+
+<option>
+
+India
+
+</option>
+
+<option>
+
+USA
+
+</option>
+
+<option>
+
+Japan
+
+</option>
+
+</select>
+
+Result:
+
+▼ India
+
+▼ USA
+
+▼ Japan
+
+══════════════════════════════════════════════════════════════
+SELECT STRUCTURE
+══════════════════════════════════════════════════════════════
+
+select
+
+│
+
+├── option
+
+├── option
+
+├── option
+
+└── option
+
+Options live inside select.
+
+══════════════════════════════════════════════════════════════
+TEXTAREA
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<textarea>
+
+</textarea>
+
+Purpose:
+
+Large text input.
+
+Examples:
+
+Feedback
+
+Comments
+
+Messages
+
+Reviews
+
+Descriptions
+
+══════════════════════════════════════════════════════════════
+TEXTAREA EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<textarea>
+
+</textarea>
+
+Result:
+
+┌───────────────┐
+│               │
+│               │
+│               │
+└───────────────┘
+
+══════════════════════════════════════════════════════════════
+TEXTAREA VS INPUT
+══════════════════════════════════════════════════════════════
+
+Input:
+
+One line.
+
+<textarea>:
+
+Multiple lines.
+
+Examples:
+
+Name:
+
+Input
+
+Feedback:
+
+Textarea
+
+══════════════════════════════════════════════════════════════
+TEXTAREA LABEL
+══════════════════════════════════════════════════════════════
+
+Textarea can use labels.
+
+Example:
+
+<label for="message">
+
+Message
+
+</label>
+
+<textarea id="message">
+
+</textarea>
+
+Just like inputs.
+
+══════════════════════════════════════════════════════════════
+BUTTON
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<button>
+
+Submit
+
+</button>
+
+Result:
+
+[ Submit ]
+
+Purpose:
+
+Clickable control.
+
+══════════════════════════════════════════════════════════════
+BUTTON TODAY
+══════════════════════════════════════════════════════════════
+
+Currently:
+
+Just a clickable element.
+
+Later:
+
+JavaScript will control it.
+
+══════════════════════════════════════════════════════════════
+BUTTON IN THE FUTURE
+══════════════════════════════════════════════════════════════
+
+Buttons can:
+
+Submit forms
+
+Validate inputs
+
+Open menus
+
+Show alerts
+
+Change content
+
+Start games
+
+Control applications
+
+Buttons become extremely powerful
+with JavaScript.
+
+══════════════════════════════════════════════════════════════
+EXAMPLE FORM
+══════════════════════════════════════════════════════════════
+
+<form>
+
+<input type="radio">
+
+<input type="checkbox">
+
+<select>
+
+<option>
+
+India
+
+</option>
+
+</select>
+
+<textarea>
+
+</textarea>
+
+<button>
+
+Submit
+
+</button>
+
+</form>
+
+══════════════════════════════════════════════════════════════
+DAY 13 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+radio
+
+checkbox
+
+name
+
+select
+
+option
+
+textarea
+
+button
+
+══════════════════════════════════════════════════════════════
+DAY 13 SUMMARY
+══════════════════════════════════════════════════════════════
+
+radio:
+
+Choose one.
+
+checkbox:
+
+Choose many.
+
+name:
+
+Groups radio buttons.
+
+select:
+
+Dropdown menu.
+
+option:
+
+Choice inside select.
+
+textarea:
+
+Large text box.
+
+button:
+
+Clickable control.
+
+Users do not always type.
+
+Sometimes they choose.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 13
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13</title>
+</head>
+<body>
+    <h3>Gender</h3>
+    <form>
+        <label for = "male">Male</label>
+        <input type = "radio" id = "male" name = "gender">
+        <br />
+        <label for = "female">Female</label>
+        <input type = "radio" id = "female" name = "gender">
+        <br />
+        <label for = "others">Others</label>
+        <input type = "radio" id = "others" name = "gender">
+    </form>
+    <h3>Favourite Sports</h3>
+    <form>
+        <label for = "cricket">Cricket</label>
+        <input type = "checkbox" id = "cricket">
+        <br />
+        <label for = "football">Football</label>
+        <input type = "checkbox" id = "football">
+        <br />
+        <label for = "chess">Chess</label>
+        <input type = "checkbox" id = "chess">
+        <br />
+        <label for = "badminton">Badminton</label>
+        <input type = "checkbox" id = "badminton">
+    </form>
+    <h3>Country</h3>
+    <form>
+        <select>
+            <option>India</option>
+            <option>USA</option>
+            <option>Japan</option>
+            <option>Australia</option>
+        </select>
+    </form>
+    <h3>Feedback</h3>
+    <form>
+        <label for = "name">Name</label>
+        <input type = "text" id = "name">
+        <br />
+        <label for = "message">Message</label>
+        <textarea id = "message"></textarea>
+        <br />
+        <button>Submit</button>
+    </form>
+    <h3>Gaming Survey</h3>
+    <form>
+        <label for = "gName">Name</label>
+        <input type = "text" id = "gName">
+        <br />
+        <h4>Favourite Game</h4>
+        <select>
+            <option>Swordigo</option>
+            <option>Call Of Duty</option>
+            <option>Geometry Dash</option>
+            <option>OSU</option>
+            <option>Soul Knight</option>
+            <option>Minecraft</option>
+            <option>Ice Scream(any chapter)</option>
+            <option>Others</option>
+        </select>
+        <br />
+        <h4>Gaming Platform</h4>
+        <label for = "playstation">Playstation</label>
+        <input type = "checkbox" id = "playstation">
+        <br />
+        <label for = "steam">Steam</label>
+        <input type = "checkbox" id = "steam">
+        <br />
+        <label for="others">Others</label>
+        <input type = "checkbox" id = "others">
+        <br />
+        <h4>Skill Level</h4>
+        <label for = "low">Low</label>
+        <input type = "checkbox" id = "low">
+        <br />
+        <label for = "medium">Medium</label>
+        <input type = "checkbox" id = "medium">
+        <br />
+        <label for = "pro">Pro</label>
+        <input type = "checkbox" id = "pro">
+        <br />
+        <label for = "legend">Legend</label>
+        <input type = "checkbox" id = "legend">
+        <br />
+        <label for = "comment">Comment</label>
+        <textarea id = "comment"></textarea>
+        <br />
+        <button>Submit</button>
+    </form>
+</body>
+</html>

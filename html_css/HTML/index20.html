@@ -1,0 +1,719 @@
+<!--
+
+==========================================================
+DAY 20
+AUDIO AND VIDEO
+==========================================================
+
+Welcome to the Multimedia Arc.
+
+Until now we have mostly worked with:
+
+Headings
+
+Paragraphs
+
+Lists
+
+Links
+
+Images
+
+Tables
+
+Forms
+
+Today we learn how HTML handles media.
+
+Media means:
+
+Sound
+
+Video
+
+Music
+
+Recordings
+
+Movies
+
+Clips
+
+Podcasts
+
+And other multimedia content.
+
+==========================================================
+KEYWORDS
+==========================================================
+
+audio
+
+video
+
+source
+
+controls
+
+autoplay
+
+loop
+
+muted
+
+poster
+
+==========================================================
+BEFORE HTML5
+==========================================================
+
+Playing audio was difficult.
+
+Playing video was difficult.
+
+Browsers often required plugins.
+
+Different browsers behaved differently.
+
+Users had inconsistent experiences.
+
+HTML5 solved many of these problems.
+
+HTML5 introduced built-in multimedia tags.
+
+==========================================================
+AUDIO
+==========================================================
+
+Purpose:
+
+Plays sound.
+
+Examples:
+
+Music
+
+Podcasts
+
+Voice recordings
+
+Sound effects
+
+Background audio
+
+Syntax:
+
+<audio>
+
+</audio>
+
+Example:
+
+<audio controls>
+
+<source src="song.mp3">
+
+</audio>
+
+The audio tag is specifically made for sound.
+
+If there is no video and only sound:
+
+Use audio.
+
+Do not use video.
+
+Memory Trick:
+
+audio
+
+Hear it.
+
+==========================================================
+VIDEO
+==========================================================
+
+Purpose:
+
+Plays video.
+
+Examples:
+
+Movies
+
+Tutorials
+
+Recorded lectures
+
+Animations
+
+Clips
+
+Syntax:
+
+<video>
+
+</video>
+
+Example:
+
+<video controls>
+
+<source src="movie.mp4">
+
+</video>
+
+Video usually contains:
+
+Picture
+
+Sound
+
+Movement
+
+Memory Trick:
+
+video
+
+Hear it and see it.
+
+==========================================================
+AUDIO VS VIDEO
+==========================================================
+
+audio
+
+Sound only.
+
+video
+
+Sound + picture.
+
+If there is no picture:
+
+Use audio.
+
+If there is picture and sound:
+
+Use video.
+
+==========================================================
+SOURCE
+==========================================================
+
+Purpose:
+
+Tells browser where the media file is.
+
+Syntax:
+
+<source src="song.mp3">
+
+Example:
+
+<audio controls>
+
+<source src="song.mp3">
+
+</audio>
+
+Browser asks:
+
+Where is the file?
+
+source answers.
+
+Without source:
+
+Browser does not know what to play.
+
+Think of source as the address of the media.
+
+Examples:
+
+song.mp3
+
+music.mp3
+
+movie.mp4
+
+video.mp4
+
+==========================================================
+CONTROLS
+==========================================================
+
+Purpose:
+
+Shows media controls.
+
+Syntax:
+
+controls
+
+Example:
+
+<audio controls>
+
+Browser displays:
+
+Play button
+
+Pause button
+
+Progress bar
+
+Volume control
+
+Time display
+
+The same works with video.
+
+Example:
+
+<video controls>
+
+Without controls:
+
+Media exists.
+
+User often cannot easily control it.
+
+Memory Trick:
+
+controls
+
+Remote control for media.
+
+==========================================================
+AUTOPLAY
+==========================================================
+
+Purpose:
+
+Starts media automatically.
+
+Syntax:
+
+autoplay
+
+Example:
+
+<audio autoplay>
+
+Example:
+
+<video autoplay>
+
+When the page loads:
+
+Browser attempts to start the media.
+
+Important:
+
+Modern browsers often block autoplay.
+
+Reason:
+
+Unexpected sound annoys users.
+
+Therefore:
+
+Autoplay is a request.
+
+Not a guarantee.
+
+Memory Trick:
+
+autoplay
+
+Start automatically.
+
+==========================================================
+LOOP
+==========================================================
+
+Purpose:
+
+Repeats media forever.
+
+Syntax:
+
+loop
+
+Example:
+
+<audio loop>
+
+Media starts.
+
+Media finishes.
+
+Media starts again.
+
+Media finishes.
+
+Media starts again.
+
+And continues forever.
+
+Until user stops it.
+
+Useful for:
+
+Background music
+
+Ambient sounds
+
+Repeating effects
+
+Memory Trick:
+
+loop
+
+Repeat forever.
+
+==========================================================
+MUTED
+==========================================================
+
+Purpose:
+
+Starts media with sound turned off.
+
+Syntax:
+
+muted
+
+Example:
+
+<video muted>
+
+Result:
+
+Video starts silently.
+
+User can later unmute.
+
+Common Combination:
+
+autoplay + muted
+
+Example:
+
+<video autoplay muted>
+
+Why?
+
+Browsers are more likely to allow:
+
+autoplay + muted
+
+than:
+
+autoplay with sound.
+
+Reason:
+
+Silent videos are less annoying.
+
+Memory Trick:
+
+muted
+
+Starts silent.
+
+==========================================================
+POSTER
+==========================================================
+
+Video only.
+
+Purpose:
+
+Shows an image before video starts.
+
+Syntax:
+
+poster="thumbnail.jpg"
+
+Example:
+
+<video poster="cover.jpg">
+
+Before user presses play:
+
+Image is visible.
+
+After user presses play:
+
+Video begins.
+
+Think of YouTube.
+
+Before clicking:
+
+You see a thumbnail.
+
+poster behaves similarly.
+
+Memory Trick:
+
+poster
+
+Video thumbnail.
+
+==========================================================
+WIDTH
+==========================================================
+
+Purpose:
+
+Controls displayed width.
+
+Example:
+
+<video width="500">
+
+Browser attempts to display video
+around 500 pixels wide.
+
+Useful when video appears too large
+or too small.
+
+==========================================================
+COMMON MISTAKES
+==========================================================
+
+Mistake 1
+
+Forgetting controls.
+
+Result:
+
+User asks:
+
+Where is the play button?
+
+----------------------------------------------------------
+
+Mistake 2
+
+Using audio for video.
+
+Wrong.
+
+Use video.
+
+----------------------------------------------------------
+
+Mistake 3
+
+Using video for sound only.
+
+Unnecessary.
+
+Use audio.
+
+----------------------------------------------------------
+
+Mistake 4
+
+Thinking autoplay always works.
+
+Wrong.
+
+Browser decides.
+
+----------------------------------------------------------
+
+Mistake 5
+
+Forgetting source.
+
+Browser cannot find media.
+
+----------------------------------------------------------
+
+Mistake 6
+
+Thinking muted means no controls.
+
+Wrong.
+
+Muted only affects sound.
+
+Controls are separate.
+
+==========================================================
+REAL WORLD EXAMPLES
+==========================================================
+
+Audio
+
+Podcast player
+
+Music player
+
+Voice notes
+
+Language learning audio
+
+----------------------------------------------------------
+
+Video
+
+Course lessons
+
+Movie trailers
+
+Tutorials
+
+Product demonstrations
+
+==========================================================
+QUICK REVISION
+==========================================================
+
+audio
+
+Plays sound.
+
+----------------------------------------------------------
+
+video
+
+Plays video.
+
+----------------------------------------------------------
+
+source
+
+Tells browser where file exists.
+
+----------------------------------------------------------
+
+controls
+
+Shows controls.
+
+----------------------------------------------------------
+
+autoplay
+
+Starts automatically.
+
+----------------------------------------------------------
+
+loop
+
+Repeats forever.
+
+----------------------------------------------------------
+
+muted
+
+Starts silent.
+
+----------------------------------------------------------
+
+poster
+
+Shows thumbnail before play.
+
+==========================================================
+EXAM REVISION
+==========================================================
+
+audio
+
+Sound only.
+
+video
+
+Sound and picture.
+
+controls
+
+Media controls.
+
+autoplay
+
+Automatic start.
+
+loop
+
+Infinite repetition.
+
+muted
+
+Sound off initially.
+
+poster
+
+Thumbnail image.
+
+source
+
+Media file location.
+
+==========================================================
+DAY 20 GOLDEN RULE
+==========================================================
+
+audio speaks.
+
+video speaks and shows.
+
+==========================================================
+END OF DAY 20
+==========================================================
+
+Multimedia Arc Begins.
+
+Keywords:
+
+audio
+
+video
+
+source
+
+controls
+
+autoplay
+
+loop
+
+muted
+
+poster
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20</title>
+</head>
+<body>
+    <h2>My favourite Song</h2>
+    <audio controls>
+        <source src = "index20audio.mp3">
+    </audio>
+    <h2>My favourite video</h2>
+    <video controls width = "400">
+        <source src = "index20video.mp4">
+    </video>
+    <h2>Another video</h2>
+    <video controls muted poster = "index20thumb.png" width = "400">
+        <source src = "index20video.mp4">
+    </video>
+    <h2>Another audio</h2>
+    <audio controls loop>
+        <source src = "index20audio.mp3">
+    </audio>
+</body>
+</html>

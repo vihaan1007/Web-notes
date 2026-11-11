@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+#flex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#loac{
+    height: 10rem;
+    width: 10rem;
+    background-color: aquamarine;
+    position: relative;
+    align-self: center;
+}
+
+#loa{
+    height: 8rem;
+    width: 8rem;
+    border: 1.5px solid green;
+    border-top: 1.5px solid burlywood;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    position: absolute;
+    top: 18px;
+    left: 23px;
+    animation: loa 2.5s linear infinite;
+}
+
+@keyframes loa{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+#lobc{
+    height: 10rem;
+    width: 10rem;
+    background-color: indianred;
+    position: relative;
+    align-self: flex-start;
+}
+
+#lob{
+    height: 8rem;
+    width: 8rem;
+    border: 1.5px solid lightblue;
+    border-top: 1.5px solid lime;
+    border-bottom: 1.5px solid ivory;
+    border-radius: 50%;
+    background-color: rgb(81, 153, 23);
+    position: relative;
+    top: 18px;
+    left: 23px;
+    animation: loa 2.5s linear infinite;
+}
+
+#locc{
+    height: 10rem;
+    width: 10rem;
+    background-color: fuchsia;
+    position: relative;
+    align-self: flex-end;
+}
+
+#loc{
+    height: 8rem;
+    width: 8rem;
+    border: 1.5px solid lightblue;
+    border-top: 1.5px solid lime;
+    border-bottom: 1.5px solid hsl(59, 100%, 59%);
+    border-radius: 50%;
+    background: conic-gradient(red, blue, green, cyan, gold);
+    position: relative;
+    top: 18px;
+    left: 23px;
+    animation: loa 2.5s linear infinite;
+}
+
+#locb{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: limegreen;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#lodc{
+    height: 10rem;
+    width: 10rem;
+    background-color: chocolate;
+    position: relative;
+    align-self: center;
+}
+
+#lod{
+    height: 8rem;
+    width: 8rem;
+    border: 1.5px solid green;
+    border-top: 1.5px solid burlywood;
+    border-radius: 50%;
+    background-color: violet;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: translate(-50%, -50%);
+    animation: loa 2.5s linear infinite;
+}
+
+#lodb{
+    height: 8rem;
+    width: 8rem;
+    border: 1.5px solid green;
+    border-bottom: 1.5px solid burlywood;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    animation: loa 2.5s linear infinite reverse;
+}   
+
+#loec{
+    height: 10rem;
+    width: 10rem;
+    background-color: cadetblue;
+    position: relative;
+    align-self: center;
+}
+
+#loe{
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid salmon;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: burlywood;
+    animation: pulse 0.5s linear infinite;
+}
+
+@keyframes pulse{
+    from{transform: scale(1.1);}
+    to{transform: scale(0.8);}
+}

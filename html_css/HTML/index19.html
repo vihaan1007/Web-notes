@@ -1,0 +1,626 @@
+<!-- ========================================================== -->
+<!-- DAY 19 NOTES -->
+<!-- FIELDSET AND LEGEND -->
+<!-- ========================================================== -->
+
+<!-- Today we learn two new tags. -->
+
+<!-- fieldset -->
+
+<!-- legend -->
+
+<!-- ========================================================== -->
+
+<!-- These tags are not used to collect data. -->
+
+<!-- They are used to organize data. -->
+
+<!-- ========================================================== -->
+
+<!-- Before today -->
+
+<!-- We learned inputs. -->
+
+<!-- We learned labels. -->
+
+<!-- We learned radio buttons. -->
+
+<!-- We learned checkboxes. -->
+
+<!-- We learned selects. -->
+
+<!-- We learned textareas. -->
+
+<!-- ========================================================== -->
+
+<!-- But there is a problem. -->
+
+<!-- ========================================================== -->
+
+<!-- Imagine a form with: -->
+
+<!-- Name -->
+
+<!-- Age -->
+
+<!-- Email -->
+
+<!-- Phone -->
+
+<!-- Gender -->
+
+<!-- Country -->
+
+<!-- Feedback -->
+
+<!-- ========================================================== -->
+
+<!-- Browser sees: -->
+
+<!-- One giant pile of inputs. -->
+
+<!-- ========================================================== -->
+
+<!-- Humans may understand it. -->
+
+<!-- But it is not organized. -->
+
+<!-- ========================================================== -->
+
+<!-- THE SOLUTION -->
+
+<!-- fieldset -->
+
+<!-- ========================================================== -->
+
+<!-- Syntax -->
+
+<!-- <fieldset> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- Purpose -->
+
+<!-- Groups related form controls together. -->
+
+<!-- ========================================================== -->
+
+<!-- Think of fieldset as a box. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <fieldset> -->
+
+<!-- Name -->
+
+<!-- Age -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- Browser usually draws a box around it. -->
+
+<!-- ========================================================== -->
+
+<!-- Visual Idea -->
+
+<!-- +------------------+ -->
+
+<!-- |                  | -->
+
+<!-- | Name             | -->
+
+<!-- | Age              | -->
+
+<!-- |                  | -->
+
+<!-- +------------------+ -->
+
+<!-- ========================================================== -->
+
+<!-- fieldset groups things together. -->
+
+<!-- ========================================================== -->
+
+<!-- Think of a classroom. -->
+
+<!-- ========================================================== -->
+
+<!-- Students of Class 8A -->
+
+<!-- stay together. -->
+
+<!-- ========================================================== -->
+
+<!-- Students of Class 8B -->
+
+<!-- stay together. -->
+
+<!-- ========================================================== -->
+
+<!-- fieldset does a similar thing. -->
+
+<!-- ========================================================== -->
+
+<!-- It groups related controls. -->
+
+<!-- ========================================================== -->
+
+<!-- THE SECOND TAG -->
+
+<!-- legend -->
+
+<!-- ========================================================== -->
+
+<!-- Syntax -->
+
+<!-- <legend> -->
+
+<!-- Personal Information -->
+
+<!-- </legend> -->
+
+<!-- ========================================================== -->
+
+<!-- Purpose -->
+
+<!-- Gives a title to a fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- Think of legend as a nameplate. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Personal Information -->
+
+<!-- </legend> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- Visual Idea -->
+
+<!-- +--- Personal Information ---+ -->
+
+<!-- |                            | -->
+
+<!-- | Name                       | -->
+
+<!-- | Age                        | -->
+
+<!-- |                            | -->
+
+<!-- +----------------------------+ -->
+
+<!-- ========================================================== -->
+
+<!-- fieldset -->
+
+<!-- Creates the box. -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- Names the box. -->
+
+<!-- ========================================================== -->
+
+<!-- MEMORY TRICK -->
+
+<!-- fieldset -->
+
+<!-- Box -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- Box title -->
+
+<!-- ========================================================== -->
+
+<!-- REAL EXAMPLE -->
+
+<!-- Registration Form -->
+
+<!-- ========================================================== -->
+
+<!-- Personal Information -->
+
+<!-- Name -->
+
+<!-- Age -->
+
+<!-- Gender -->
+
+<!-- ========================================================== -->
+
+<!-- Address Information -->
+
+<!-- City -->
+
+<!-- State -->
+
+<!-- Country -->
+
+<!-- ========================================================== -->
+
+<!-- Account Information -->
+
+<!-- Username -->
+
+<!-- Password -->
+
+<!-- ========================================================== -->
+
+<!-- Each section can have its own fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Personal Information -->
+
+<!-- </legend> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- <fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Address Information -->
+
+<!-- </legend> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- <fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Account Information -->
+
+<!-- </legend> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- MULTIPLE FIELDSETS -->
+
+<!-- One form can have many fieldsets. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- Personal Information -->
+
+<!-- Sports -->
+
+<!-- Education -->
+
+<!-- Contact -->
+
+<!-- ========================================================== -->
+
+<!-- Each can be its own fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 1 -->
+
+<!-- Using legend by itself. -->
+
+<!-- ========================================================== -->
+
+<!-- Wrong -->
+
+<!-- <legend> -->
+
+<!-- Personal Information -->
+
+<!-- </legend> -->
+
+<!-- ========================================================== -->
+
+<!-- legend belongs inside fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 2 -->
+
+<!-- Putting legend outside fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- Wrong -->
+
+<!-- <fieldset> -->
+
+<!-- </fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Personal -->
+
+<!-- </legend> -->
+
+<!-- ========================================================== -->
+
+<!-- Correct -->
+
+<!-- <fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Personal -->
+
+<!-- </legend> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 3 -->
+
+<!-- Thinking fieldset is required. -->
+
+<!-- ========================================================== -->
+
+<!-- Wrong. -->
+
+<!-- ========================================================== -->
+
+<!-- Forms work perfectly without fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- fieldset simply improves structure. -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 4 -->
+
+<!-- Thinking legend is a heading tag. -->
+
+<!-- ========================================================== -->
+
+<!-- Wrong. -->
+
+<!-- ========================================================== -->
+
+<!-- h1 -->
+
+<!-- h2 -->
+
+<!-- h3 -->
+
+<!-- are heading tags. -->
+
+<!-- ========================================================== -->
+
+<!-- legend is specifically for fieldsets. -->
+
+<!-- ========================================================== -->
+
+<!-- BEFORE DAY 19 -->
+
+<!-- We often wrote: -->
+
+<!-- <h3> -->
+
+<!-- Personal Information -->
+
+<!-- </h3> -->
+
+<!-- ========================================================== -->
+
+<!-- This works. -->
+
+<!-- Humans understand it. -->
+
+<!-- ========================================================== -->
+
+<!-- But browser only sees a heading. -->
+
+<!-- ========================================================== -->
+
+<!-- AFTER DAY 19 -->
+
+<!-- <fieldset> -->
+
+<!-- <legend> -->
+
+<!-- Personal Information -->
+
+<!-- </legend> -->
+
+<!-- </fieldset> -->
+
+<!-- ========================================================== -->
+
+<!-- Humans understand it. -->
+
+<!-- Browser understands it. -->
+
+<!-- ========================================================== -->
+
+<!-- This is called semantic HTML. -->
+
+<!-- ========================================================== -->
+
+<!-- Meaningful HTML. -->
+
+<!-- ========================================================== -->
+
+<!-- Think of it like this: -->
+
+<!-- h3 -->
+
+<!-- A heading. -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- A fieldset title. -->
+
+<!-- ========================================================== -->
+
+<!-- h3 -->
+
+<!-- General purpose. -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- Form purpose. -->
+
+<!-- ========================================================== -->
+
+<!-- DAY 19 GOLDEN RULE -->
+
+<!-- fieldset builds the room. -->
+
+<!-- ========================================================== -->
+
+<!-- legend hangs the nameplate. -->
+
+<!-- ========================================================== -->
+
+<!-- QUICK REVISION -->
+
+<!-- fieldset -->
+
+<!-- Groups controls. -->
+
+<!-- Creates a form section. -->
+
+<!-- Usually surrounds inputs. -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- Titles the group. -->
+
+<!-- Acts like a nameplate. -->
+
+<!-- Belongs inside fieldset. -->
+
+<!-- ========================================================== -->
+
+<!-- EXAM REVISION -->
+
+<!-- fieldset -->
+
+<!-- Box -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- Box title -->
+
+<!-- ========================================================== -->
+
+<!-- fieldset -->
+
+<!-- Organization -->
+
+<!-- ========================================================== -->
+
+<!-- legend -->
+
+<!-- Identification -->
+
+<!-- ========================================================== -->
+
+<!-- END OF DAY 19 -->
+
+<!-- Keywords -->
+
+<!-- fieldset -->
+
+<!-- legend -->
+
+<!-- form organization -->
+
+<!-- semantic grouping -->
+
+<!-- ========================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19</title>
+</head>
+<body>
+    <form action = "index18.html" method = "post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for = "name">Name</label>
+            <input type = "text" placeholder = "Name" value = "Alex" id = "name">
+            <label for = "pass">Password</label>
+            <input type = "password" placeholder = "Password" id = "pass" minlength = "10" maxlength = "18" required>
+            <label for = "male">Male</label>
+            <input id = "male" type = "radio" name = "gender">
+            <label for = "female">Female</label>
+            <input id = "female" type = "radio" name = "gender">
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for = "cricket">Cricket</label>
+            <input id = "cricket" type = "checkbox">
+            <label for = "chess">Chess</label>
+            <input id = "chess" type = "checkbox">
+            <select>
+                <option selected>Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>China</option>
+                <option>Japan</option>
+                <option>Norway</option>
+                <option>Greece</option>
+                <option>Germany</option>
+                <option>Bhutan</option>
+                <!--Enough I dont know how much I will write-->
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Others</legend>
+            <label for = "school_code">School Code</label>
+            <input type = "text" value = "ABC1024" id = "school_code" readonly>
+            <input type = "text" value = "Future feature" disabled>
+            <button type = "submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 1 - HTML BASICS
+══════════════════════════════════════════════════════════════
+
+HTML = HyperText Markup Language
+
+Purpose:
+HTML creates the structure of a webpage.
+
+Think of a website as a house:
+
+HTML = Structure
+CSS = Design
+JavaScript = Functionality
+
+Without HTML:
+- No headings
+- No paragraphs
+- No images
+- No buttons
+- No forms
+
+HTML provides the content and structure that CSS and
+JavaScript work with.
+
+══════════════════════════════════════════════════════════════
+WHAT IS A TAG?
+══════════════════════════════════════════════════════════════
+
+A tag tells the browser what something is.
+
+Examples of tags:
+
+LESS THAN h1 GREATER THAN
+
+LESS THAN p GREATER THAN
+
+LESS THAN title GREATER THAN
+
+A tag usually has:
+
+1. Opening Tag
+2. Content
+3. Closing Tag
+
+Example:
+
+Opening Tag:
+LESS THAN p GREATER THAN
+
+Content:
+Hello
+
+Closing Tag:
+LESS THAN /p GREATER THAN
+
+Together these form an element.
+
+══════════════════════════════════════════════════════════════
+WHAT IS AN ELEMENT?
+══════════════════════════════════════════════════════════════
+
+Element =
+Opening Tag + Content + Closing Tag
+
+Example:
+
+LESS THAN p GREATER THAN
+Hello
+LESS THAN /p GREATER THAN
+
+Everything from opening tag to closing tag is called
+an HTML element.
+
+══════════════════════════════════════════════════════════════
+HTML DOCUMENT STRUCTURE
+══════════════════════════════════════════════════════════════
+
+Every webpage follows a basic structure.
+
+Structure:
+
+DOCTYPE
+
+html
+
+head
+
+body
+
+The browser reads the page from top to bottom.
+
+══════════════════════════════════════════════════════════════
+DOCTYPE
+══════════════════════════════════════════════════════════════
+
+Syntax:
+
+LESS THAN !DOCTYPE html GREATER THAN
+
+Purpose:
+
+Tells the browser:
+
+"Use modern HTML5 standards."
+
+Benefits:
+
+- Standards mode
+- Modern browser behavior
+- Better compatibility
+- Predictable rendering
+
+Always written on the first line.
+
+══════════════════════════════════════════════════════════════
+HTML ELEMENT
+══════════════════════════════════════════════════════════════
+
+The html element is the root element.
+
+Everything belongs inside it.
+
+Structure:
+
+html
+|
+|-- head
+|
+|-- body
+
+Nothing should exist outside html except DOCTYPE.
+
+══════════════════════════════════════════════════════════════
+HEAD ELEMENT
+══════════════════════════════════════════════════════════════
+
+The head contains information ABOUT the webpage.
+
+Users normally do not see this information directly.
+
+Common contents:
+
+- Title
+- Meta tags
+- CSS links
+- JavaScript links
+- Favicon links
+
+Think:
+
+head = information for browser and search engines.
+
+══════════════════════════════════════════════════════════════
+TITLE ELEMENT
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Controls browser tab text.
+
+Example:
+
+Title:
+Weather App
+
+Tab shows:
+Weather App
+
+Benefits:
+
+- Helps identify page
+- Helps SEO
+- Improves user experience
+
+Only one title should exist per page.
+
+Title belongs inside head.
+
+══════════════════════════════════════════════════════════════
+BODY ELEMENT
+══════════════════════════════════════════════════════════════
+
+The body contains visible content.
+
+Examples:
+
+- Headings
+- Paragraphs
+- Images
+- Buttons
+- Forms
+- Tables
+- Videos
+- Audio
+
+Everything users see belongs inside body.
+
+Think:
+
+body = actual webpage content.
+
+══════════════════════════════════════════════════════════════
+HEAD VS BODY
+══════════════════════════════════════════════════════════════
+
+HEAD
+
+Purpose:
+Information ABOUT webpage.
+
+Examples:
+- Title
+- Meta tags
+- CSS links
+- Script links
+
+BODY
+
+Purpose:
+Information SHOWN on webpage.
+
+Examples:
+- Text
+- Images
+- Buttons
+- Forms
+- Tables
+
+Easy way to remember:
+
+HEAD = Information about page
+
+BODY = Content of page
+
+══════════════════════════════════════════════════════════════
+NESTING
+══════════════════════════════════════════════════════════════
+
+Elements can contain other elements.
+
+This is called nesting.
+
+Example Structure:
+
+html
+|
+|-- body
+    |
+    |-- paragraph
+
+Rules:
+
+- Parent contains child.
+- Child lives inside parent.
+
+Benefits:
+
+- Organized structure
+- Easier maintenance
+- Better readability
+
+══════════════════════════════════════════════════════════════
+CORRECT NESTING
+══════════════════════════════════════════════════════════════
+
+Correct:
+
+Open body
+Open paragraph
+Close paragraph
+Close body
+
+Wrong:
+
+Open body
+Open paragraph
+Close body
+Close paragraph
+
+Always close inner elements first.
+
+══════════════════════════════════════════════════════════════
+INDENTATION
+══════════════════════════════════════════════════════════════
+
+Indentation means spacing code to show structure.
+
+Benefits:
+
+- Easier reading
+- Easier debugging
+- Professional code
+- Easier teamwork
+
+Browser ignores indentation.
+
+Developers do not.
+
+Good indentation shows nesting clearly.
+
+══════════════════════════════════════════════════════════════
+COMMENTS
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+- Notes
+- Explanations
+- Reminders
+
+Comment Syntax:
+
+LESS THAN !-- Comment -- GREATER THAN
+
+Examples:
+
+LESS THAN !-- Header Starts -- GREATER THAN
+
+LESS THAN !-- Navigation -- GREATER THAN
+
+LESS THAN !-- Footer -- GREATER THAN
+
+Comments are ignored by browser.
+
+Comments are visible only to developers.
+
+══════════════════════════════════════════════════════════════
+CASE SENSITIVITY
+══════════════════════════════════════════════════════════════
+
+HTML is not case sensitive.
+
+These are treated the same:
+
+Uppercase h1 tag
+
+Lowercase h1 tag
+
+Best Practice:
+
+Always use lowercase.
+
+Reasons:
+
+- Cleaner code
+- Industry standard
+- Easier maintenance
+
+══════════════════════════════════════════════════════════════
+EMMET
+══════════════════════════════════════════════════════════════
+
+Emmet is a productivity feature in VS Code.
+
+Shortcut:
+
+!
+
+then press Enter or Tab
+
+Creates complete HTML boilerplate.
+
+Benefits:
+
+- Faster coding
+- Less typing
+- Fewer mistakes
+
+Used by almost every web developer.
+
+══════════════════════════════════════════════════════════════
+AUTO CLOSING TAGS
+══════════════════════════════════════════════════════════════
+
+Modern editors automatically create closing tags.
+
+Example:
+
+When opening a paragraph tag,
+
+VS Code automatically creates the closing paragraph tag.
+
+Benefits:
+
+- Faster coding
+- Fewer syntax errors
+- Better productivity
+
+══════════════════════════════════════════════════════════════
+WHY HTML MATTERS
+══════════════════════════════════════════════════════════════
+
+HTML is the foundation of every website.
+
+Examples:
+
+- Google
+- YouTube
+- Amazon
+- Wikipedia
+- ChatGPT web interface
+
+All begin with HTML structure.
+
+CSS makes them beautiful.
+
+JavaScript makes them interactive.
+
+══════════════════════════════════════════════════════════════
+DAY 1 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+HTML
+HyperText Markup Language
+Tag
+Element
+DOCTYPE
+html
+head
+title
+body
+Nesting
+Indentation
+Comment
+Emmet
+Auto Closing Tags
+
+══════════════════════════════════════════════════════════════
+DAY 1 SUMMARY
+══════════════════════════════════════════════════════════════
+
+HTML creates webpage structure.
+
+DOCTYPE tells browser to use HTML5.
+
+html is the root element.
+
+head contains information about webpage.
+
+title controls browser tab text.
+
+body contains visible content.
+
+Nesting means elements inside elements.
+
+Indentation improves readability.
+
+Comments are ignored by browser.
+
+HTML is not case sensitive.
+
+Emmet shortcut:
+!
+
+Auto-closing tags improve productivity.
+
+HTML is the foundation of web development.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 1
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+</head>
+<body>
+    <h1>My first website</h1>
+    <p>I am learning HTML.</p>
+    <!--AAA-->
+</body>
+</html>

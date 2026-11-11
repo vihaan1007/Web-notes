@@ -1,0 +1,886 @@
+<!--
+
+==========================================================
+DAY 22
+SEMANTIC HTML AND WEBSITE STRUCTURE
+==========================================================
+
+Today we learn why semantic HTML exists.
+
+At first semantic tags look useless.
+
+Many beginners think:
+
+Why use:
+
+<header>
+
+<main>
+
+<section>
+
+<footer>
+
+when I can use:
+
+<div>
+
+for everything?
+
+Today we answer that question.
+
+==========================================================
+WHAT IS SEMANTIC HTML
+==========================================================
+
+Semantic means:
+
+Meaning.
+
+Semantic HTML means:
+
+Tags that describe their purpose.
+
+Examples:
+
+<header>
+
+<main>
+
+<section>
+
+<article>
+
+<footer>
+
+When someone reads the code:
+
+They immediately understand the role of
+that section.
+
+==========================================================
+BEFORE HTML5
+==========================================================
+
+Developers often built entire websites
+using only div.
+
+Example:
+
+<div>
+
+<div>
+
+<div>
+
+<div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+This worked.
+
+Browsers understood it.
+
+Users saw the page correctly.
+
+But there was a problem.
+
+Nobody knew what each div meant.
+
+==========================================================
+THE DIV PROBLEM
+==========================================================
+
+Imagine:
+
+<div>
+
+<h1>Logo Corporation</h1>
+
+</div>
+
+<div>
+
+<h2>Services</h2>
+
+</div>
+
+<div>
+
+Copyright
+
+</div>
+
+A human must guess:
+
+Which div is the header?
+
+Which div is the content?
+
+Which div is the footer?
+
+The code works.
+
+But the meaning is hidden.
+
+==========================================================
+THE HTML5 SOLUTION
+==========================================================
+
+HTML5 introduced semantic tags.
+
+Instead of:
+
+<div>
+
+Use:
+
+<header>
+
+Instead of:
+
+<div>
+
+Use:
+
+<footer>
+
+Instead of:
+
+<div>
+
+Use:
+
+<main>
+
+Now the purpose becomes obvious.
+
+==========================================================
+HEADER
+==========================================================
+
+Purpose:
+
+Represents the top section.
+
+Usually contains:
+
+Logo
+
+Website title
+
+Navigation
+
+Main heading
+
+Example:
+
+<header>
+
+<h1>Logo Corporation</h1>
+
+</header>
+
+Think:
+
+Top of the page.
+
+Memory Trick:
+
+header
+
+Head of the website.
+
+==========================================================
+MAIN
+==========================================================
+
+Purpose:
+
+Contains the primary content.
+
+Usually there is only one main element.
+
+Example:
+
+<main>
+
+<h2>Services</h2>
+
+<p>Welcome</p>
+
+</main>
+
+Think:
+
+The most important area.
+
+Memory Trick:
+
+main
+
+Main content.
+
+==========================================================
+SECTION
+==========================================================
+
+Purpose:
+
+Groups a large topic.
+
+Examples:
+
+Services
+
+Products
+
+Reviews
+
+Contact
+
+Example:
+
+<section>
+
+<h2>Services</h2>
+
+</section>
+
+Think:
+
+A chapter in a book.
+
+Memory Trick:
+
+section
+
+Big topic area.
+
+==========================================================
+ARTICLE
+==========================================================
+
+Purpose:
+
+Independent content.
+
+Examples:
+
+Blog post
+
+News article
+
+Forum post
+
+Review article
+
+Tutorial article
+
+Example:
+
+<article>
+
+<h2>How I Learned HTML</h2>
+
+<p>...</p>
+
+</article>
+
+Important:
+
+An article can stand alone.
+
+Even if copied elsewhere it still makes
+sense.
+
+Memory Trick:
+
+article
+
+Complete content piece.
+
+==========================================================
+SECTION VS ARTICLE
+==========================================================
+
+Many students confuse them.
+
+Think:
+
+Website
+
+Contains sections.
+
+Section
+
+Contains topics.
+
+Article
+
+Contains a complete piece of content.
+
+Example:
+
+<section>
+
+<h2>Blog</h2>
+
+<article>
+
+My First Blog Post
+
+</article>
+
+<article>
+
+My Second Blog Post
+
+</article>
+
+</section>
+
+Section:
+
+Blog area.
+
+Articles:
+
+Individual posts.
+
+==========================================================
+FOOTER
+==========================================================
+
+Purpose:
+
+Bottom of page.
+
+Usually contains:
+
+Copyright
+
+Contact info
+
+Social links
+
+Policies
+
+Example:
+
+<footer>
+
+Copyright 2026
+
+</footer>
+
+Memory Trick:
+
+footer
+
+Foot of the website.
+
+==========================================================
+DIV
+==========================================================
+
+Purpose:
+
+Generic container.
+
+Syntax:
+
+<div>
+
+</div>
+
+Can contain:
+
+Headings
+
+Paragraphs
+
+Forms
+
+Images
+
+Tables
+
+Videos
+
+Other divs
+
+Almost anything.
+
+Div has no meaning.
+
+It only groups content.
+
+Memory Trick:
+
+Cardboard box.
+
+Put anything inside.
+
+==========================================================
+SPAN
+==========================================================
+
+Purpose:
+
+Small inline container.
+
+Syntax:
+
+<span>
+
+</span>
+
+Example:
+
+<p>I love <span>HTML</span>.</p>
+
+Unlike div:
+
+Span stays on the same line.
+
+Memory Trick:
+
+Tiny container.
+
+==========================================================
+DIV VS SPAN
+==========================================================
+
+div
+
+Block element.
+
+Starts on a new line.
+
+Groups larger content.
+
+----------------------------------------------------------
+
+span
+
+Inline element.
+
+Stays in the same line.
+
+Groups smaller content.
+
+==========================================================
+WHY SEMANTIC HTML MATTERS
+==========================================================
+
+This is the important part.
+
+Many students think semantic tags are
+just fancy divs.
+
+That is not completely wrong.
+
+But semantic tags provide meaning.
+
+Three major groups benefit.
+
+==========================================================
+BENEFIT 1
+SEO
+==========================================================
+
+SEO means:
+
+Search Engine Optimization.
+
+Google reads HTML.
+
+When Google sees:
+
+<header>
+
+It understands:
+
+Top area.
+
+When Google sees:
+
+<main>
+
+It understands:
+
+Main content.
+
+When Google sees:
+
+<article>
+
+It understands:
+
+Independent content.
+
+Google can understand the page better.
+
+Semantic HTML helps search engines.
+
+==========================================================
+BENEFIT 2
+ACCESSIBILITY
+==========================================================
+
+Screen readers help visually impaired users.
+
+Screen readers can announce:
+
+Header
+
+Main
+
+Article
+
+Footer
+
+This makes navigation easier.
+
+Without semantic tags:
+
+Everything looks like random divs.
+
+==========================================================
+BENEFIT 3
+DEVELOPERS
+==========================================================
+
+Imagine opening code after six months.
+
+Which is easier?
+
+----------------------------------------------------------
+
+<div>
+
+<div>
+
+<div>
+
+----------------------------------------------------------
+
+or
+
+----------------------------------------------------------
+
+<header>
+
+<main>
+
+<footer>
+
+----------------------------------------------------------
+
+The second version is easier to understand.
+
+Semantic HTML improves readability.
+
+==========================================================
+CSS CONNECTION
+==========================================================
+
+This is why semantic tags became
+important in CSS.
+
+Before:
+
+div
+
+div
+
+div
+
+div
+
+CSS:
+
+div {
+
+}
+
+Problem:
+
+Which div?
+
+Nobody knows.
+
+----------------------------------------------------------
+
+After:
+
+<header>
+
+<section>
+
+<footer>
+
+CSS:
+
+header {
+
+}
+
+section {
+
+}
+
+footer {
+
+}
+
+Now CSS becomes easier to write.
+
+And easier to maintain.
+
+==========================================================
+JAVASCRIPT CONNECTION
+==========================================================
+
+JavaScript can target semantic elements.
+
+Example:
+
+document.querySelector("header")
+
+document.querySelector("main")
+
+document.querySelector("footer")
+
+The code becomes easier to understand.
+
+==========================================================
+REAL WEBSITE SKELETON
+==========================================================
+
+<header>
+
+</header>
+
+<main>
+
+<section>
+
+</section>
+
+<section>
+
+</section>
+
+</main>
+
+<footer>
+
+</footer>
+
+This structure appears in countless
+real websites.
+
+==========================================================
+COMMON MISTAKES
+==========================================================
+
+Mistake 1
+
+Using div for everything.
+
+It works.
+
+But loses meaning.
+
+----------------------------------------------------------
+
+Mistake 2
+
+Using article when content is not
+independent.
+
+----------------------------------------------------------
+
+Mistake 3
+
+Using multiple main elements.
+
+Usually there should be one.
+
+----------------------------------------------------------
+
+Mistake 4
+
+Thinking semantic tags change appearance.
+
+They do not.
+
+Meaning changes.
+
+Not appearance.
+
+==========================================================
+QUICK REVISION
+==========================================================
+
+header
+
+Top section.
+
+----------------------------------------------------------
+
+main
+
+Main content.
+
+----------------------------------------------------------
+
+section
+
+Large topic.
+
+----------------------------------------------------------
+
+article
+
+Independent content.
+
+----------------------------------------------------------
+
+footer
+
+Bottom section.
+
+----------------------------------------------------------
+
+div
+
+Generic container.
+
+----------------------------------------------------------
+
+span
+
+Small inline container.
+
+==========================================================
+DAY 22 GOLDEN RULE
+==========================================================
+
+Div groups content.
+
+Semantic tags explain content.
+
+==========================================================
+EXAM REVISION
+==========================================================
+
+header
+
+Top.
+
+main
+
+Main content.
+
+section
+
+Topic area.
+
+article
+
+Independent content.
+
+footer
+
+Bottom.
+
+div
+
+Generic box.
+
+span
+
+Inline box.
+
+==========================================================
+END OF DAY 22
+==========================================================
+
+Semantic HTML gives meaning.
+
+Meaning helps:
+
+SEO
+
+Accessibility
+
+Developers
+
+CSS structure
+
+JavaScript readability
+
+-->
+``` 🏆📜🔥
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 21</title>
+    <link>
+</head>
+<body>
+    <header>
+        <h1>
+
+        </h1>
+    </header>
+    <main>
+        <section>
+            <div>
+
+            </div>
+            <div>
+                <p><span></span></p>
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <section>
+            <form>
+
+            </form>
+        </section>
+        <section>
+            <h3>
+                
+            </h3>
+            <article>
+
+            </article>
+            <h3>
+
+            </h3>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+        <script></script>
+    </footer>
+</body>
+</html>

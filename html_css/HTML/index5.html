@@ -1,0 +1,745 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 5 - LINKS (<a>)
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Links connect resources.
+
+Without links:
+
+Websites would be isolated documents.
+
+The World Wide Web exists because
+documents can connect to other documents.
+
+══════════════════════════════════════════════════════════════
+THE ANCHOR TAG
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<a></a>
+
+Meaning:
+
+Anchor
+
+Purpose:
+
+Creates a hyperlink.
+
+A hyperlink allows navigation.
+
+══════════════════════════════════════════════════════════════
+SIMPLEST LINK
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<a href="https://google.com">
+    Google
+</a>
+
+Output:
+
+Google
+
+(clickable)
+
+══════════════════════════════════════════════════════════════
+HREF
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+href
+
+Meaning:
+
+Hypertext Reference
+
+Question answered by href:
+
+"Where should this link go?"
+
+Example:
+
+<a href="https://youtube.com">
+    YouTube
+</a>
+
+══════════════════════════════════════════════════════════════
+ANATOMY OF A LINK
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<a href="https://google.com">
+    Google
+</a>
+
+Parts:
+
+<a
+
+Opening tag
+
+href="https://google.com"
+
+Destination
+
+Google
+
+Visible text
+
+</a>
+
+Closing tag
+
+══════════════════════════════════════════════════════════════
+ABSOLUTE URLS
+══════════════════════════════════════════════════════════════
+
+Definition:
+
+Complete address.
+
+Examples:
+
+https://google.com
+
+https://youtube.com
+
+https://github.com
+
+Contains:
+
+Protocol
+
++
+
+Domain
+
+Example:
+
+https://github.com
+
+Protocol:
+
+https://
+
+Domain:
+
+github.com
+
+══════════════════════════════════════════════════════════════
+RELATIVE URLS
+══════════════════════════════════════════════════════════════
+
+Definition:
+
+Path relative to current file.
+
+Project:
+
+project
+
+├─ index.html
+├─ about.html
+└─ contact.html
+
+From:
+
+index.html
+
+To:
+
+about.html
+
+Use:
+
+<a href="about.html">
+    About
+</a>
+
+No full website address needed.
+
+══════════════════════════════════════════════════════════════
+WHY RELATIVE URLS ARE IMPORTANT
+══════════════════════════════════════════════════════════════
+
+Suppose:
+
+You move website to another domain.
+
+Relative links continue working.
+
+Example:
+
+about.html
+
+works on:
+
+example.com
+
+or
+
+mywebsite.net
+
+No modification required.
+
+══════════════════════════════════════════════════════════════
+CURRENT DIRECTORY
+══════════════════════════════════════════════════════════════
+
+Symbol:
+
+./
+
+Meaning:
+
+Current folder.
+
+Examples:
+
+about.html
+
+and
+
+./about.html
+
+Both commonly work.
+
+Many developers omit ./
+
+because it is shorter.
+
+══════════════════════════════════════════════════════════════
+PARENT DIRECTORY
+══════════════════════════════════════════════════════════════
+
+Symbol:
+
+../
+
+Meaning:
+
+Go one folder up.
+
+Example Structure:
+
+project
+
+├─ index.html
+
+└─ pages
+
+    └─ about.html
+
+From:
+
+pages/about.html
+
+To:
+
+index.html
+
+Use:
+
+<a href="../index.html">
+    Home
+</a>
+
+══════════════════════════════════════════════════════════════
+INTERNAL LINKS
+══════════════════════════════════════════════════════════════
+
+Definition:
+
+Links inside your own website.
+
+Examples:
+
+Home
+
+About
+
+Services
+
+Contact
+
+Example:
+
+<a href="about.html">
+    About Us
+</a>
+
+══════════════════════════════════════════════════════════════
+EXTERNAL LINKS
+══════════════════════════════════════════════════════════════
+
+Definition:
+
+Links to another website.
+
+Example:
+
+<a href="https://developer.mozilla.org">
+    MDN
+</a>
+
+Example:
+
+<a href="https://github.com">
+    GitHub
+</a>
+
+══════════════════════════════════════════════════════════════
+OPENING IN A NEW TAB
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+target="_blank"
+
+Example:
+
+<a href="https://google.com"
+   target="_blank">
+   Google
+</a>
+
+Purpose:
+
+Open link in a new tab.
+
+══════════════════════════════════════════════════════════════
+TARGET ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+target controls
+where content opens.
+
+Most Common:
+
+_self
+
+_blank
+
+══════════════════════════════════════════════════════════════
+_SELF
+══════════════════════════════════════════════════════════════
+
+Default behavior.
+
+Example:
+
+<a href="about.html">
+    About
+</a>
+
+Meaning:
+
+Open in current tab.
+
+══════════════════════════════════════════════════════════════
+_BLANK
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<a href="https://github.com"
+   target="_blank">
+   GitHub
+</a>
+
+Meaning:
+
+Open in new tab.
+
+══════════════════════════════════════════════════════════════
+FRAGMENT LINKS
+══════════════════════════════════════════════════════════════
+
+Also Called:
+
+Page Anchors
+
+Jump Links
+
+Purpose:
+
+Jump to another section
+of the same page.
+
+══════════════════════════════════════════════════════════════
+CREATING A FRAGMENT LINK
+══════════════════════════════════════════════════════════════
+
+Destination:
+
+<h2 id="contact">
+    Contact
+</h2>
+
+Link:
+
+<a href="#contact">
+    Contact Section
+</a>
+
+Result:
+
+Page jumps to Contact.
+
+══════════════════════════════════════════════════════════════
+WHY # IS USED
+══════════════════════════════════════════════════════════════
+
+Example:
+
+#contact
+
+Meaning:
+
+Find element whose id is contact.
+
+══════════════════════════════════════════════════════════════
+MULTIPLE FRAGMENT LINKS
+══════════════════════════════════════════════════════════════
+
+Useful for:
+
+Table of Contents
+
+Documentation
+
+Large Articles
+
+Example:
+
+<a href="#chapter1">Chapter 1</a>
+
+<a href="#chapter2">Chapter 2</a>
+
+<a href="#chapter3">Chapter 3</a>
+
+══════════════════════════════════════════════════════════════
+EMAIL LINKS
+══════════════════════════════════════════════════════════════
+
+Protocol:
+
+mailto:
+
+Example:
+
+<a href="mailto:test@example.com">
+    Email Me
+</a>
+
+Result:
+
+Opens email application.
+
+══════════════════════════════════════════════════════════════
+PHONE LINKS
+══════════════════════════════════════════════════════════════
+
+Protocol:
+
+tel:
+
+Example:
+
+<a href="tel:+919999999999">
+    Call Me
+</a>
+
+Result:
+
+Phone attempts to dial.
+
+Very useful on mobile devices.
+
+══════════════════════════════════════════════════════════════
+DOWNLOADABLE FILES
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<a href="notes.pdf">
+    Download Notes
+</a>
+
+Possible Files:
+
+PDF
+
+ZIP
+
+DOCX
+
+Images
+
+Videos
+
+══════════════════════════════════════════════════════════════
+LINKING IMAGES
+══════════════════════════════════════════════════════════════
+
+Possible:
+
+<a href="about.html">
+    <img src="logo.png">
+</a>
+
+Meaning:
+
+Image becomes clickable.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 1
+══════════════════════════════════════════════════════════════
+
+Missing href.
+
+Bad:
+
+<a>Google</a>
+
+Reason:
+
+Not a real hyperlink.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 2
+══════════════════════════════════════════════════════════════
+
+Wrong target value.
+
+Bad:
+
+target="blank"
+
+Correct:
+
+target="_blank"
+
+Underscore required.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 3
+══════════════════════════════════════════════════════════════
+
+Broken file paths.
+
+Example:
+
+aboutt.html
+
+instead of:
+
+about.html
+
+Link fails.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 4
+══════════════════════════════════════════════════════════════
+
+Using buttons
+for navigation.
+
+Bad:
+
+<button>About</button>
+
+Better:
+
+<a href="about.html">
+    About
+</a>
+
+Reason:
+
+Meaning first.
+
+Appearance second.
+
+══════════════════════════════════════════════════════════════
+ACCESSIBILITY
+══════════════════════════════════════════════════════════════
+
+Good:
+
+<a href="contact.html">
+    Contact Us
+</a>
+
+Bad:
+
+<a href="contact.html">
+    Click Here
+</a>
+
+Reason:
+
+Screen reader users gain
+more information.
+
+══════════════════════════════════════════════════════════════
+SEO
+══════════════════════════════════════════════════════════════
+
+Search engines analyze links.
+
+Good:
+
+<a href="services.html">
+    Web Design Services
+</a>
+
+Bad:
+
+<a href="services.html">
+    Click Here
+</a>
+
+Descriptive text helps.
+
+══════════════════════════════════════════════════════════════
+DEVELOPER THINKING
+══════════════════════════════════════════════════════════════
+
+Beginner:
+
+I need blue underlined text.
+
+Developer:
+
+I need navigation.
+
+HTML focuses on meaning.
+
+CSS focuses on appearance.
+
+══════════════════════════════════════════════════════════════
+DAY 5 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+a
+
+href
+
+Hyperlink
+
+Anchor
+
+Absolute URL
+
+Relative URL
+
+Internal Link
+
+External Link
+
+target
+
+_blank
+
+_self
+
+Fragment Link
+
+Anchor Link
+
+Page Jump
+
+mailto
+
+tel
+
+Accessibility
+
+SEO
+
+══════════════════════════════════════════════════════════════
+DAY 5 SUMMARY
+══════════════════════════════════════════════════════════════
+
+a creates hyperlinks.
+
+href defines destination.
+
+Absolute URLs are complete addresses.
+
+Relative URLs are project-relative paths.
+
+Internal links stay inside website.
+
+External links leave website.
+
+target="_blank" opens new tab.
+
+Fragment links jump within page.
+
+mailto opens email app.
+
+tel opens phone dialer.
+
+Good link text improves
+accessibility and SEO.
+
+Choose tags by meaning.
+
+Navigation is the purpose
+of the anchor tag.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 5
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+</head>
+<body>
+    <h2 id="projects">
+        Projects
+    </h2>
+    <a href = "https://www.google.com">Visit Google</a>
+    <a href = "https://github.com" target = "_blank">GitHub</a>
+    <a href = "./about_us">About Us</a>
+    <a href = "./contact_us">Contact Us</a>
+    <a href = "#projects">Projects</a>
+    <a href = "mailto:hello@example.com">Email me</a>
+    <a href = "tel:+919876543210">Call me</a>
+    <ul>
+        <li>
+            <a href = "./home">Home</a>
+        </li>
+        <li>
+            <a href = "./about_us">About Us</a>
+        </li>
+        <li>
+            <a href = "./services">Our services</a>
+        </li>
+        <li>
+            <a href = "./contact_us">Contact Us</a>
+        </li>
+    </ul>
+    <a href = "./steal">Click here</a><!--steal to even the ones using inspect get scared which is same as the home they share the same style and script :)-->
+    <a href = "./home">Home</a>
+    <!--second is better as it shows it is home and dosen't gives consuision like is it even safe and, for screen readers it shows it is home not a surprise.-->
+    <a href = "/project/index.html">Index.html</a><!--It dosent matter where I am I can reatart from project-->
+
+    <!--<a> shows a link to take somewhere and it is html based so one line you are there but button is like What, Why is it looking like a new thing and it is js heavy it can take like 5-10 minutes for just thinking for beginners for sharp minded it might be 1-2 minutes for those who are doing it the tenth time 0. I am not writing big because of lack of time-->
+</body>
+</html>

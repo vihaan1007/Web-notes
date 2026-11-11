@@ -1,0 +1,686 @@
+/*
+<<<<0-CONTRAST-RULE+0>>>>
+
+Dark Background
+
+=
+
+Light Text
+
+-----------------------------------------
+
+Light Background
+
+=
+
+Dark Text
+
+-----------------------------------------
+
+Always maintain readability.
+
+=========================================
+
+<<<<0-COMMON-NAVBAR-MISTAKES+0>>>>
+
+Too Many Links
+
+-----------------------------------------
+
+Tiny Text
+
+-----------------------------------------
+
+Low Contrast
+
+-----------------------------------------
+
+No Hover Feedback
+
+-----------------------------------------
+
+Poor Spacing
+
+=========================================
+
+<<<<0-GOOD-NAVBAR-RULES+0>>>>
+
+Simple
+
+Readable
+
+Consistent
+
+Responsive
+
+-----------------------------------------
+
+Users should understand
+the navbar immediately.
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Navbar
+
+=
+Website Map
+
+-----------------------------------------
+
+Logo
+
+=
+Identity
+
+-----------------------------------------
+
+Links
+
+=
+Navigation
+
+-----------------------------------------
+
+Hover
+
+=
+Feedback
+
+-----------------------------------------
+
+Active Link
+
+=
+Current Page
+
+-----------------------------------------
+
+Spacing
+
+=
+Readability
+
+-----------------------------------------
+
+Dark Background
+
+=
+Light Text
+
+-----------------------------------------
+
+Light Background
+
+=
+Dark Text
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #5
+NAVIGATION BAR TRICKS
+PART 2
+ADVANCED NAVBARS,
+MOBILE MENUS &
+PROFESSIONAL PATTERNS
+=========================================
+
+<<<<0-STICKY-NAVBARS+0>>>>
+
+Sticky Navbar
+
+=
+Navbar remains visible
+while scrolling.
+
+-----------------------------------------
+
+Normal Navbar:
+
+Visible
+
+↓
+
+Scroll
+
+↓
+
+Disappears
+
+-----------------------------------------
+
+Sticky Navbar:
+
+Visible
+
+↓
+
+Scroll
+
+↓
+
+Still Visible
+
+=========================================
+
+<<<<0-WHY-STICKY-NAVBARS+0>>>>
+
+Users can always access
+navigation links.
+
+-----------------------------------------
+
+No need to scroll
+back to the top.
+
+-----------------------------------------
+
+Improves usability.
+
+=========================================
+
+<<<<0-WHEN-TO-USE-STICKY+0>>>>
+
+Large Websites
+
+Portfolio Sites
+
+Business Websites
+
+Dashboards
+
+-----------------------------------------
+
+Very common in modern design.
+
+=========================================
+
+<<<<0-STICKY-VS-FIXED+0>>>>
+
+Many beginners confuse them.
+
+-----------------------------------------
+
+Sticky
+
+=
+Behaves normally
+
+then sticks.
+
+-----------------------------------------
+
+Fixed
+
+=
+Always fixed.
+
+=========================================
+
+<<<<0-FIXED-NAVBARS+0>>>>
+
+Fixed Navbar
+
+=
+Always visible.
+
+-----------------------------------------
+
+Remains attached
+to the viewport.
+
+-----------------------------------------
+
+Very common.
+
+=========================================
+
+<<<<0-FIXED-NAVBAR-PROBLEM+0>>>>
+
+Content may hide
+behind the navbar.
+
+-----------------------------------------
+
+Common beginner issue.
+
+=========================================
+
+<<<<0-NAVBAR-SHADOWS+0>>>>
+
+Shadows improve separation.
+
+-----------------------------------------
+
+Navbar
+
+Shadow
+
+Content
+
+-----------------------------------------
+
+Creates depth.
+
+=========================================
+
+<<<<0-WHY-SHADOWS-WORK+0>>>>
+
+Users can easily identify:
+
+Navigation Area
+
+Content Area
+
+-----------------------------------------
+
+Professional appearance.
+
+=========================================
+
+<<<<0-LIGHT-SHADOWS+0>>>>
+
+Small shadows are usually better.
+
+-----------------------------------------
+
+Too much shadow
+looks outdated.
+
+=========================================
+
+<<<<0-TRANSPARENT-NAVBARS+0>>>>
+
+Popular in hero sections.
+
+-----------------------------------------
+
+Navbar background
+is transparent.
+
+-----------------------------------------
+
+Content or image
+shows through.
+
+=========================================
+
+<<<<0-WHY-TRANSPARENT-NAVBARS+0>>>>
+
+Creates a premium look.
+
+-----------------------------------------
+
+Feels modern.
+
+-----------------------------------------
+
+Common on landing pages.
+
+=========================================
+
+<<<<0-PROBLEM-WITH-TRANSPARENCY+0>>>>
+
+Text may become
+hard to read.
+
+-----------------------------------------
+
+Always check contrast.
+
+=========================================
+
+<<<<0-BLURRED-NAVBARS+0>>>>
+
+Modern design trend.
+
+-----------------------------------------
+
+Navbar becomes:
+
+Semi Transparent
+
++
+
+Blurred
+
+-----------------------------------------
+
+Often called:
+
+Glass Effect
+
+=========================================
+
+<<<<0-WHY-BLUR-WORKS+0>>>>
+
+Users can still see
+background content.
+
+-----------------------------------------
+
+But text remains readable.
+
+=========================================
+
+<<<<0-GLASSMORPHISM-NAVBARS+0>>>>
+
+Blurred Navbar
+
++
+
+Transparency
+
++
+
+Soft Border
+
+-----------------------------------------
+
+Creates a futuristic look.
+
+=========================================
+
+<<<<0-CTA-BUTTONS-IN-NAVBAR+0>>>>
+
+CTA
+
+=
+Call To Action
+
+-----------------------------------------
+
+Example:
+
+Home
+
+About
+
+Services
+
+[ Contact Us ]
+
+=========================================
+
+<<<<0-WHY-CTA-BUTTONS+0>>>>
+
+Draw attention to
+the most important action.
+
+-----------------------------------------
+
+Useful for:
+
+Businesses
+
+Portfolios
+
+Landing Pages
+
+=========================================
+
+<<<<0-CTA-BUTTON-STYLING+0>>>>
+
+Usually:
+
+Different Color
+
+Rounded Corners
+
+Hover Effects
+
+-----------------------------------------
+
+Should stand out.
+
+=========================================
+
+<<<<0-MOBILE-NAVIGATION+0>>>>
+
+Desktop navigation
+does not always fit
+small screens.
+
+-----------------------------------------
+
+Solution:
+
+Mobile Menu
+
+=========================================
+
+<<<<0-HAMBURGER-MENU+0>>>>
+
+Symbol:
+
+☰
+
+-----------------------------------------
+
+Represents hidden navigation.
+
+-----------------------------------------
+
+Most common mobile solution.
+
+=========================================
+
+<<<<0-WHY-HAMBURGER-MENUS+0>>>>
+
+Save Space
+
+-----------------------------------------
+
+Cleaner Layout
+
+-----------------------------------------
+
+Better Mobile Experience
+
+=========================================
+
+<<<<0-HAMBURGER-BEHAVIOR+0>>>>
+
+Closed
+
+↓
+
+User Clicks
+
+↓
+
+Menu Opens
+
+-----------------------------------------
+
+Links become visible.
+
+=========================================
+
+<<<<0-MOBILE-FIRST-THINKING+0>>>>
+
+Modern websites often
+consider mobile navigation
+early in development.
+
+-----------------------------------------
+
+Mobile traffic is huge.
+
+=========================================
+
+<<<<0-SIDE-DRAWER-MENUS+0>>>>
+
+Popular mobile pattern.
+
+-----------------------------------------
+
+Menu slides from:
+
+Left
+
+or
+
+Right
+
+-----------------------------------------
+
+Common in apps.
+
+=========================================
+
+<<<<0-DROPDOWN-MENUS+0>>>>
+
+Dropdown
+
+=
+Menu inside menu.
+
+-----------------------------------------
+
+Example:
+
+Services
+
+↓
+
+Web Design
+
+SEO
+
+Marketing
+
+=========================================
+
+<<<<0-WHY-DROPDOWNS+0>>>>
+
+Organize many links.
+
+-----------------------------------------
+
+Reduce navbar clutter.
+
+=========================================
+
+<<<<0-MEGA-MENUS+0>>>>
+
+Very large dropdowns.
+
+-----------------------------------------
+
+Used by:
+
+Large Stores
+
+Large Companies
+
+-----------------------------------------
+
+Contain many sections.
+
+=========================================
+
+<<<<0-SCROLL-EFFECT-NAVBARS+0>>>>
+
+Navbar changes while scrolling.
+
+-----------------------------------------
+
+Example:
+
+Large Navbar
+
+↓
+
+Scroll
+
+↓
+
+Smaller Navbar
+
+=========================================
+
+<<<<0-SCROLL-COLOR-CHANGES+0>>>>
+
+Popular Effect.
+
+-----------------------------------------
+
+Transparent Navbar
+
+↓
+
+Scroll
+
+↓
+
+Solid Navbar
+
+-----------------------------------------
+
+Improves readability.
+
+=========================================
+
+<<<<0-SHRINKING-NAVBARS+0>>>>
+
+Example Idea:
+
+Large Padding
+
+↓
+
+Scroll
+
+↓
+
+Small Padding
+
+-----------------------------------------
+
+Saves space.
+
+=========================================
+
+<<<<0-ACTIVE-SCROLL-HIGHLIGHTS+0>>>>
+
+Advanced Technique.
+
+-----------------------------------------
+
+Current section link
+becomes highlighted.
+
+-----------------------------------------
+
+Useful on long pages.
+
+=========================================
+
+<<<<0-PROFESSIONAL-NAVBAR-PATTERN+0>>>>
+
+Most Common Modern Layout:
+
+Logo Left
+
+Links Center/Right
+
+CTA Button Right
+
+Sticky
+
+Shadow
+
+Hover Effects
+
+-----------------------------------------
+
+Extremely popular.
+
+=========================================
+NEXT FILE
+/*

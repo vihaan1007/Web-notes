@@ -1,0 +1,691 @@
+/*
+<<<<0-LUXURY-NAVBAR-PATTERN+0>>>>
+
+Centered Logo
+
+Minimal Links
+
+Lots Of Space
+
+-----------------------------------------
+
+Common in:
+
+Fashion
+
+Luxury Brands
+
+=========================================
+
+<<<<0-STARTUP-NAVBAR-PATTERN+0>>>>
+
+Logo Left
+
+Links Right
+
+CTA Button
+
+-----------------------------------------
+
+Very common for startups.
+
+=========================================
+
+<<<<0-DASHBOARD-NAVBAR-PATTERN+0>>>>
+
+Logo
+
+Search
+
+Notifications
+
+Profile
+
+-----------------------------------------
+
+Focused on productivity.
+
+=========================================
+
+<<<<0-GOOD-PRACTICES+0>>>>
+
+Keep navigation:
+
+Simple
+
+Readable
+
+Consistent
+
+Accessible
+
+-----------------------------------------
+
+Users should never wonder
+how to navigate.
+
+=========================================
+
+<<<<0-COMMON-MISTAKES+0>>>>
+
+Too Many Links
+
+-----------------------------------------
+
+Tiny Click Areas
+
+-----------------------------------------
+
+No Mobile Menu
+
+-----------------------------------------
+
+Poor Contrast
+
+-----------------------------------------
+
+Too Many Animations
+
+=========================================
+
+<<<<0-NAVBAR-CHECKLIST+0>>>>
+
+Logo
+
+-----------------------------------------
+
+Navigation Links
+
+-----------------------------------------
+
+Hover Feedback
+
+-----------------------------------------
+
+Active Link
+
+-----------------------------------------
+
+Mobile Support
+
+-----------------------------------------
+
+Responsive Layout
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Sticky
+
+=
+Stays Visible
+
+-----------------------------------------
+
+Fixed
+
+=
+Always Fixed
+
+-----------------------------------------
+
+Transparent
+
+=
+See Through
+
+-----------------------------------------
+
+Blur
+
+=
+Glass Effect
+
+-----------------------------------------
+
+CTA
+
+=
+Main Action
+
+-----------------------------------------
+
+Hamburger
+
+=
+Mobile Menu
+
+-----------------------------------------
+
+Dropdown
+
+=
+Menu Inside Menu
+
+-----------------------------------------
+
+Shadow
+
+=
+Depth
+
+-----------------------------------------
+
+Scroll Effects
+
+=
+Navbar Changes On Scroll
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #7
+MODALS & POPUPS
+PART 1
+FOUNDATIONS, OVERLAYS,
+MODAL BOXES, CENTERING
+AND Z-INDEX
+=========================================
+
+<<<<0-WHAT-IS-A-MODAL+0>>>>
+
+Modal
+
+=
+A box that appears above
+the webpage.
+
+-----------------------------------------
+
+Usually used to show:
+
+Messages
+
+Forms
+
+Warnings
+
+Login Screens
+
+Image Previews
+
+=========================================
+
+<<<<0-WHY-MODALS-EXIST+0>>>>
+
+Modals force users to focus
+on one task.
+
+-----------------------------------------
+
+The rest of the page becomes
+less important temporarily.
+
+=========================================
+
+<<<<0-WHAT-IS-A-POPUP+0>>>>
+
+Popup
+
+=
+A window that appears
+above content.
+
+-----------------------------------------
+
+Many people use:
+
+Modal
+
+and
+
+Popup
+
+as the same thing.
+
+=========================================
+
+<<<<0-COMMON-USES+0>>>>
+
+Login Forms
+
+Sign Up Forms
+
+Delete Confirmation
+
+Success Messages
+
+Error Messages
+
+Terms & Conditions
+
+Image Viewers
+
+=========================================
+
+<<<<0-HOW-A-MODAL-WORKS+0>>>>
+
+Normal Page
+
+↓
+
+Overlay Appears
+
+↓
+
+Modal Appears
+
+-----------------------------------------
+
+User focuses on modal.
+
+=========================================
+
+<<<<0-THE-THREE-PARTS+0>>>>
+
+Every modal usually contains:
+
+Overlay
+
+Modal Box
+
+Close Button
+
+=========================================
+
+<<<<0-WHAT-IS-AN-OVERLAY+0>>>>
+
+Overlay
+
+=
+Layer placed above the page.
+
+-----------------------------------------
+
+Usually dark and transparent.
+
+=========================================
+
+<<<<0-PURPOSE-OF-OVERLAY+0>>>>
+
+Reduces distractions.
+
+-----------------------------------------
+
+Makes modal stand out.
+
+-----------------------------------------
+
+Improves focus.
+
+=========================================
+
+<<<<0-HOW-OVERLAY-FEELS+0>>>>
+
+Without Overlay:
+
+Modal competes with page.
+
+-----------------------------------------
+
+With Overlay:
+
+Modal becomes the center
+of attention.
+
+=========================================
+
+<<<<0-COMMON-OVERLAY-COLOR+0>>>>
+
+Most websites use:
+
+Black
+
+-----------------------------------------
+
+with transparency.
+
+-----------------------------------------
+
+Creates a darkened page effect.
+
+=========================================
+
+<<<<0-TRANSPARENCY-IN-OVERLAYS+0>>>>
+
+Overlay should not completely
+hide the page.
+
+-----------------------------------------
+
+Users should still see
+that the page exists behind it.
+
+=========================================
+
+<<<<0-MODAL-BOX+0>>>>
+
+Modal Box
+
+=
+The actual content area.
+
+-----------------------------------------
+
+Contains information,
+forms or actions.
+
+=========================================
+
+<<<<0-WHAT-GOES-INSIDE-MODALS+0>>>>
+
+Headings
+
+Text
+
+Forms
+
+Buttons
+
+Images
+
+Warnings
+
+=========================================
+
+<<<<0-WHY-MODAL-BOXES-ARE-SEPARATE+0>>>>
+
+Overlay
+
+=
+Background Layer
+
+-----------------------------------------
+
+Modal Box
+
+=
+Content Layer
+
+-----------------------------------------
+
+They have different jobs.
+
+=========================================
+
+<<<<0-MODAL-BACKGROUNDS+0>>>>
+
+Most modal boxes use:
+
+White
+
+Light Gray
+
+Dark Gray
+
+-----------------------------------------
+
+Should contrast with overlay.
+
+=========================================
+
+<<<<0-MODAL-BORDERS+0>>>>
+
+Optional.
+
+-----------------------------------------
+
+Some designs use:
+
+Border
+
+-----------------------------------------
+
+Others rely on shadows.
+
+=========================================
+
+<<<<0-MODAL-SHADOWS+0>>>>
+
+Very common.
+
+-----------------------------------------
+
+Purpose:
+
+Depth
+
+Separation
+
+Focus
+
+=========================================
+
+<<<<0-MODAL-PADDING+0>>>>
+
+Padding creates breathing room.
+
+-----------------------------------------
+
+Without padding:
+
+Content feels cramped.
+
+-----------------------------------------
+
+With padding:
+
+Content feels comfortable.
+
+=========================================
+
+<<<<0-MODAL-WIDTH+0>>>>
+
+Modals should not fill
+the entire screen.
+
+-----------------------------------------
+
+Too Large
+
+=
+Overwhelming
+
+-----------------------------------------
+
+Too Small
+
+=
+Difficult To Use
+
+=========================================
+
+<<<<0-CENTERING-MODALS+0>>>>
+
+Most modals appear
+in the center.
+
+-----------------------------------------
+
+Reason:
+
+Immediate visibility.
+
+=========================================
+
+<<<<0-WHY-CENTERING-WORKS+0>>>>
+
+Users naturally look
+towards the center.
+
+-----------------------------------------
+
+Best location for important content.
+
+=========================================
+
+<<<<0-HORIZONTAL-CENTERING+0>>>>
+
+Modal centered left-to-right.
+
+-----------------------------------------
+
+Creates balance.
+
+=========================================
+
+<<<<0-VERTICAL-CENTERING+0>>>>
+
+Modal centered top-to-bottom.
+
+-----------------------------------------
+
+Common in modern design.
+
+=========================================
+
+<<<<0-CLOSE-BUTTON+0>>>>
+
+Most modals need
+a close button.
+
+-----------------------------------------
+
+Common Symbol:
+
+X
+
+=========================================
+
+<<<<0-WHY-CLOSE-BUTTONS+0>>>>
+
+Users must have a clear
+way to leave the modal.
+
+-----------------------------------------
+
+Improves usability.
+
+=========================================
+
+<<<<0-CLOSE-BUTTON-POSITION+0>>>>
+
+Usually placed:
+
+Top Right
+
+-----------------------------------------
+
+Very common pattern.
+
+=========================================
+
+<<<<0-CLOSE-BUTTON-HOVER+0>>>>
+
+Often includes:
+
+Color Change
+
+Scale
+
+Opacity Change
+
+-----------------------------------------
+
+Shows interactivity.
+
+=========================================
+
+<<<<0-WHAT-IS-Z-INDEX+0>>>>
+
+z-index
+
+=
+Controls stacking order.
+
+-----------------------------------------
+
+Determines what appears
+above other elements.
+
+=========================================
+
+<<<<0-WHY-Z-INDEX-MATTERS+0>>>>
+
+Without proper z-index:
+
+Modal may appear
+behind content.
+
+-----------------------------------------
+
+Very common beginner mistake.
+
+=========================================
+
+<<<<0-STACKING-CONCEPT+0>>>>
+
+Imagine layers:
+
+Background
+
+↓
+
+Content
+
+↓
+
+Overlay
+
+↓
+
+Modal
+
+-----------------------------------------
+
+Each layer sits above another.
+
+=========================================
+
+<<<<0-MODAL-STACKING+0>>>>
+
+Typical Order:
+
+Page
+
+↓
+
+Overlay
+
+↓
+
+Modal
+
+↓
+
+Close Button
+
+-----------------------------------------
+
+Everything stays visible.
+
+=========================================
+
+<<<<0-OVERLAY-VS-MODAL+0>>>>
+
+Overlay should be above page.
+
+-----------------------------------------
+
+Modal should be above overlay.
+
+-----------------------------------------
+
+Otherwise modal disappears.
+
+=========================================
+NEXT FILE
+*/

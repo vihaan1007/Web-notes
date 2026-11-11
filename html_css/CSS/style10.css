@@ -1,0 +1,691 @@
+/*
+=========================================
+TRICK DAY #3 — HOVER EFFECTS
+=========================================
+
+<<<<0-WHAT-IS-HOVER+0>>>>
+
+Hover
+
+=
+State when the mouse cursor
+is placed over an element.
+
+-----------------------------------------
+
+CSS uses:
+
+:hover
+
+pseudo-class.
+
+-----------------------------------------
+
+Example:
+
+button:hover
+
+-----------------------------------------
+
+The styles inside :hover
+only work while the mouse
+is over the element.
+
+=========================================
+
+<<<<0-WHY-HOVER-EFFECTS-MATTER+0>>>>
+
+Without Hover Effects:
+
+Website feels static.
+
+-----------------------------------------
+
+User receives little feedback.
+
+-----------------------------------------
+
+Clickable elements may not
+look interactive.
+
+-----------------------------------------
+
+With Hover Effects:
+
+Website feels alive.
+
+-----------------------------------------
+
+User gets feedback.
+
+-----------------------------------------
+
+Buttons and cards feel modern.
+
+=========================================
+
+<<<<0-TRANSITIONS+0>>>>
+
+Most hover effects should
+use transitions.
+
+-----------------------------------------
+
+Without Transition:
+
+Instant Jump
+
+-----------------------------------------
+
+With Transition:
+
+Smooth Animation
+
+-----------------------------------------
+
+Example:
+
+transition:0.3s;
+
+-----------------------------------------
+
+Common Values:
+
+0.2s
+
+0.3s
+
+0.5s
+
+=========================================
+
+<<<<0-BACKGROUND-COLOR-HOVER+0>>>>
+
+One of the simplest effects.
+
+-----------------------------------------
+
+Normal:
+
+Blue
+
+-----------------------------------------
+
+Hover:
+
+Red
+
+-----------------------------------------
+
+Common On:
+
+Buttons
+
+Cards
+
+Navigation Links
+
+=========================================
+
+<<<<0-TEXT-COLOR-HOVER+0>>>>
+
+Changes text color.
+
+-----------------------------------------
+
+Example:
+
+White
+
+↓
+
+Cyan
+
+-----------------------------------------
+
+Common On:
+
+Links
+
+Navigation Menus
+
+Buttons
+
+=========================================
+
+<<<<0-SCALE-HOVER+0>>>>
+
+Scale
+
+=
+Change Size
+
+-----------------------------------------
+
+Example:
+
+scale(1.1)
+
+-----------------------------------------
+
+Result:
+
+Element becomes larger.
+
+-----------------------------------------
+
+Common Values:
+
+1.05
+
+1.1
+
+1.15
+
+-----------------------------------------
+
+Too large values can
+break layouts.
+
+=========================================
+
+<<<<0-SHRINK-HOVER+0>>>>
+
+Example:
+
+scale(0.95)
+
+-----------------------------------------
+
+Result:
+
+Element becomes smaller.
+
+-----------------------------------------
+
+Less common than grow.
+
+=========================================
+
+<<<<0-LIFT-HOVER+0>>>>
+
+One of the most professional
+hover effects.
+
+-----------------------------------------
+
+Example:
+
+translateY(-10px)
+
+-----------------------------------------
+
+Result:
+
+Element moves upward.
+
+-----------------------------------------
+
+Creates:
+
+Floating Effect
+
+-----------------------------------------
+
+Very common on:
+
+Cards
+
+Portfolio Projects
+
+Service Sections
+
+=========================================
+
+<<<<0-MOVE-DOWN-HOVER+0>>>>
+
+Example:
+
+translateY(10px)
+
+-----------------------------------------
+
+Result:
+
+Element moves downward.
+
+-----------------------------------------
+
+Less common.
+
+=========================================
+
+<<<<0-MOVE-LEFT-HOVER+0>>>>
+
+Example:
+
+translateX(-10px)
+
+-----------------------------------------
+
+Result:
+
+Moves Left
+
+=========================================
+
+<<<<0-MOVE-RIGHT-HOVER+0>>>>
+
+Example:
+
+translateX(10px)
+
+-----------------------------------------
+
+Result:
+
+Moves Right
+
+=========================================
+
+<<<<0-ROTATE-HOVER+0>>>>
+
+Example:
+
+rotate(5deg)
+
+-----------------------------------------
+
+Result:
+
+Element tilts slightly.
+
+-----------------------------------------
+
+Useful For:
+
+Creative Websites
+
+Portfolios
+
+Fun Designs
+
+-----------------------------------------
+
+Not commonly used
+in dashboards.
+
+=========================================
+
+<<<<0-SHADOW-HOVER+0>>>>
+
+Uses:
+
+box-shadow
+
+-----------------------------------------
+
+Purpose:
+
+Create Depth
+
+-----------------------------------------
+
+Separate element from
+background.
+
+-----------------------------------------
+
+Common On:
+
+Cards
+
+Images
+
+Buttons
+
+=========================================
+
+<<<<0-GLOW-HOVER+0>>>>
+
+Glow
+
+=
+Shadow without noticeable offset.
+
+-----------------------------------------
+
+Example:
+
+0 0 20px cyan
+
+-----------------------------------------
+
+Creates:
+
+Light Effect
+
+-----------------------------------------
+
+Works best on:
+
+Dark Themes
+
+=========================================
+
+<<<<0-BORDER-COLOR-HOVER+0>>>>
+
+Example:
+
+Border
+
+White
+
+↓
+
+Cyan
+
+-----------------------------------------
+
+Subtle effect.
+
+-----------------------------------------
+
+Professional looking.
+
+=========================================
+
+<<<<0-OPACITY-HOVER+0>>>>
+
+Example:
+
+opacity:0.8
+
+-----------------------------------------
+
+Result:
+
+Element becomes
+slightly transparent.
+
+-----------------------------------------
+
+Can create a soft effect.
+
+=========================================
+
+<<<<0-BRIGHTNESS-HOVER+0>>>>
+
+Example:
+
+brightness(120%)
+
+-----------------------------------------
+
+Result:
+
+Element becomes brighter.
+
+-----------------------------------------
+
+Often used on images.
+
+=========================================
+
+<<<<0-DARKEN-HOVER+0>>>>
+
+Example:
+
+brightness(80%)
+
+-----------------------------------------
+
+Result:
+
+Element becomes darker.
+
+=========================================
+
+<<<<0-IMAGE-ZOOM-HOVER+0>>>>
+
+Very common effect.
+
+-----------------------------------------
+
+Example:
+
+scale(1.1)
+
+-----------------------------------------
+
+Result:
+
+Image zooms in.
+
+-----------------------------------------
+
+Popular On:
+
+Product Images
+
+Gallery Images
+
+Portfolio Images
+
+=========================================
+
+<<<<0-UNDERLINE-HOVER+0>>>>
+
+Very common on links.
+
+-----------------------------------------
+
+Normal:
+
+No Underline
+
+-----------------------------------------
+
+Hover:
+
+Underline Appears
+
+-----------------------------------------
+
+Used In:
+
+Navigation Bars
+
+Menus
+
+=========================================
+
+<<<<0-COMBINING-HOVER-EFFECTS+0>>>>
+
+The best hover effects
+usually combine multiple
+techniques.
+
+-----------------------------------------
+
+Example:
+
+Scale
+
++
+
+Lift
+
++
+
+Shadow
+
++
+
+Border Change
+
+-----------------------------------------
+
+Result:
+
+Modern Professional Hover
+
+=========================================
+
+<<<<0-REAL-WORLD-CARD-HOVER+0>>>>
+
+Common Formula:
+
+Lift
+
++
+
+Shadow
+
+-----------------------------------------
+
+Reason:
+
+Creates the illusion
+of a floating card.
+
+-----------------------------------------
+
+Seen on:
+
+Portfolio Sites
+
+Service Cards
+
+Dashboards
+
+=========================================
+
+<<<<0-REAL-WORLD-BUTTON-HOVER+0>>>>
+
+Common Formula:
+
+Scale
+
++
+
+Glow
+
++
+
+Color Change
+
+-----------------------------------------
+
+Reason:
+
+Makes button feel clickable.
+
+=========================================
+
+<<<<0-COMMON-MISTAKES+0>>>>
+
+Using too many effects.
+
+-----------------------------------------
+
+Huge rotations.
+
+-----------------------------------------
+
+Large movements.
+
+-----------------------------------------
+
+No transition.
+
+-----------------------------------------
+
+Long animations.
+
+=========================================
+
+<<<<0-GOOD-PRACTICES+0>>>>
+
+Keep hover effects:
+
+Smooth
+
+Fast
+
+Small
+
+Purposeful
+
+-----------------------------------------
+
+Let hover support the design,
+not dominate it.
+
+=========================================
+
+<<<<0-MOST-IMPORTANT-HOVER-EFFECTS+0>>>>
+
+Scale
+
+-----------------------------------------
+
+Lift
+
+-----------------------------------------
+
+Shadow
+
+-----------------------------------------
+
+Glow
+
+-----------------------------------------
+
+Image Zoom
+
+-----------------------------------------
+
+These five appear constantly
+in modern websites.
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Scale
+
+=
+Grow
+
+-----------------------------------------
+
+Scale(0.95)
+
+=
+Shrink
+
+-----------------------------------------
+
+TranslateY(-)
+
+=
+Lift
+
+-----------------------------------------
+
+TranslateY(+)
+
+=
+Move Down
+
+-----------------------------------------
+
+Rotate
+
+=
+Tilt
+
+-----------------------------------------
+NEXT FILE
+*/

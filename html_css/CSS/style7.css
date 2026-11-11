@@ -1,0 +1,1001 @@
+/*
+=========================================
+DAY 19 — INPUT STYLING
+    Trick day 1
+=========================================
+
+<<<<0-THE-GOAL+0>>>>
+
+Inputs should feel:
+
+Clickable
+
+Editable
+
+Responsive
+
+Comfortable
+
+Professional
+
+-----------------------------------------
+
+Most modern inputs use:
+
+Focus Effects
+
+Animations
+
+Icons
+
+Validation
+
+Floating Labels
+
+instead of just:
+
+border + padding
+
+=========================================
+
+<<<<0-FOCUS-GLOW+0>>>>
+
+Used to highlight the active input.
+
+Example:
+
+input:focus{
+    box-shadow: 0 0 10px #4F8CFF;
+}
+
+-----------------------------------------
+
+Result:
+
+Input glows when typing.
+
+-----------------------------------------
+
+Common Uses:
+
+Dark Themes
+
+Login Forms
+
+Search Bars
+
+=========================================
+
+<<<<0-ANIMATED-BORDER+0>>>>
+
+Make state changes smooth.
+
+Example:
+
+input{
+    transition:0.3s;
+}
+
+input:focus{
+    border-color:#4F8CFF;
+}
+
+-----------------------------------------
+
+Without transition:
+
+Instant jump
+
+-----------------------------------------
+
+With transition:
+
+Smooth animation
+
+=========================================
+
+<<<<0-UNDERLINE-INPUTS+0>>>>
+
+Instead of:
+
+Full Rectangle
+
+Use:
+
+border-bottom
+
+Example:
+
+input{
+    border:none;
+    border-bottom:2px solid gray;
+}
+
+input:focus{
+    border-bottom-color:#4F8CFF;
+}
+
+-----------------------------------------
+
+Common In:
+
+Material Design
+
+Google Forms
+
+Modern UIs
+
+=========================================
+
+<<<<0-PILL-SHAPED-INPUTS+0>>>>
+
+Create rounded search bars.
+
+Example:
+
+border-radius:999px;
+
+-----------------------------------------
+
+Usually Combined With:
+
+Search Inputs
+
+Navigation Bars
+
+Mobile UIs
+
+=========================================
+
+<<<<0-EXPANDING-SEARCH-BAR+0>>>>
+
+Default:
+
+width:150px;
+
+-----------------------------------------
+
+Focus:
+
+width:300px;
+
+-----------------------------------------
+
+Combined With:
+
+transition
+
+-----------------------------------------
+
+Result:
+
+Input expands while typing.
+
+=========================================
+
+<<<<0-DARK-THEME-INPUTS+0>>>>
+
+For Background:
+
+rgb(30,30,30)
+
+-----------------------------------------
+
+Typical Input:
+
+background:#2D2D2D;
+
+border:2px solid #444;
+
+color:white;
+
+-----------------------------------------
+
+Reason:
+
+Maintains contrast.
+
+=========================================
+
+<<<<0-TRANSPARENT-INPUTS+0>>>>
+
+Example:
+
+background:transparent;
+
+-----------------------------------------
+
+Used When:
+
+Input sits on a card
+
+Input sits on a custom background
+
+Input sits on glassmorphism surfaces
+
+=========================================
+
+<<<<0-FLOATING-LABELS+0>>>>
+
+Label starts inside input.
+
+-----------------------------------------
+
+When typing:
+
+Label moves upward.
+
+-----------------------------------------
+
+Built Using:
+
+position
+
+transform
+
+focus
+
+transition
+
+-----------------------------------------
+
+Common In:
+
+Google
+
+Material Design
+
+Modern Forms
+
+=========================================
+
+<<<<0-VALIDATION-COLORS+0>>>>
+
+Correct Input:
+
+Green
+
+-----------------------------------------
+
+Wrong Input:
+
+Red
+
+-----------------------------------------
+
+Purpose:
+
+Instant feedback
+
+-----------------------------------------
+
+Examples:
+
+Email validation
+
+Password validation
+
+Username validation
+
+=========================================
+
+<<<<0-PLACEHOLDER-ANIMATION+0>>>>
+
+Example:
+
+input:focus::placeholder
+
+-----------------------------------------
+
+Often:
+
+opacity:0;
+
+-----------------------------------------
+
+Result:
+
+Placeholder fades away
+while typing.
+
+=========================================
+
+<<<<0-ICONS-IN-INPUTS+0>>>>
+
+Examples:
+
+🔍 Search
+
+📧 Email
+
+🔒 Password
+
+-----------------------------------------
+
+Usually Built With:
+
+position:absolute
+
+-----------------------------------------
+
+Benefits:
+
+Clearer purpose
+
+Better UX
+
+=========================================
+
+<<<<0-GLASSMORPHISM-INPUTS+0>>>>
+
+Example:
+
+background:
+rgba(255,255,255,0.1);
+
+backdrop-filter:
+blur(10px);
+
+-----------------------------------------
+
+Result:
+
+Frosted Glass Look
+
+-----------------------------------------
+
+Common In:
+
+Modern Dashboards
+
+Landing Pages
+
+Portfolio Sites
+
+=========================================
+
+<<<<0-MOST-USEFUL-TRICKS+0>>>>
+
+Focus Glow
+
+Animated Border
+
+Floating Labels
+
+Validation Colors
+
+Icons
+
+Expanding Search Bars
+
+-----------------------------------------
+
+These provide the biggest
+visual improvement.
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Focus Glow
+
+=
+Active Input
+
+-----------------------------------------
+
+Animated Border
+
+=
+Smooth Feedback
+
+-----------------------------------------
+
+Underline Input
+
+=
+Material Design Style
+
+-----------------------------------------
+
+Pill Shape
+
+=
+Search Bar Style
+
+-----------------------------------------
+
+Floating Label
+
+=
+Professional Forms
+
+-----------------------------------------
+
+Validation Colors
+
+=
+Correct / Wrong Feedback
+
+-----------------------------------------
+
+Icons
+
+=
+Better UX
+
+-----------------------------------------
+
+Glassmorphism
+
+=
+Modern Frosted Glass Look
+
+=========================================
+*/
+
+/*
+=========================================
+DAY 20 — BUTTON STYLING
+=========================================
+
+<<<<0-WHY-BUTTONS-MATTER+0>>>>
+
+Buttons are the most common
+interactive element on a website.
+
+A button should immediately say:
+
+"I can be clicked."
+
+-----------------------------------------
+
+Good buttons provide:
+
+Visual Feedback
+
+Clear Purpose
+
+Good Contrast
+
+Smooth Interactions
+
+=========================================
+
+<<<<0-BUTTON-TYPES+0>>>>
+
+Primary
+
+=
+Main Action
+
+Examples:
+
+Submit
+
+Save
+
+Continue
+
+Sign Up
+
+-----------------------------------------
+
+Secondary
+
+=
+Less Important Action
+
+Examples:
+
+Back
+
+Cancel
+
+Later
+
+-----------------------------------------
+
+Danger
+
+=
+Destructive Action
+
+Examples:
+
+Delete
+
+Remove
+
+Destroy
+
+Usually Red
+
+-----------------------------------------
+
+Success
+
+=
+Positive Action
+
+Examples:
+
+Confirm
+
+Accept
+
+Done
+
+Usually Green
+
+=========================================
+
+<<<<0-HOVER-STATE+0>>>>
+
+Hover
+
+=
+Mouse is over button
+
+-----------------------------------------
+
+Purpose:
+
+Show that the button
+can be interacted with.
+
+-----------------------------------------
+
+Common Effects:
+
+Color Change
+
+Brightness Change
+
+Shadow Change
+
+Movement
+
+=========================================
+
+<<<<0-ACTIVE-STATE+0>>>>
+
+Active
+
+=
+Button is currently pressed
+
+-----------------------------------------
+
+Common Effect:
+
+button shrinks slightly
+
+-----------------------------------------
+
+Purpose:
+
+Feels like a real button.
+
+=========================================
+
+<<<<0-FOCUS-STATE+0>>>>
+
+Focus
+
+=
+Selected using keyboard
+
+-----------------------------------------
+
+Purpose:
+
+Accessibility
+
+Keyboard Navigation
+
+-----------------------------------------
+
+Common Effects:
+
+Outline
+
+Glow
+
+Shadow
+
+=========================================
+
+<<<<0-TRANSITIONS+0>>>>
+
+Transitions make button
+changes smooth.
+
+-----------------------------------------
+
+Without Transition:
+
+Instant Change
+
+-----------------------------------------
+
+With Transition:
+
+Smooth Change
+
+-----------------------------------------
+
+Usually Applied To:
+
+Color
+
+Background
+
+Transform
+
+Shadow
+
+=========================================
+
+<<<<0-ROUNDED-BUTTONS+0>>>>
+
+Small Radius
+
+=
+Modern Look
+
+-----------------------------------------
+
+Large Radius
+
+=
+Soft Look
+
+-----------------------------------------
+
+999px Radius
+
+=
+Pill Button
+
+=========================================
+
+<<<<0-GHOST-BUTTONS+0>>>>
+
+Ghost Button
+
+=
+Transparent Background
+
+Visible Border
+
+-----------------------------------------
+
+Purpose:
+
+Secondary Actions
+
+Hero Sections
+
+Modern Landing Pages
+
+-----------------------------------------
+
+Looks Light
+
+Does Not Compete
+With Primary Buttons
+
+=========================================
+
+NEW FILE
+<<<<0-OUTLINE-BUTTONS+0>>>>
+
+Outline Button
+
+=
+Border Focused Design
+
+-----------------------------------------
+
+Often Similar To:
+
+Ghost Buttons
+
+-----------------------------------------
+
+Used When:
+
+A Button Needs Less Attention
+Than The Primary Button
+
+=========================================
+
+<<<<0-ICON-BUTTONS+0>>>>
+
+Button Contains Only An Icon
+
+Examples:
+
+🔍
+
+❤️
+
+⚙️
+
+🗑️
+
+-----------------------------------------
+
+Advantages:
+
+Compact
+
+Recognizable
+
+=========================================
+
+<<<<0-ICON-TEXT-BUTTONS+0>>>>
+
+Examples:
+
+🔍 Search
+
+❤️ Like
+
+⚙️ Settings
+
+-----------------------------------------
+
+Advantages:
+
+Easy To Understand
+
+Better UX
+
+=========================================
+
+<<<<0-LOADING-BUTTONS+0>>>>
+
+When A Button Is Processing:
+
+Show:
+
+Loading...
+
+Spinner
+
+Progress Indicator
+
+-----------------------------------------
+
+Purpose:
+
+User Knows
+Something Is Happening
+
+=========================================
+
+<<<<0-DISABLED-BUTTONS+0>>>>
+
+Disabled
+
+=
+Cannot Be Clicked
+
+-----------------------------------------
+
+Typical Appearance:
+
+Lower Opacity
+
+Muted Colors
+
+Not Allowed Cursor
+
+-----------------------------------------
+
+Purpose:
+
+Prevent Invalid Actions
+
+=========================================
+
+<<<<0-ELEVATED-BUTTONS+0>>>>
+
+Uses Shadows
+
+-----------------------------------------
+
+Creates:
+
+Depth
+
+Importance
+
+Visibility
+
+-----------------------------------------
+
+Often Used For:
+
+Primary Buttons
+
+=========================================
+
+<<<<0-GLASSMORPHISM-BUTTONS+0>>>>
+
+Glass Effect
+
+-----------------------------------------
+
+Features:
+
+Transparency
+
+Blur
+
+Soft Borders
+
+-----------------------------------------
+
+Common In:
+
+Modern Dashboards
+
+Portfolios
+
+=========================================
+
+<<<<0-NEUMORPHISM-BUTTONS+0>>>>
+
+Uses:
+
+Soft Shadows
+
+Soft Highlights
+
+-----------------------------------------
+
+Creates:
+
+Pressed Surface Look
+
+-----------------------------------------
+
+Can Look Beautiful
+
+But Often Reduces Accessibility
+
+=========================================
+
+<<<<0-BUTTON-COLOR-THEORY+0>>>>
+
+For Background:
+
+rgb(30,30,30)
+
+-----------------------------------------
+
+Safe Primary Colors:
+
+Blue
+
+Cyan
+
+Green
+
+Purple
+
+-----------------------------------------
+
+Danger:
+
+Red
+
+-----------------------------------------
+
+Success:
+
+Green
+
+-----------------------------------------
+
+Avoid:
+
+Many Random Colors
+
+=========================================
+
+<<<<0-GOOD-BUTTON-RULES+0>>>>
+
+A Button Should:
+
+Look Clickable
+
+Provide Feedback
+
+Have Good Contrast
+
+Have Clear Purpose
+
+Have Comfortable Padding
+
+=========================================
+
+<<<<0-MOST-USEFUL-BUTTON-TRICKS+0>>>>
+
+Hover Effects
+
+Active Effects
+
+Transitions
+
+Rounded Buttons
+
+Icon Buttons
+
+Loading States
+
+Focus States
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Hover
+
+=
+Mouse Over
+
+-----------------------------------------
+
+Active
+
+=
+Pressed
+
+-----------------------------------------
+
+Focus
+
+=
+Keyboard Selected
+
+-----------------------------------------
+
+Ghost
+
+=
+Transparent
+
+-----------------------------------------
+
+Outline
+
+=
+Border Focused
+
+-----------------------------------------
+
+Loading
+
+=
+Processing
+
+-----------------------------------------
+
+Disabled
+
+=
+Cannot Click
+
+-----------------------------------------
+
+Icon Button
+
+=
+Visual Meaning
+
+=========================================
+*/

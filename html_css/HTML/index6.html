@@ -1,0 +1,278 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 6 - IMAGES
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Images add visual content to webpages.
+
+Examples:
+
+- Logos
+- Photos
+- Product Images
+- Banners
+
+HTML uses:
+
+<img>
+
+to display images.
+
+══════════════════════════════════════════════════════════════
+IMG TAG
+══════════════════════════════════════════════════════════════
+
+Syntax:
+
+<img src="image.jpg">
+
+Purpose:
+
+Displays an image on the webpage.
+
+Example:
+
+<img src="logo.png">
+
+══════════════════════════════════════════════════════════════
+VOID ELEMENT
+══════════════════════════════════════════════════════════════
+
+img is a void element.
+
+Meaning:
+
+- No closing tag
+- No content inside
+
+Correct:
+
+<img src="cat.jpg">
+
+Wrong:
+
+<img src="cat.jpg"></img>
+
+══════════════════════════════════════════════════════════════
+SRC ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+src means:
+
+Source
+
+Purpose:
+
+Tells browser where image is located.
+
+Example:
+
+<img src="dog.jpg">
+
+══════════════════════════════════════════════════════════════
+ALT ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+alt means:
+
+Alternative Text
+
+Purpose:
+
+- Accessibility
+- Screen readers
+- Image fails to load
+- Slow internet
+
+Example:
+
+<img src="dog.jpg" alt="Brown dog running">
+
+Good:
+
+alt="Golden retriever playing fetch"
+
+Bad:
+
+alt="image"
+
+Bad:
+
+alt="photo"
+
+Bad:
+
+alt="dog"
+
+Reason:
+
+Too vague.
+
+══════════════════════════════════════════════════════════════
+RELATIVE PATHS
+══════════════════════════════════════════════════════════════
+
+Same folder:
+
+project
+│
+├── index.html
+└── logo.png
+
+Use:
+
+<img src="logo.png">
+
+or
+
+<img src="./logo.png">
+
+══════════════════════════════════════════════════════════════
+USING ..
+══════════════════════════════════════════════════════════════
+
+Structure:
+
+project
+│
+├── images
+│   └── logo.png
+│
+└── pages
+    └── about.html
+
+From:
+
+pages/about.html
+
+Use:
+
+<img src="../images/logo.png">
+
+Meaning:
+
+.. = Go up one folder
+
+══════════════════════════════════════════════════════════════
+WIDTH
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<img src="cat.jpg" width="300">
+
+Meaning:
+
+300 pixels wide
+
+Note:
+
+Modern projects often use CSS:
+
+img{
+    width:300px;
+}
+
+══════════════════════════════════════════════════════════════
+HEIGHT
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<img src="cat.jpg" height="200">
+
+Meaning:
+
+200 pixels tall
+
+══════════════════════════════════════════════════════════════
+DISTORTION
+══════════════════════════════════════════════════════════════
+
+Original:
+
+400 × 400
+
+Forced:
+
+600 × 200
+
+Result:
+
+Stretched image
+
+Often better:
+
+<img src="cat.jpg" width="300">
+
+and let browser calculate height.
+
+══════════════════════════════════════════════════════════════
+IMAGE AS A LINK
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<a href="about.html">
+    <img src="logo.png"
+         alt="Company Logo">
+</a>
+
+Result:
+
+Clickable image
+
+══════════════════════════════════════════════════════════════
+SEO
+══════════════════════════════════════════════════════════════
+
+Search engines use:
+
+- Filename
+- Alt text
+- Surrounding content
+
+Good:
+
+golden-retriever.jpg
+
+Better than:
+
+image.jpg
+
+══════════════════════════════════════════════════════════════
+DAY 6 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+img
+Void Element
+src
+alt
+width
+height
+title
+Relative Path
+External Image
+Accessibility
+SEO
+Distortion
+
+══════════════════════════════════════════════════════════════
+DAY 6 SUMMARY
+══════════════════════════════════════════════════════════════
+
+- img displays images.
+- src tells browser where image is.
+- alt helps accessibility and SEO.
+- Relative paths work like links.
+- .. means go up one folder.
+- Images can be links.
+- Width and height resize images.
+- Incorrect sizing can distort images.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 6
+══════════════════════════════════════════════════════════════
+-->

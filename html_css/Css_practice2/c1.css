@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(30,30,30);
+    font-family: 'Times New Roman';
+}
+
+#Outer {
+    font-size: 25px;
+    color:pink;
+    line-height: 20px;
+}
+
+#Inner {
+    font-size: 10px;
+    color: lime;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}

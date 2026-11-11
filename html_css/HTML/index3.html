@@ -1,0 +1,605 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 3 - TEXT FORMATTING ELEMENTS
+══════════════════════════════════════════════════════════════
+
+Goal:
+
+Learn the difference between:
+
+Appearance
+
+and
+
+Meaning
+
+A browser may display two tags exactly the same.
+
+But their semantic meaning can be completely different.
+
+Modern HTML focuses on meaning first.
+
+══════════════════════════════════════════════════════════════
+FORMATTING TAGS COVERED
+══════════════════════════════════════════════════════════════
+
+strong
+
+b
+
+em
+
+i
+
+u
+
+mark
+
+sup
+
+sub
+
+══════════════════════════════════════════════════════════════
+STRONG
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Strong importance.
+
+Meaning:
+
+"This content is important."
+
+Common Uses:
+
+- Warnings
+- Critical instructions
+- Important notices
+- Important labels
+
+Default Browser Appearance:
+
+Bold
+
+Important:
+
+strong does NOT mean:
+
+"Make text bold."
+
+strong means:
+
+"This text is important."
+
+The bold appearance is only the browser's default styling.
+
+══════════════════════════════════════════════════════════════
+B
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Draw attention without implying importance.
+
+Meaning:
+
+"Notice this text."
+
+Common Uses:
+
+- Product names
+- Keywords
+- Labels
+- Visual attention
+
+Default Browser Appearance:
+
+Bold
+
+Important:
+
+b does NOT indicate importance.
+
+It only draws attention.
+
+══════════════════════════════════════════════════════════════
+STRONG VS B
+══════════════════════════════════════════════════════════════
+
+Both often appear bold.
+
+The difference is meaning.
+
+strong
+
+Meaning:
+Important content.
+
+b
+
+Meaning:
+Attention-grabbing content.
+
+Developer Thinking:
+
+strong = significance
+
+b = attention
+
+Semantic HTML prefers meaning.
+
+══════════════════════════════════════════════════════════════
+EM
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Emphasis.
+
+Meaning:
+
+Stress a word or phrase.
+
+Example Meaning:
+
+I REALLY like HTML.
+
+The word receives emphasis.
+
+Default Browser Appearance:
+
+Italic
+
+Important:
+
+em does not exist to make text italic.
+
+It exists to express emphasis.
+
+══════════════════════════════════════════════════════════════
+I
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Alternate voice or mood.
+
+Common Uses:
+
+- Foreign words
+- Scientific names
+- Technical terms
+- Taxonomic names
+- Thoughts
+
+Default Browser Appearance:
+
+Italic
+
+Examples:
+
+Foreign language phrase
+
+Scientific classification
+
+Book title
+
+Important:
+
+i has semantic meaning.
+
+It is NOT just decoration.
+
+══════════════════════════════════════════════════════════════
+EM VS I
+══════════════════════════════════════════════════════════════
+
+em
+
+Purpose:
+Emphasis
+
+Example Meaning:
+
+I REALLY need help.
+
+i
+
+Purpose:
+Alternate voice
+
+Example Meaning:
+
+Foreign language term
+
+Scientific name
+
+Technical term
+
+Both often appear italic.
+
+Their meanings are different.
+
+══════════════════════════════════════════════════════════════
+U
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Annotation.
+
+Historically:
+
+Used for underlining.
+
+Modern Development:
+
+Rarely used.
+
+Reason:
+
+CSS handles decoration better.
+
+Important:
+
+Do not use u simply because you want
+underlined text.
+
+Use CSS instead.
+
+══════════════════════════════════════════════════════════════
+MARK
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Highlight text.
+
+Meaning:
+
+"This content deserves attention."
+
+Default Browser Appearance:
+
+Yellow highlight
+
+Common Uses:
+
+- Search results
+- Notes
+- Important references
+- Study material
+
+Example Meaning:
+
+This topic is important.
+
+══════════════════════════════════════════════════════════════
+SUP
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Superscript.
+
+Position:
+
+Above normal text.
+
+Common Uses:
+
+- Mathematics
+- Exponents
+- Footnotes
+- Scientific notation
+
+Examples:
+
+x²
+
+a³
+
+10⁴
+
+Meaning:
+
+Raised text.
+
+══════════════════════════════════════════════════════════════
+SUB
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Subscript.
+
+Position:
+
+Below normal text.
+
+Common Uses:
+
+- Chemistry
+- Scientific formulas
+- Mathematical notation
+
+Examples:
+
+H₂O
+
+CO₂
+
+O₂
+
+Meaning:
+
+Lowered text.
+
+══════════════════════════════════════════════════════════════
+SUP VS SUB
+══════════════════════════════════════════════════════════════
+
+SUP
+
+Position:
+Above text
+
+Examples:
+
+x²
+
+a³
+
+SUB
+
+Position:
+Below text
+
+Examples:
+
+H₂O
+
+CO₂
+
+Easy Memory Trick:
+
+SUP = UP
+
+SUB = BELOW
+
+══════════════════════════════════════════════════════════════
+COMBINING TAGS
+══════════════════════════════════════════════════════════════
+
+Formatting tags can work together.
+
+Example Idea:
+
+Important + Emphasis
+
+Meaning:
+
+Very important content receiving emphasis.
+
+Use combinations carefully.
+
+Do not overuse formatting.
+
+══════════════════════════════════════════════════════════════
+SEMANTIC HTML THINKING
+══════════════════════════════════════════════════════════════
+
+Beginner Thinking:
+
+strong = bold
+
+em = italic
+
+Developer Thinking:
+
+strong = importance
+
+em = emphasis
+
+Appearance is secondary.
+
+Meaning is primary.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKES
+══════════════════════════════════════════════════════════════
+
+Mistake 1
+
+Using b instead of strong for warnings.
+
+Better:
+
+Use strong.
+
+Reason:
+
+Importance is being communicated.
+
+══════════════════════════════════════════════════════════════
+
+Mistake 2
+
+Using i instead of em for emphasis.
+
+Better:
+
+Use em.
+
+Reason:
+
+The word is being stressed.
+
+══════════════════════════════════════════════════════════════
+
+Mistake 3
+
+Using u for decoration.
+
+Better:
+
+Use CSS.
+
+Reason:
+
+Presentation belongs to CSS.
+
+══════════════════════════════════════════════════════════════
+
+Mistake 4
+
+Thinking formatting tags exist only for styling.
+
+Reality:
+
+Most formatting tags also carry meaning.
+
+══════════════════════════════════════════════════════════════
+ACCESSIBILITY BENEFITS
+══════════════════════════════════════════════════════════════
+
+Semantic tags help:
+
+- Screen readers
+- Accessibility tools
+- Search engines
+- Developers
+
+Meaningful HTML improves communication.
+
+══════════════════════════════════════════════════════════════
+SEO BENEFITS
+══════════════════════════════════════════════════════════════
+
+Search engines understand semantic meaning.
+
+Examples:
+
+strong
+
+em
+
+headings
+
+semantic sections
+
+These help search engines understand content.
+
+Remember:
+
+Semantic HTML helps SEO.
+
+It does not replace quality content.
+
+══════════════════════════════════════════════════════════════
+DAY 3 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+Formatting
+
+Semantic HTML
+
+strong
+
+b
+
+em
+
+i
+
+u
+
+mark
+
+sup
+
+sub
+
+Importance
+
+Emphasis
+
+Annotation
+
+Highlight
+
+Superscript
+
+Subscript
+
+Accessibility
+
+SEO
+
+══════════════════════════════════════════════════════════════
+DAY 3 SUMMARY
+══════════════════════════════════════════════════════════════
+
+strong = importance
+
+b = attention
+
+em = emphasis
+
+i = alternate voice
+
+u = annotation
+
+mark = highlight
+
+sup = superscript
+
+sub = subscript
+
+Meaning is more important than appearance.
+
+Semantic HTML helps:
+
+- Accessibility
+- SEO
+- Maintainability
+
+Developer Rule:
+
+Use the tag that best describes the meaning.
+
+Let CSS handle appearance.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 3
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 3</title>
+</head>
+<body>
+    <h1>Day 3 Practical</h1>
+    <p><strong>WARNING</strong>: Don't click randomly on unknown links</p>
+    <p>I <em>really</em> enjoy learning HTML.</p>
+    <p><i>Homo sapiens</i></p>
+    <p>Use <mark>rem</mark> for responsive sizing.</p>
+    <p>
+        H<sub>2</sub>O
+        CO<sub>2</sub>
+        O<sub>2</sub>
+    </p>
+    <p>
+        x<sup>2</sup>
+        a<sup>3</sup>
+        10<sup>4</sup>
+    </p>
+    <p>This is <strong><em>extremely</em></strong> important</p>
+    <!--strong waves the browser to see me I am a warning(or whatever) but b shows I am a normal text but visually they are same bold-->
+</body>
+</html>

@@ -1,0 +1,592 @@
+/*
+=========================================
+DAY 15 - CSS ANIMATIONS
+    Motion Part-3
+        Animations
+=========================================
+
+Animations can run automatically.
+
+Transitions:
+Need a trigger.
+
+Animations:
+Can run by themselves.
+
+=========================================
+
+>>> @keyframes <<<
+
+Defines the stages of an animation.
+
+0% = Start
+
+100% = End
+
+Can also use:
+
+25%
+50%
+75%
+
+for middle stages.
+
+Example idea:
+
+0%   → Small
+50%  → Medium
+100% → Large
+
+=========================================
+
+>>> animation-name <<<
+
+Connects an element
+to a keyframe animation.
+
+animation-name: bounce;
+
+Meaning:
+
+Use the animation
+called bounce.
+
+=========================================
+
+>>> animation-duration <<<
+
+Controls how long
+one animation cycle lasts.
+
+animation-duration: 2s;
+
+Meaning:
+
+One complete animation
+takes 2 seconds.
+
+=========================================
+
+>>> animation-timing-function <<<
+
+Controls the speed pattern.
+
+linear
+
+Same speed.
+
+-----------------------------------------
+
+ease
+
+Slow → Fast → Slow
+
+-----------------------------------------
+
+ease-in
+
+Slow start.
+
+-----------------------------------------
+
+ease-out
+
+Slow finish.
+
+-----------------------------------------
+
+ease-in-out
+
+Slow → Fast → Slow
+
+More noticeable.
+
+-----------------------------------------
+
+Advanced values:
+
+steps()
+cubic-bezier()
+
+=========================================
+
+>>> animation-delay <<<
+
+Wait before starting.
+
+animation-delay: 2s;
+
+Meaning:
+
+Wait 2 seconds
+then start animation.
+
+=========================================
+
+>>> animation-iteration-count <<<
+
+Controls repetitions.
+
+animation-iteration-count: 3;
+
+Run 3 times.
+
+-----------------------------------------
+
+animation-iteration-count: infinite;
+
+Run forever.
+
+=========================================
+
+>>> animation-direction <<<
+
+Controls direction.
+
+normal
+
+Start → End
+
+-----------------------------------------
+
+reverse
+
+End → Start
+
+-----------------------------------------
+
+alternate
+
+Start → End → Start
+
+-----------------------------------------
+
+alternate-reverse
+
+End → Start → End
+
+=========================================
+
+>>> animation-fill-mode <<<
+
+Controls what happens
+before and after
+the animation.
+
+-----------------------------------------
+
+none
+
+Default value.
+
+Original state
+↓
+Animation
+↓
+Final state
+↓
+Return to original state
+
+-----------------------------------------
+
+forwards
+
+Keep the final frame.
+
+Original state
+↓
+Animation
+↓
+Final state
+↓
+Stay there
+
+-----------------------------------------
+
+backwards
+
+Useful with delay.
+
+Apply first keyframe
+immediately during delay.
+
+-----------------------------------------
+
+both
+
+backwards
++
+forwards
+
+Apply first frame during delay.
+
+Keep final frame after finish.
+
+=========================================
+
+>>> animation-play-state <<<
+
+Controls whether
+animation moves or freezes.
+
+-----------------------------------------
+
+running
+
+Default value.
+
+Animation moves.
+
+-----------------------------------------
+
+paused
+
+Freeze animation.
+
+Stops exactly where
+it currently is.
+
+Can continue later
+from the same position.
+
+=========================================
+
+>>> animation shorthand <<<
+
+animation:
+
+name
+duration
+timing-function
+delay
+iteration-count
+direction
+fill-mode
+play-state
+
+-----------------------------------------
+
+Example:
+
+animation:
+bounce
+2s
+ease
+1s
+infinite
+alternate
+forwards
+running;
+
+=========================================
+
+>>> IMPORTANT <<<
+
+Transitions:
+
+A → B
+
+Need a trigger.
+
+-----------------------------------------
+
+Animations:
+
+A → B → C → D
+
+Can run automatically.
+
+Can repeat.
+
+Can have multiple stages.
+
+=========================================
+
+>>> SUMMARY <<<
+
+@keyframes
+
+animation-name
+
+animation-duration
+
+animation-timing-function
+
+animation-delay
+
+animation-iteration-count
+
+animation-direction
+
+animation-fill-mode
+
+animation-play-state
+
+animation shorthand
+
+=========================================
+*/
+
+/*
+=========================================
+DAY 17 - PSEUDO ELEMENTS
+=========================================
+
+Pseudo classes
+
+:hover
+:active
+:focus
+
+represent a special state.
+
+-----------------------------------------
+
+Pseudo elements
+
+::before
+::after
+
+represent a virtual element.
+
+They create extra content
+without adding HTML.
+
+=========================================
+
+>>> What is a Pseudo Element? <<<
+
+A pseudo element behaves like
+an extra element created by CSS.
+
+Example:
+
+HTML
+
+<div class="box">
+    Hello
+</div>
+
+CSS can create:
+
+[Before]
+Hello
+[After]
+
+without writing extra HTML.
+
+=========================================
+
+>>> Syntax <<<
+
+Modern syntax:
+
+selector::pseudo-element
+
+Examples:
+
+.box::before
+
+.box::after
+
+=========================================
+
+>>> ::before <<<
+
+Creates content
+before the element's content.
+
+Example:
+
+.box::before
+
+Appears before:
+
+Hello
+
+Result:
+
+Before Hello
+
+-----------------------------------------
+
+Most common property:
+
+content
+
+Example:
+
+content: "★";
+
+=========================================
+
+>>> ::after <<<
+
+Creates content
+after the element's content.
+
+Example:
+
+.box::after
+
+Result:
+
+Hello After
+
+-----------------------------------------
+
+Most common property:
+
+content
+
+Example:
+
+content: "✓";
+
+=========================================
+
+>>> content <<<
+
+Required for
+::before and ::after.
+
+Without content
+
+nothing appears.
+
+-----------------------------------------
+
+Examples:
+
+content: "Hello";
+
+content: "★";
+
+content: "✓";
+
+content: "";
+
+Empty content.
+
+Still creates the element.
+
+=========================================
+
+>>> Why Use Pseudo Elements? <<<
+
+Add icons.
+
+Add decorations.
+
+Add labels.
+
+Create shapes.
+
+Create effects.
+
+Without extra HTML.
+
+=========================================
+
+>>> Common Usage <<<
+
+Button arrow:
+
+button::after
+
+content: "→";
+
+-----------------------------------------
+
+Required field:
+
+label::after
+
+content: "*";
+
+-----------------------------------------
+
+Quote mark:
+
+blockquote::before
+
+content: "\"";
+
+=========================================
+
+>>> Positioning <<<
+
+Pseudo elements can use:
+
+position
+
+width
+
+height
+
+background-color
+
+border
+
+transform
+
+animation
+
+transition
+
+Just like normal elements.
+
+=========================================
+
+>>> Difference <<<
+
+Pseudo Class
+
+:hover
+
+Represents a state.
+
+-----------------------------------------
+
+Pseudo Element
+
+::before
+
+Creates a virtual element.
+
+=========================================
+
+>>> Most Important Pseudo Elements <<<
+
+::before
+
+::after
+
+=========================================
+
+>>> Summary <<<
+
+Pseudo elements create
+extra virtual elements.
+
+Most used:
+
+::before
+
+::after
+
+Require:
+
+content
+
+Useful for:
+
+Icons
+Labels
+Decorations
+Effects
+
+Without extra HTML.
+
+=========================================
+*/

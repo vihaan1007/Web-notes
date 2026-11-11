@@ -1,0 +1,654 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 14 - FORMS PART 4
+══════════════════════════════════════════════════════════════
+
+So far:
+
+Users can type information.
+
+Users can choose information.
+
+Examples:
+
+text
+password
+email
+number
+tel
+date
+radio
+checkbox
+select
+textarea
+
+Today:
+
+We improve forms.
+
+New Attributes:
+
+placeholder
+value
+required
+
+These make forms easier
+and safer to use.
+
+══════════════════════════════════════════════════════════════
+PLACEHOLDER
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+placeholder
+
+Purpose:
+
+Shows hint text inside
+an input field.
+
+Example:
+
+<input
+type="text"
+placeholder="Enter Name">
+
+Result:
+
+[ Enter Name ]
+
+The text appears inside
+the input.
+
+══════════════════════════════════════════════════════════════
+PLACEHOLDER BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+Initially:
+
+Hint is visible.
+
+When user types:
+
+Hint disappears.
+
+Example:
+
+Before typing:
+
+[ Enter Name ]
+
+After typing:
+
+[ Alex ]
+
+Placeholder vanishes.
+
+══════════════════════════════════════════════════════════════
+WHY PLACEHOLDER EXISTS
+══════════════════════════════════════════════════════════════
+
+Without placeholder:
+
+[            ]
+
+User may not know
+what to enter.
+
+With placeholder:
+
+[ Enter Email ]
+
+Purpose becomes obvious.
+
+══════════════════════════════════════════════════════════════
+PLACEHOLDER EXAMPLES
+══════════════════════════════════════════════════════════════
+
+Email:
+
+<input
+type="email"
+placeholder="example@gmail.com">
+
+Phone:
+
+<input
+type="tel"
+placeholder="9876543210">
+
+Age:
+
+<input
+type="number"
+placeholder="Age">
+
+Password:
+
+<input
+type="password"
+placeholder="Enter Password">
+
+══════════════════════════════════════════════════════════════
+GOOD PLACEHOLDERS
+══════════════════════════════════════════════════════════════
+
+Good:
+
+placeholder="Enter Name"
+
+placeholder="example@gmail.com"
+
+placeholder="Phone Number"
+
+Bad:
+
+placeholder="Type"
+
+placeholder="Input"
+
+placeholder="Data"
+
+Good placeholders help users.
+
+══════════════════════════════════════════════════════════════
+PLACEHOLDER IS NOT A LABEL
+══════════════════════════════════════════════════════════════
+
+Wrong Thinking:
+
+Placeholder replaces label.
+
+Incorrect.
+
+Example:
+
+<label for="name">
+
+Name
+
+</label>
+
+<input
+id="name"
+placeholder="Enter Name">
+
+Label:
+
+Identifies field.
+
+Placeholder:
+
+Provides hint.
+
+Both have different jobs.
+
+══════════════════════════════════════════════════════════════
+LABEL VS PLACEHOLDER
+══════════════════════════════════════════════════════════════
+
+Label:
+
+Outside input.
+
+Always visible.
+
+Placeholder:
+
+Inside input.
+
+Disappears when typing starts.
+
+Example:
+
+Label:
+
+Name
+
+Placeholder:
+
+Enter Name
+
+Different purposes.
+
+══════════════════════════════════════════════════════════════
+VALUE
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+value
+
+Purpose:
+
+Provides default content.
+
+Example:
+
+<input
+type="text"
+value="Alex">
+
+Result:
+
+[ Alex ]
+
+Alex is already present.
+
+══════════════════════════════════════════════════════════════
+VALUE BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+Unlike placeholder:
+
+Value is real content.
+
+Example:
+
+<input
+value="Alex">
+
+User sees:
+
+[ Alex ]
+
+This text already exists
+inside the input.
+
+══════════════════════════════════════════════════════════════
+VALUE EXAMPLES
+══════════════════════════════════════════════════════════════
+
+Name:
+
+<input
+value="Alex">
+
+Age:
+
+<input
+type="number"
+value="18">
+
+Country:
+
+<input
+value="India">
+
+All contain actual values.
+
+══════════════════════════════════════════════════════════════
+WHY VALUE EXISTS
+══════════════════════════════════════════════════════════════
+
+Useful when:
+
+Editing data
+
+Profile settings
+
+Registration updates
+
+Prefilled forms
+
+Example:
+
+User changes profile.
+
+Old data already appears.
+
+User edits instead
+of typing everything again.
+
+══════════════════════════════════════════════════════════════
+PLACEHOLDER VS VALUE
+══════════════════════════════════════════════════════════════
+
+Placeholder:
+
+Hint text.
+
+Value:
+
+Real content.
+
+Example:
+
+placeholder="Enter Name"
+
+Result:
+
+Grey hint.
+
+Example:
+
+value="Alex"
+
+Result:
+
+Actual text.
+
+══════════════════════════════════════════════════════════════
+PLACEHOLDER EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+placeholder="Enter Name">
+
+Result:
+
+Hint appears.
+
+Typing removes it.
+
+══════════════════════════════════════════════════════════════
+VALUE EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+value="Alex">
+
+Result:
+
+Alex already exists.
+
+Typing edits the value.
+
+══════════════════════════════════════════════════════════════
+REQUIRED
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+required
+
+Purpose:
+
+Makes field mandatory.
+
+Example:
+
+<input
+type="text"
+required>
+
+Meaning:
+
+User must fill it.
+
+══════════════════════════════════════════════════════════════
+WHY REQUIRED EXISTS
+══════════════════════════════════════════════════════════════
+
+Without required:
+
+User may submit:
+
+Blank Name
+
+Blank Email
+
+Blank Password
+
+Bad data enters system.
+
+Required helps prevent this.
+
+══════════════════════════════════════════════════════════════
+REQUIRED EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+type="email"
+required>
+
+If empty:
+
+Browser blocks submission.
+
+══════════════════════════════════════════════════════════════
+MULTIPLE REQUIRED FIELDS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+type="text"
+required>
+
+<input
+type="email"
+required>
+
+<input
+type="password"
+required>
+
+All must be completed.
+
+══════════════════════════════════════════════════════════════
+REQUIRED BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+User presses submit.
+
+Field empty.
+
+Browser warns user.
+
+Submission stops.
+
+User fills field.
+
+Submission continues.
+
+══════════════════════════════════════════════════════════════
+COMBINING ATTRIBUTES
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+type="text"
+placeholder="Enter Name"
+required>
+
+This field:
+
+Provides hint.
+
+Cannot be left empty.
+
+══════════════════════════════════════════════════════════════
+ANOTHER COMBINATION
+══════════════════════════════════════════════════════════════
+
+<input
+type="email"
+placeholder="example@gmail.com"
+required>
+
+Provides:
+
+Hint
+
+Validation
+
+Mandatory entry
+
+══════════════════════════════════════════════════════════════
+VALUE AND REQUIRED
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+value="Alex"
+required>
+
+Already contains content.
+
+Required is satisfied.
+
+Field is not empty.
+
+══════════════════════════════════════════════════════════════
+VALUE AND PLACEHOLDER
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+value="Alex"
+placeholder="Enter Name">
+
+Result:
+
+Alex appears.
+
+Placeholder is hidden.
+
+Reason:
+
+Value takes priority.
+
+══════════════════════════════════════════════════════════════
+REAL FORM EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<form>
+
+<label for="name">
+
+Name
+
+</label>
+
+<input
+id="name"
+type="text"
+placeholder="Enter Name"
+required>
+
+<br>
+
+<label for="email">
+
+Email
+
+</label>
+
+<input
+id="email"
+type="email"
+placeholder="example@gmail.com"
+required>
+
+<br>
+
+<button>
+
+Submit
+
+</button>
+
+</form>
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKES
+══════════════════════════════════════════════════════════════
+
+Mistake 1:
+
+Using placeholder
+instead of label.
+
+Mistake 2:
+
+Thinking value is hint text.
+
+Mistake 3:
+
+Forgetting required
+on important fields.
+
+Mistake 4:
+
+Confusing value
+with placeholder.
+
+══════════════════════════════════════════════════════════════
+MEMORY TRICK
+══════════════════════════════════════════════════════════════
+
+Placeholder:
+
+Suggestion.
+
+Value:
+
+Already filled.
+
+Required:
+
+No escape.
+
+══════════════════════════════════════════════════════════════
+DAY 14 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+placeholder
+
+value
+
+required
+
+══════════════════════════════════════════════════════════════
+DAY 14 SUMMARY
+══════════════════════════════════════════════════════════════
+
+placeholder:
+
+Hint text.
+
+value:
+
+Default content.
+
+required:
+
+Must fill field.
+
+Placeholder helps user.
+
+Value prefills data.
+
+Required prevents empty submission.
+
+These attributes improve
+real-world forms.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 14
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14</title>
+</head>
+<body>
+    <form>
+        <label for = "name">Name</label>
+        <input type = "text" id = "name" value = "Alex">
+        <label for = "ph">Phone number</label>
+        <input type = "tel" id = "ph" placeholder = "1234567890">
+        <label for = "pass">Password</label>
+        <input type = "password" id = "pass" required>
+    </form>
+</body>
+</html>

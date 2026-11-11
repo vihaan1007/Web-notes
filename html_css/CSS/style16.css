@@ -1,0 +1,691 @@
+/*
+<<<<0-FULL-SCREEN-OVERLAYS+0>>>>
+
+Most overlays cover
+the entire screen.
+
+-----------------------------------------
+
+Purpose:
+
+Prevent interaction
+with background content.
+
+=========================================
+
+<<<<0-BACKGROUND-INTERACTION+0>>>>
+
+When modal is open:
+
+Users should focus
+on modal content.
+
+-----------------------------------------
+
+Background interactions
+are often disabled.
+
+=========================================
+
+<<<<0-WHAT-MAKES-A-GOOD-MODAL+0>>>>
+
+Centered
+
+Readable
+
+Easy To Close
+
+Proper Contrast
+
+Good Spacing
+
+=========================================
+
+<<<<0-COMMON-MODAL-MISTAKES+0>>>>
+
+No Close Button
+
+-----------------------------------------
+
+Poor Contrast
+
+-----------------------------------------
+
+No Overlay
+
+-----------------------------------------
+
+Wrong z-index
+
+-----------------------------------------
+
+Too Much Content
+
+=========================================
+
+<<<<0-REAL-WORLD-EXAMPLES+0>>>>
+
+Login Windows
+
+Cookie Notices
+
+Newsletter Signup
+
+Delete Confirmation
+
+Image Viewers
+
+=========================================
+
+<<<<0-MODAL-CHECKLIST+0>>>>
+
+Overlay
+
+-----------------------------------------
+
+Modal Box
+
+-----------------------------------------
+
+Close Button
+
+-----------------------------------------
+
+Proper Centering
+
+-----------------------------------------
+
+Correct z-index
+
+-----------------------------------------
+
+Good Spacing
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Modal
+
+=
+Popup Box
+
+-----------------------------------------
+
+Overlay
+
+=
+Dark Layer
+
+-----------------------------------------
+
+Modal Box
+
+=
+Content Area
+
+-----------------------------------------
+
+Close Button
+
+=
+Exit
+
+-----------------------------------------
+
+Center
+
+=
+Focus
+
+-----------------------------------------
+
+z-index
+
+=
+Stacking Order
+
+-----------------------------------------
+
+Page
+
+↓
+
+Overlay
+
+↓
+
+Modal
+
+↓
+
+Close Button
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #7
+MODALS & POPUPS
+PART 2
+ANIMATIONS, EFFECTS,
+PATTERNS & BEST PRACTICES
+=========================================
+
+<<<<0-WHY-ANIMATE-MODALS+0>>>>
+
+Modern websites rarely make
+modals appear instantly.
+
+-----------------------------------------
+
+Reason:
+
+Instant appearance feels harsh.
+
+-----------------------------------------
+
+Animation feels smoother.
+
+=========================================
+
+<<<<0-ANIMATION-GOAL+0>>>>
+
+Animation should:
+
+Guide Attention
+
+Feel Natural
+
+Look Professional
+
+-----------------------------------------
+
+Not distract users.
+
+=========================================
+
+<<<<0-FADE-IN-EFFECT+0>>>>
+
+Most common modal animation.
+
+-----------------------------------------
+
+Invisible
+
+↓
+
+Visible
+
+-----------------------------------------
+
+Uses opacity changes.
+
+=========================================
+
+<<<<0-WHY-FADE-IN-WORKS+0>>>>
+
+Very smooth.
+
+-----------------------------------------
+
+Easy on the eyes.
+
+-----------------------------------------
+
+Works with almost every design.
+
+=========================================
+
+<<<<0-FADE-OUT-EFFECT+0>>>>
+
+Reverse of fade in.
+
+-----------------------------------------
+
+Visible
+
+↓
+
+Invisible
+
+-----------------------------------------
+
+Used when closing modals.
+
+=========================================
+
+<<<<0-SCALE-IN-EFFECT+0>>>>
+
+Popular modern effect.
+
+-----------------------------------------
+
+Small
+
+↓
+
+Normal Size
+
+-----------------------------------------
+
+Modal appears to grow.
+
+=========================================
+
+<<<<0-WHY-SCALE-IN-WORKS+0>>>>
+
+Feels energetic.
+
+-----------------------------------------
+
+Makes modal feel important.
+
+=========================================
+
+<<<<0-SCALE-OUT-EFFECT+0>>>>
+
+Normal Size
+
+↓
+
+Smaller
+
+↓
+
+Disappear
+
+-----------------------------------------
+
+Common closing animation.
+
+=========================================
+
+<<<<0-SLIDE-IN-EFFECT+0>>>>
+
+Modal enters from:
+
+Top
+
+Bottom
+
+Left
+
+Right
+
+-----------------------------------------
+
+Very common.
+
+=========================================
+
+<<<<0-SLIDE-DOWN-MODALS+0>>>>
+
+Popular pattern.
+
+-----------------------------------------
+
+Top
+
+↓
+
+Center
+
+-----------------------------------------
+
+Feels natural.
+
+=========================================
+
+<<<<0-SLIDE-UP-MODALS+0>>>>
+
+Often used on mobile.
+
+-----------------------------------------
+
+Bottom
+
+↓
+
+Upward
+
+-----------------------------------------
+
+Common in apps.
+
+=========================================
+
+<<<<0-COMBINATION-ANIMATIONS+0>>>>
+
+Professional modals often use:
+
+Fade
+
++
+
+Scale
+
+-----------------------------------------
+
+or
+
+-----------------------------------------
+
+Fade
+
++
+
+Slide
+
+=========================================
+
+<<<<0-ANIMATION-SPEED+0>>>>
+
+Too Fast
+
+=
+Feels abrupt
+
+-----------------------------------------
+
+Too Slow
+
+=
+Feels annoying
+
+-----------------------------------------
+
+Balanced
+
+=
+Smooth
+
+=========================================
+
+<<<<0-OVERLAY-ANIMATIONS+0>>>>
+
+Overlay can animate too.
+
+-----------------------------------------
+
+Darkness gradually appears.
+
+-----------------------------------------
+
+Looks cleaner.
+
+=========================================
+
+<<<<0-MODAL-ENTRY-SEQUENCE+0>>>>
+
+Typical sequence:
+
+Overlay Appears
+
+↓
+
+Modal Appears
+
+↓
+
+User Interacts
+
+=========================================
+
+<<<<0-MODAL-EXIT-SEQUENCE+0>>>>
+
+User Clicks Close
+
+↓
+
+Modal Disappears
+
+↓
+
+Overlay Disappears
+
+=========================================
+
+<<<<0-CLICK-OUTSIDE-TO-CLOSE+0>>>>
+
+Common feature.
+
+-----------------------------------------
+
+User clicks overlay.
+
+-----------------------------------------
+
+Modal closes.
+
+=========================================
+
+<<<<0-WHY-OUTSIDE-CLICKS+0>>>>
+
+Faster interaction.
+
+-----------------------------------------
+
+Improves usability.
+
+=========================================
+
+<<<<0-ESCAPE-KEY-CLOSING+0>>>>
+
+Professional websites often allow:
+
+ESC
+
+↓
+
+Close Modal
+
+-----------------------------------------
+
+Very convenient.
+
+=========================================
+
+<<<<0-CONFIRMATION-MODALS+0>>>>
+
+Used before dangerous actions.
+
+-----------------------------------------
+
+Examples:
+
+Delete
+
+Reset
+
+Remove
+
+=========================================
+
+<<<<0-WARNING-MODALS+0>>>>
+
+Purpose:
+
+Prevent mistakes.
+
+-----------------------------------------
+
+User must confirm action.
+
+=========================================
+
+<<<<0-SUCCESS-MODALS+0>>>>
+
+Used after:
+
+Submission
+
+Purchase
+
+Registration
+
+-----------------------------------------
+
+Provides feedback.
+
+=========================================
+
+<<<<0-ERROR-MODALS+0>>>>
+
+Used when:
+
+Something fails.
+
+-----------------------------------------
+
+Shows error details.
+
+=========================================
+
+<<<<0-LOGIN-MODALS+0>>>>
+
+Very common.
+
+-----------------------------------------
+
+Contains:
+
+Username
+
+Password
+
+Buttons
+
+=========================================
+
+<<<<0-IMAGE-PREVIEW-MODALS+0>>>>
+
+Click Image
+
+↓
+
+Large Version Opens
+
+-----------------------------------------
+
+Common in galleries.
+
+=========================================
+
+<<<<0-NEWSLETTER-MODALS+0>>>>
+
+Used for:
+
+Email Collection
+
+-----------------------------------------
+
+Often appears after
+a delay.
+
+=========================================
+
+<<<<0-TIMED-MODALS+0>>>>
+
+Modal appears after:
+
+5 Seconds
+
+10 Seconds
+
+15 Seconds
+
+-----------------------------------------
+
+Used in marketing.
+
+=========================================
+
+<<<<0-DONT-OVERUSE-MODALS+0>>>>
+
+Too many modals:
+
+Annoy users.
+
+-----------------------------------------
+
+Can hurt user experience.
+
+=========================================
+
+<<<<0-GOOD-MODAL-RULES+0>>>>
+
+Easy To Close
+
+Readable
+
+Responsive
+
+Focused
+
+Simple
+
+=========================================
+
+<<<<0-RESPONSIVE-MODALS+0>>>>
+
+Must work on:
+
+Desktop
+
+Tablet
+
+Mobile
+
+-----------------------------------------
+
+Very important.
+
+=========================================
+
+<<<<0-MOBILE-MODALS+0>>>>
+
+Smaller screens need:
+
+Less Width
+
+Better Spacing
+
+Larger Buttons
+
+=========================================
+
+<<<<0-SCROLLING-INSIDE-MODALS+0>>>>
+
+Large content may require:
+
+Internal Scrolling
+
+-----------------------------------------
+
+Prevents giant modals.
+
+=========================================
+
+<<<<0-ACCESSIBILITY+0>>>>
+
+Users should always know:
+
+How To Open
+
+How To Close
+
+-----------------------------------------
+
+Clarity matters.
+
+=========================================
+
+<<<<0-COMMON-MISTAKES+0>>>>
+
+No Close Button
+
+-----------------------------------------
+NEXT FILE
+*/

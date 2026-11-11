@@ -1,0 +1,524 @@
+/*
+=========================================
+DAY 19 — COLOR PICKING
+=========================================
+
+<<<<0-RGB+0>>>>
+
+RGB stands for:
+
+Red
+Green
+Blue
+
+RGB describes a color by mixing
+different amounts of red, green
+and blue light.
+
+Each value ranges from:
+
+0 → 255
+
+Example:
+
+rgb(255,0,0)
+=
+Red
+
+Modern Alpha Syntax:
+
+rgb(255 0 0 / 0.5)
+
+-----------------------------------------
+
+RGB is useful for exact values,
+but not the easiest system for
+building color palettes.
+
+=========================================
+
+<<<<0-THEME THEORY+0>>>>
+
+A theme is a group of colors that
+look like they belong together.
+
+Bad Theme:
+
+Random blue
+
+Random green
+
+Random red
+
+Random orange
+
+-----------------------------------------
+
+Good Theme:
+
+One dominant color family
+
+Several shades of it
+
+Neutral background
+
+Readable text
+
+-----------------------------------------
+
+A theme usually contains:
+
+Background
+
+Surface
+
+Primary
+
+Accent
+
+Text
+
+-----------------------------------------
+
+Example:
+
+Background
+
+rgb(30,30,30)
+
+Primary
+
+Blue
+
+Accent
+
+Yellow
+
+Text
+
+Light Gray
+
+-----------------------------------------
+
+The fewer unrelated colors used,
+the more professional the design
+usually feels.
+
+=========================================
+
+<<<<0-HSL+0>>>>
+
+HSL stands for:
+
+Hue
+
+Saturation
+
+Lightness
+
+-----------------------------------------
+
+HSL is the best color system
+for humans because it matches
+how humans think about color.
+
+Instead of:
+
+rgb(79,140,255)
+
+you think:
+
+Blue
+
+Very colorful
+
+Medium bright
+
+=========================================
+
+<<<<0-HUE+0>>>>
+
+Hue means:
+
+Which color?
+
+Think of a color wheel.
+
+0°   = Red
+
+60°  = Yellow
+
+120° = Green
+
+180° = Cyan
+
+240° = Blue
+
+300° = Purple
+
+360° = Red
+
+-----------------------------------------
+
+Changing Hue
+
+=
+Changes the color itself
+
+Examples:
+
+hsl(0,100%,50%)
+=
+Red
+
+hsl(120,100%,50%)
+=
+Green
+
+hsl(240,100%,50%)
+=
+Blue
+
+=========================================
+
+<<<<0-SATURATION+0>>>>
+
+Saturation means:
+
+How colorful?
+
+Range:
+
+0% → 100%
+
+-----------------------------------------
+
+100%
+
+=
+Maximum color
+
+-----------------------------------------
+
+50%
+
+=
+Washed color
+
+-----------------------------------------
+
+0%
+
+=
+No color
+
+Gray scale
+
+-----------------------------------------
+
+Examples:
+
+hsl(240,100%,50%)
+=
+Strong Blue
+
+hsl(240,50%,50%)
+=
+Weak Blue
+
+hsl(240,0%,50%)
+=
+Gray
+
+-----------------------------------------
+
+Changing Saturation
+
+=
+Changes color strength
+
+=========================================
+
+<<<<0-LIGHTNESS+0>>>>
+
+Lightness means:
+
+How bright?
+
+Range:
+
+0% → 100%
+
+-----------------------------------------
+
+0%
+
+=
+Black
+
+-----------------------------------------
+
+50%
+
+=
+Normal
+
+-----------------------------------------
+
+100%
+
+=
+White
+
+-----------------------------------------
+
+Examples:
+
+hsl(240,100%,20%)
+=
+Dark Blue
+
+hsl(240,100%,50%)
+=
+Normal Blue
+
+hsl(240,100%,80%)
+=
+Light Blue
+
+-----------------------------------------
+
+Changing Lightness
+
+=
+Changes brightness
+
+=========================================
+
+<<<<0-THE POWER OF HSL+0>>>>
+
+Suppose we choose:
+
+hsl(220,100%,60%)
+
+Nice Blue
+
+-----------------------------------------
+
+Darker:
+
+hsl(220,100%,40%)
+
+-----------------------------------------
+
+Lighter:
+
+hsl(220,100%,80%)
+
+-----------------------------------------
+
+Less Colorful:
+
+hsl(220,50%,60%)
+
+-----------------------------------------
+
+Notice:
+
+Hue never changed
+
+Everything still belongs
+to the same family.
+
+=========================================
+
+<<<<0-BLACK-WHITE-GRAY+0>>>>
+
+Lightness = 0%
+
+=
+Black
+
+-----------------------------------------
+
+Lightness = 100%
+
+=
+White
+
+-----------------------------------------
+
+Saturation = 0%
+
+=
+Gray Scale
+
+-----------------------------------------
+
+Examples:
+
+hsl(0,0%,0%)
+=
+Black
+
+hsl(0,0%,100%)
+=
+White
+
+hsl(0,0%,50%)
+=
+Gray
+
+-----------------------------------------
+
+Important:
+
+When Saturation = 0%
+
+Hue becomes irrelevant.
+
+=========================================
+
+<<<<0-MY-BACKGROUND+0>>>>
+
+rgb(30,30,30)
+
+=
+
+hsl(0,0%,12%)
+
+-----------------------------------------
+
+Saturation = 0%
+
+=
+Gray
+
+-----------------------------------------
+
+Lightness = 12%
+
+=
+Very Dark
+
+=========================================
+
+<<<<0-HSLA+0>>>>
+
+Traditional:
+
+hsla(220,100%,60%,0.5)
+
+-----------------------------------------
+
+Modern:
+
+hsl(220 100% 60% / 0.5)
+
+-----------------------------------------
+
+Alpha
+
+=
+Transparency
+
+Range:
+
+0 → 1
+
+-----------------------------------------
+
+Useful For:
+
+Glows
+
+Focus Rings
+
+Overlays
+
+Shadows
+
+=========================================
+
+<<<<0-COLOR PICKING WORKFLOW+0>>>>
+
+Step 1
+
+Choose a Hue
+
+Example:
+
+220°
+=
+Blue
+
+-----------------------------------------
+
+Step 2
+
+Choose Saturation
+
+80% - 100%
+
+for strong colors
+
+-----------------------------------------
+
+Step 3
+
+Choose Lightness
+
+40%
+=
+Dark
+
+60%
+=
+Normal
+
+80%
+=
+Light
+
+-----------------------------------------
+
+Step 4
+
+Create shades by changing
+only Lightness.
+
+-----------------------------------------
+
+Result:
+
+One color family
+
+Many shades
+
+Professional UI
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Hue
+
+=
+Which color?
+
+-----------------------------------------
+
+Saturation
+
+=
+How colorful?
+
+-----------------------------------------
+
+Lightness
+
+=
+How bright?
+
+=========================================
+*/

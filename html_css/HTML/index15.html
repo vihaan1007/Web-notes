@@ -1,0 +1,801 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 15 NOTES
+FORMS PART 5
+INPUT RESTRICTIONS & CONTROL ATTRIBUTES
+══════════════════════════════════════════════════════════════
+
+Until now:
+
+Users could type data.
+
+Examples:
+
+text
+email
+password
+number
+tel
+date
+
+Problem:
+
+Users can sometimes enter data
+we don't want.
+
+Examples:
+
+Age = 500
+
+Password = a
+
+Username = 500 characters
+
+Negative marks
+
+Wrong values
+
+Today we learn attributes
+that control user input.
+
+New Attributes:
+
+readonly
+disabled
+maxlength
+minlength
+min
+max
+
+══════════════════════════════════════════════════════════════
+READONLY
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+readonly
+
+Purpose:
+
+User can see data.
+
+User can select data.
+
+User can focus data.
+
+User cannot edit data.
+
+Example:
+
+<input
+type="text"
+value="Alex"
+readonly>
+
+Result:
+
+Alex appears.
+
+Cannot be changed.
+
+══════════════════════════════════════════════════════════════
+READONLY BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+User can:
+
+Click
+
+Focus
+
+Select
+
+Copy
+
+User cannot:
+
+Edit
+
+Delete
+
+Change
+
+══════════════════════════════════════════════════════════════
+WHY READONLY EXISTS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+Student Form
+
+Name:
+Editable
+
+Email:
+Editable
+
+Student ID:
+Readonly
+
+Reason:
+
+Student ID should not change.
+
+But user should still see it.
+
+══════════════════════════════════════════════════════════════
+READONLY EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<label>
+
+Student ID
+
+</label>
+
+<input
+type="text"
+value="STU123"
+readonly>
+
+User sees:
+
+STU123
+
+Cannot edit.
+
+══════════════════════════════════════════════════════════════
+ANOTHER READONLY EXAMPLE
+══════════════════════════════════════════════════════════════
+
+Account Number
+
+Employee Code
+
+Registration Number
+
+Order ID
+
+These are commonly readonly.
+
+══════════════════════════════════════════════════════════════
+DISABLED
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+disabled
+
+Purpose:
+
+Completely disables field.
+
+Example:
+
+<input
+type="text"
+disabled>
+
+══════════════════════════════════════════════════════════════
+DISABLED BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+User cannot:
+
+Focus
+
+Select
+
+Type
+
+Interact
+
+Usually appears grey.
+
+══════════════════════════════════════════════════════════════
+DISABLED EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+type="text"
+value="Premium Feature"
+disabled>
+
+Visible.
+
+Unavailable.
+
+══════════════════════════════════════════════════════════════
+WHY DISABLED EXISTS
+══════════════════════════════════════════════════════════════
+
+Sometimes feature exists.
+
+But cannot be used.
+
+Example:
+
+Premium Plan
+
+Feature Locked
+
+Upgrade Required
+
+Temporary Maintenance
+
+Field waits for another choice.
+
+══════════════════════════════════════════════════════════════
+REAL EXAMPLE
+══════════════════════════════════════════════════════════════
+
+Country
+
+State
+
+Initially:
+
+Country not selected.
+
+State field disabled.
+
+After country selected:
+
+JavaScript enables State field.
+
+══════════════════════════════════════════════════════════════
+READONLY VS DISABLED
+══════════════════════════════════════════════════════════════
+
+Readonly:
+
+Visible
+
+Focusable
+
+Selectable
+
+Not editable
+
+Disabled:
+
+Visible
+
+Not focusable
+
+Not selectable
+
+Not editable
+
+Inactive
+
+══════════════════════════════════════════════════════════════
+MEMORY TRICK
+══════════════════════════════════════════════════════════════
+
+Readonly:
+
+Look but don't edit.
+
+Disabled:
+
+Don't touch.
+
+══════════════════════════════════════════════════════════════
+JAVASCRIPT AND DISABLED
+══════════════════════════════════════════════════════════════
+
+HTML:
+
+<input
+id="city"
+disabled>
+
+JavaScript:
+
+city.disabled = false;
+
+Result:
+
+Field becomes usable.
+
+══════════════════════════════════════════════════════════════
+DISABLE USING JAVASCRIPT
+══════════════════════════════════════════════════════════════
+
+city.disabled = true;
+
+Meaning:
+
+Disable field.
+
+══════════════════════════════════════════════════════════════
+ENABLE USING JAVASCRIPT
+══════════════════════════════════════════════════════════════
+
+city.disabled = false;
+
+Meaning:
+
+Enable field.
+
+══════════════════════════════════════════════════════════════
+MAXLENGTH
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+maxlength
+
+Purpose:
+
+Limits maximum characters.
+
+Example:
+
+<input
+type="text"
+maxlength="10">
+
+Maximum:
+
+10 characters.
+
+══════════════════════════════════════════════════════════════
+MAXLENGTH EXAMPLE
+══════════════════════════════════════════════════════════════
+
+Allowed:
+
+abcdefghij
+
+Not Allowed:
+
+abcdefghijk
+
+Reason:
+
+11 characters.
+
+══════════════════════════════════════════════════════════════
+WHY MAXLENGTH EXISTS
+══════════════════════════════════════════════════════════════
+
+Username
+
+PIN
+
+OTP
+
+Short Code
+
+Limited Inputs
+
+══════════════════════════════════════════════════════════════
+PIN EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+type="password"
+maxlength="4">
+
+User cannot exceed 4 characters.
+
+══════════════════════════════════════════════════════════════
+MINLENGTH
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+minlength
+
+Purpose:
+
+Minimum characters required.
+
+Example:
+
+<input
+type="password"
+minlength="8">
+
+User must enter
+at least 8 characters.
+
+══════════════════════════════════════════════════════════════
+MINLENGTH EXAMPLE
+══════════════════════════════════════════════════════════════
+
+Allowed:
+
+password
+
+12345678
+
+Not Allowed:
+
+abc
+
+123
+
+Too short.
+
+══════════════════════════════════════════════════════════════
+WHY MINLENGTH EXISTS
+══════════════════════════════════════════════════════════════
+
+Weak passwords are dangerous.
+
+Example:
+
+a
+
+12
+
+abc
+
+Too short.
+
+Minlength helps improve quality.
+
+══════════════════════════════════════════════════════════════
+MAXLENGTH VS MINLENGTH
+══════════════════════════════════════════════════════════════
+
+maxlength:
+
+Maximum
+
+minlength:
+
+Minimum
+
+Example:
+
+<input
+type="text"
+minlength="4"
+maxlength="12">
+
+Allowed:
+
+4 to 12 characters.
+
+══════════════════════════════════════════════════════════════
+MIN
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+min
+
+Purpose:
+
+Minimum numeric value.
+
+Example:
+
+<input
+type="number"
+min="1">
+
+User cannot enter less than 1.
+
+══════════════════════════════════════════════════════════════
+MIN EXAMPLE
+══════════════════════════════════════════════════════════════
+
+Allowed:
+
+1
+
+2
+
+3
+
+Not Allowed:
+
+0
+
+-1
+
+-50
+
+══════════════════════════════════════════════════════════════
+WHY MIN EXISTS
+══════════════════════════════════════════════════════════════
+
+Age
+
+Marks
+
+Quantity
+
+Ratings
+
+Negative values may not make sense.
+
+══════════════════════════════════════════════════════════════
+MAX
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+max
+
+Purpose:
+
+Maximum numeric value.
+
+Example:
+
+<input
+type="number"
+max="100">
+
+User cannot exceed 100.
+
+══════════════════════════════════════════════════════════════
+MAX EXAMPLE
+══════════════════════════════════════════════════════════════
+
+Allowed:
+
+100
+
+99
+
+50
+
+Not Allowed:
+
+101
+
+200
+
+999
+
+══════════════════════════════════════════════════════════════
+MIN AND MAX TOGETHER
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+type="number"
+min="1"
+max="100">
+
+Allowed:
+
+1 to 100
+
+══════════════════════════════════════════════════════════════
+AGE EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+type="number"
+min="1"
+max="120">
+
+Reason:
+
+Human ages usually
+fall in this range.
+
+══════════════════════════════════════════════════════════════
+MARKS EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<input
+type="number"
+min="0"
+max="100">
+
+Reason:
+
+Exam marks.
+
+══════════════════════════════════════════════════════════════
+IMPORTANT DIFFERENCE
+══════════════════════════════════════════════════════════════
+
+min
+
+max
+
+Control:
+
+Numeric Values
+
+Example:
+
+1 to 100
+
+══════════════════════════════════════════════════════════════
+IMPORTANT DIFFERENCE
+══════════════════════════════════════════════════════════════
+
+minlength
+
+maxlength
+
+Control:
+
+Character Count
+
+Example:
+
+8 to 20 characters
+
+══════════════════════════════════════════════════════════════
+COMMON CONFUSION
+══════════════════════════════════════════════════════════════
+
+Wrong:
+
+maxlength controls number value.
+
+Incorrect.
+
+Example:
+
+maxlength="3"
+
+Allows:
+
+999
+
+123
+
+111
+
+Because it counts characters.
+
+Not value.
+
+══════════════════════════════════════════════════════════════
+COMBINING ATTRIBUTES
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+type="password"
+required
+minlength="8"
+maxlength="20">
+
+Rules:
+
+Cannot be empty.
+
+Minimum 8 characters.
+
+Maximum 20 characters.
+
+══════════════════════════════════════════════════════════════
+ANOTHER COMBINATION
+══════════════════════════════════════════════════════════════
+
+<input
+type="number"
+required
+min="1"
+max="100">
+
+Rules:
+
+Cannot be empty.
+
+Must be between 1 and 100.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKES
+══════════════════════════════════════════════════════════════
+
+Mistake 1
+
+Confusing readonly
+with disabled.
+
+Mistake 2
+
+Confusing min
+with minlength.
+
+Mistake 3
+
+Confusing max
+with maxlength.
+
+Mistake 4
+
+Thinking maxlength
+controls numeric value.
+
+══════════════════════════════════════════════════════════════
+DAY 15 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+readonly
+
+disabled
+
+maxlength
+
+minlength
+
+min
+
+max
+
+══════════════════════════════════════════════════════════════
+DAY 15 SUMMARY
+══════════════════════════════════════════════════════════════
+
+readonly
+
+Visible
+
+Selectable
+
+Not editable
+
+disabled
+
+Visible
+
+Inactive
+
+maxlength
+
+Maximum characters
+
+minlength
+
+Minimum characters
+
+min
+
+Minimum numeric value
+
+max
+
+Maximum numeric value
+
+Big Idea:
+
+Not every input should
+accept unlimited data.
+
+HTML provides attributes
+to control user input.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 15
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15</title>
+</head>
+<body>
+    <form>
+        <input type = "text" value = "Nothing" readonly>
+        <label for = "nickname">Nickname</label>
+        <input type = "text" id = "nickname" minlength="3" maxlength="15">
+        <label for = "age">Age</label>
+        <input type = "number" id = "age" min = "5" max = "124">
+        <label for = "pass">Password</label>
+        <input type = "password" id = "pass" minlength="1" maxlength="10" required>
+        <label for = "phone">Phone number</label>
+        <input type = "tel" id = "phone" minlength="1" maxlength="10" disabled>
+    </form>
+</body>
+</html>

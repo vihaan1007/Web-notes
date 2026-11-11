@@ -1,0 +1,411 @@
+/*Cascade Style Sheet*/
+/*Level 1*/
+/*Tag name*/
+header {
+    color: rgb(45, 153, 72);
+    /*Sets the text color*/
+}
+
+/*{}is a selector of a file*/
+
+p {
+    color: red;
+}
+
+form {
+    color: rgba(240, 5, 5, 0.884);
+}
+
+button {
+    color: brown;
+    background-color: greenyellow;
+    /*Sets the background-color*/
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+hr {
+    color: green;
+}
+
+custom {
+    color: aqua;
+    text-align : center;/*Used for aligning text to left / right / center to the respect of the parent*/
+}
+
+ul {
+    color: burlywood;
+}
+
+ol {
+    color: pink;
+}
+
+table {
+    color: aquamarine;
+}
+
+custom2 {
+    color: blueviolet;
+}
+
+footer {
+    color: pink;
+}
+
+select {
+    background-color: rgb(200, 225, 0);
+}
+
+textarea {
+    background-color: palegreen;
+}
+
+custom3 {
+    color: rgb(225, 225, 0);
+}
+
+div {
+    background-color: rgb(100, 200, 25);
+}
+
+big {
+    color: aquamarine;
+}
+
+small {
+    color: rgb(0, 224, 224);
+}
+
+/**{};Universal selector selects the full html document*/
+/*#id{} selects through id*/
+
+#r1 {
+    color: rgb(100,220,22);
+}
+
+#r2 {
+    color:coral;
+}
+
+#math {
+    color:cornflowerblue;
+}
+
+#phy {
+    color: rgb(32, 50, 225);
+}
+
+#chem {
+    color: rgba(240, 5, 5, 0.900);
+}
+
+#bio {
+    color: rgb(0,224,224);
+}
+
+/* .class{} is a class selector it selects the class  can make a class using the class attr. */
+
+#h4 {
+    text-decoration: overline;
+    font-weight: normal;/* decides how dark is the text */
+}
+
+#h5 {
+    text-decoration : line-through;
+}
+
+#h6 {
+    text-decoration: underline;/*Can be done through html as a tag- <u>*/
+}
+
+#h1 {
+    font-weight: bolder;
+    font-family: arial;/*Font family*/
+    text-transform: capitalize;/*Case*/   
+}
+
+#h2 {
+    font-weight: bold;
+}
+
+#h3 {
+    font-weight: lighter;/*Any number from 100-900 going from light to dark*/
+}
+
+#Ipsum{
+    color: rgb(100, 100, 225);
+}
+/*Absolute Units*/
+/*96px = 1inch = 2.54cm*/
+
+#h3 {
+    font-size: 40px;    
+}
+
+#h2 {
+    font-size: 96px;/*For text-size*/
+}
+
+#h5 {
+    line-height: 50px;/*For line-height*/
+}
+
+/*Level 2*/
+/*These are just hacks*/
+
+/*Box components
+Height
+of the content
+Width
+of the content
+Content
+is content
+Padding
+is the length between content and borders
+Border
+of the box
+Margin
+between two boxes*/
+
+/*Height and Widht*/
+div{
+    height: 100px;/*To the content*/
+    width: 500px;/*Infinite by default*/
+}    
+
+/*Border*/
+
+div{
+    border-width: 10px;/*width*/
+    border-style: solid;/*dotted or dashed style*/
+    border-color: rgb(200, 225, 000);
+    border-radius: 15px;/*Rounded corners*/
+}
+/*Trick-*/
+/*Make width and height same and assign border-radius as 50% to make a circle*/
+#circle {
+    height: 100px;
+    Width: 100px;
+    border: 5px solid yellowgreen;
+    border-radius: 50%;
+}
+/*For texts if you give it a height and width and then text-align-it it will be in the center of the box / border*/
+/*Shorthand*/
+div{
+    border: 10px solid rgb(200, 225, 0);/*width, style and color all in one pack*/
+}
+
+/*padding*/
+div{
+    padding: 25px 25px 25px 25px;/*For all sides in the pattern top, right, bottom, left- TRBL a shorthand*/
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;/*For each side*/
+}
+
+/*Margin*/
+div{
+    margin: 25px 25px 25px 25px;/*For all sides same as padding a shorthand*/
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;/*For each side*/
+}
+
+/*display*/
+
+/*Inline takes the space requires no padding no margin like span*/
+/*block takes full space in width like div*/ 
+/*Inline-block similar to Inline but cant set margin and padding*/
+/*None*/
+
+/*You can set display to change inline/ block/ etc.*/
+
+/*RGBA red green blue ALPHA(sets the opacity from 0 to 1)*/
+
+/*LEVEL 3*/
+
+
+/*Units*/
+/*Absolute:
+    cm
+    mm
+    inch
+    px
+they stay same on all devices*/
+
+/*Relative:
+    %
+    em
+    rem
+they change on different devices*/
+
+/*% changes on the parent*/
+#paobye{
+    height: 100px;
+    font-size: 5rem;/*of the root tag; the outermost tag which in this case is body whose font-size is 16px it multiplies it*/
+}
+
+#Bye{
+    height: 20%;/*of the parent in this case it is paobye*/
+    font-size: 2em;/*of the parent em just multiplies it*/
+}
+
+#h1{
+    position: static;
+}
+
+#h2{
+    position: relative;
+    top: 20px;
+    bottom: 10px;
+    right: 20px;
+    left: 10px;
+}
+
+#h3{
+    position: absolute;/*to the parent tag which is custom*/
+    top: 10px;
+    right: 20px;
+}
+
+custom{
+    position: relative;
+}
+
+#h4{
+    position:fixed;/*To the user*/
+}
+
+#h5{
+    position:sticky;/*becomes fixed when you scroll away*/
+}
+
+/*z-index decides the priority of who will come on top in overlapping the bigger it is the more the priority is the smaller it is the smaller its priority is it can be from -infinite to infinite*/
+
+#cat{
+    background-image: url(data:image/jpeg;base64,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);
+    height: 200px;
+    width: 200px;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-size: contain;/*cover covers in one photo contain just takes it and pastes it and leaves empty space which is again filled by contain if required */
+}
+
+/*LEVEL 4*/
+
+
+#Flexbox{
+    text-align: center;
+}
+
+#BOX{
+    height: 150px;
+    width: 800px;
+    display:flex;/*For a flexbox*/
+    padding: 0px 0px 0px 0px;
+    flex-direction:row;/*IT MEANS MAIN AXIS- row will take it to left to right and row reverse will take it to right to left column takes it to right to left and column takes it to top to bottom and column-reverse takes it to bottom to top*/
+    justify-content: center;/*start will take it to the start of main axis  and end will take it to the end of main axis and center is center*/
+    flex-wrap: nowrap;/*control wrap*/
+    align-items: center;
+    align-content: center;/*Control space between 2 wrapped items*/ 
+}
+
+.Flexb{
+    height: 50px;
+    width: 50px;
+    background-color: slateblue;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+}
+
+#Flexible{
+    color: whitesmoke;
+}
+
+@media(width: 1024px) {/*width of the screen*/
+    div{
+        background-color: rgb(100, 100, 225);
+    }
+}
+
+@media(min-height: 932px) {/*minimum height and max for maximum*/
+    div{
+        background-color: rgb(225, 100, 100);
+    }
+}
+
+@media(min-width: 700px)and(max-width: 1000px) {/*for two statements*/
+    div{
+        background-color: #58ffd9;
+    }
+}
+
+/*Level 5*/
+
+/*Finally Time for Advanced CSS*/
+
+#cat{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: steps(5);/*cubic, ease-in, etc*/
+    transition-delay: 1s;
+}
+
+/*Shorthand*/
+
+#cat{
+    transition: all 1s steps(5) 1s;/*property, duration, timing-function, delay*/
+}
+
+#cat:hover{/*hover*/
+    background-image: url(cat_scary.jfif);
+    height: 50px;
+}
+
+#cat:active{/*click and hold*/
+    background-image: url(cat_cute.jfif);
+}
+
+#BOX{   
+    transform: rotate(45deg);/*Use X, Z and Y for rotating on specific axis*/
+    transform: scale(0.5);/*if 1 then for all else it is X Y and it multiplies the size to get a new size*/
+    transition: all 1s ease-in 0s;
+}
+
+#BOX:hover{
+    transform: translateX(120px);
+}
+
+/*Animation*/
+
+#animation{
+    /*animation-name: move;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;*/
+    animation: move 3s ease-in 0s 2 reverse;/*shorthand- name, direction, timing-funcion, delay, iteration-count, direction*/
+}
+
+@keyframes move{
+    from{left:0px;}
+    to{left: 300px;}
+}/*Template*/
+
+#pass{
+    color: rgba(255, 0, 0, 0);
+}

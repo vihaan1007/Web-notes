@@ -1,0 +1,462 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 2 - HEADINGS, PARAGRAPHS, BR & HR
+══════════════════════════════════════════════════════════════
+
+Goal:
+Learn how browsers handle text content and understand
+the semantic meaning of text-related HTML tags.
+
+══════════════════════════════════════════════════════════════
+HEADINGS
+══════════════════════════════════════════════════════════════
+
+Available Heading Levels:
+
+h1
+h2
+h3
+h4
+h5
+h6
+
+Importance decreases as number increases.
+
+Think:
+
+Book Title     = h1
+Chapter        = h2
+Section        = h3
+Subsection     = h4
+
+Headings are NOT for making text big.
+
+Headings are for defining document structure.
+
+CSS controls appearance.
+
+HTML controls meaning.
+
+══════════════════════════════════════════════════════════════
+H1 TAG
+══════════════════════════════════════════════════════════════
+
+h1 is the highest level heading.
+
+Purpose:
+
+- Main topic of page
+- Document hierarchy
+- Accessibility
+- Search engine understanding
+
+Example Meaning:
+
+"This is the most important heading on this page."
+
+Important:
+
+h1 does NOT mean:
+
+"Make this text large."
+
+That is CSS's job.
+
+══════════════════════════════════════════════════════════════
+HEADING HIERARCHY
+══════════════════════════════════════════════════════════════
+
+Good:
+
+h1
+ └── h2
+      └── h3
+
+Example:
+
+HTML Course
+|
+|-- Introduction
+|
+|-- Forms
+    |
+    |-- Input Types
+    |
+    |-- Validation
+
+Logical structure helps:
+
+- Search engines
+- Screen readers
+- Developers
+
+══════════════════════════════════════════════════════════════
+SKIPPING HEADING LEVELS
+══════════════════════════════════════════════════════════════
+
+Bad Structure:
+
+h1
+
+h4
+
+h2
+
+The browser allows it.
+
+The browser does not care.
+
+Humans and accessibility tools do care.
+
+Prefer logical progression.
+
+══════════════════════════════════════════════════════════════
+SEO AND HEADINGS
+══════════════════════════════════════════════════════════════
+
+Search engines use headings to understand content.
+
+A meaningful heading structure helps:
+
+- Content discovery
+- Topic understanding
+- Search ranking signals
+
+Remember:
+
+Good headings help SEO.
+
+Headings alone do not guarantee SEO.
+
+══════════════════════════════════════════════════════════════
+PARAGRAPHS
+══════════════════════════════════════════════════════════════
+
+Paragraph Tag:
+
+p
+
+Purpose:
+
+Represents a block of text.
+
+Examples:
+
+Articles
+Blogs
+Descriptions
+Instructions
+
+Paragraphs naturally create separation.
+
+══════════════════════════════════════════════════════════════
+PARAGRAPH BEHAVIOR
+══════════════════════════════════════════════════════════════
+
+Two paragraphs:
+
+Paragraph 1
+
+Paragraph 2
+
+appear as separate blocks.
+
+The browser automatically separates them.
+
+No br tags needed.
+
+══════════════════════════════════════════════════════════════
+WHITESPACE COLLAPSING
+══════════════════════════════════════════════════════════════
+
+One of the most important browser behaviors.
+
+The browser collapses:
+
+- Multiple spaces
+- Multiple tabs
+- Multiple line breaks
+
+into a single space.
+
+Example:
+
+Hello          World
+
+Becomes:
+
+Hello World
+
+══════════════════════════════════════════════════════════════
+MULTIPLE LINE BREAKS IN CODE
+══════════════════════════════════════════════════════════════
+
+Code may contain:
+
+Hello
+
+
+World
+
+Browser output becomes:
+
+Hello World
+
+Extra empty lines are collapsed.
+
+══════════════════════════════════════════════════════════════
+LINE BREAK TAG
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+br
+
+Purpose:
+
+Force content onto a new line.
+
+Example Output:
+
+Line 1
+Line 2
+
+A br creates a line break.
+
+══════════════════════════════════════════════════════════════
+GOOD USES OF BR
+══════════════════════════════════════════════════════════════
+
+Addresses
+
+Poems
+
+Song lyrics
+
+Postal information
+
+Example:
+
+Shop No. 10
+Main Road
+Jabalpur
+
+Each line has meaning.
+
+══════════════════════════════════════════════════════════════
+BAD USES OF BR
+══════════════════════════════════════════════════════════════
+
+Bad:
+
+Using many br tags to create spacing.
+
+Example Idea:
+
+br
+br
+br
+br
+br
+
+Problems:
+
+- Poor maintainability
+- Poor responsiveness
+- Mixing HTML and CSS roles
+- Harder to control spacing
+
+══════════════════════════════════════════════════════════════
+CSS VS BR
+══════════════════════════════════════════════════════════════
+
+HTML Role:
+
+Structure
+
+CSS Role:
+
+Presentation
+
+Spacing should usually be handled with:
+
+margin
+padding
+gap
+
+Advanced CSS tools:
+
+rem
+em
+vw
+vh
+%
+calc()
+clamp()
+
+Use CSS for layout.
+
+Use br for line breaks.
+
+══════════════════════════════════════════════════════════════
+HORIZONTAL RULE
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+hr
+
+Most people think:
+
+hr = line
+
+Real meaning:
+
+A thematic break.
+
+A change in topic.
+
+A change in section.
+
+══════════════════════════════════════════════════════════════
+EXAMPLE OF HR
+══════════════════════════════════════════════════════════════
+
+Topic A
+
+hr
+
+Topic B
+
+The browser usually draws a horizontal line.
+
+The line is the visual representation.
+
+The semantic meaning is:
+
+"The topic changed."
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKES
+══════════════════════════════════════════════════════════════
+
+Mistake 1:
+
+Using h1 because it looks big.
+
+Correct:
+
+Use CSS for size.
+
+Use headings for hierarchy.
+
+Mistake 2:
+
+Using many br tags for spacing.
+
+Correct:
+
+Use CSS margin and padding.
+
+Mistake 3:
+
+Skipping heading levels.
+
+Correct:
+
+Maintain logical structure.
+
+Mistake 4:
+
+Ignoring semantic meaning.
+
+Correct:
+
+Think about meaning first.
+
+══════════════════════════════════════════════════════════════
+HTML + CSS + JS THINKING
+══════════════════════════════════════════════════════════════
+
+Beginner:
+
+h1 = big text
+
+Developer:
+
+h1 = important heading
+
+Beginner:
+
+br = spacing
+
+Developer:
+
+CSS handles spacing
+
+Beginner:
+
+Page looks correct
+
+Developer:
+
+SEO
+Accessibility
+Maintainability
+Performance
+
+══════════════════════════════════════════════════════════════
+DAY 2 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+Heading
+Hierarchy
+h1
+h2
+h3
+Paragraph
+Whitespace
+Whitespace Collapsing
+Line Break
+br
+Horizontal Rule
+hr
+Semantic HTML
+SEO
+Accessibility
+
+══════════════════════════════════════════════════════════════
+DAY 2 SUMMARY
+══════════════════════════════════════════════════════════════
+
+Headings define structure.
+
+Headings are not for styling.
+
+Paragraphs represent text blocks.
+
+Browsers collapse extra whitespace.
+
+br creates a line break.
+
+br should not be used for layout spacing.
+
+CSS should control spacing.
+
+hr represents a thematic break.
+
+Semantic HTML helps:
+
+- SEO
+- Accessibility
+- Maintainability
+
+Always think:
+
+Meaning first.
+Appearance second.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 2
+══════════════════════════════════════════════════════════════
+-->

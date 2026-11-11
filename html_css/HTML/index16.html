@@ -1,0 +1,816 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 16 NOTES
+FORMS PART 6
+checked, selected, multiple
+══════════════════════════════════════════════════════════════
+
+Until now we learned:
+
+text
+password
+email
+number
+tel
+date
+
+label
+input
+textarea
+select
+option
+
+required
+readonly
+disabled
+
+maxlength
+minlength
+
+min
+max
+
+Today we learn how HTML can make
+choices BEFORE the user touches
+the form.
+
+New attributes:
+
+checked
+selected
+multiple
+
+══════════════════════════════════════════════════════════════
+THE BIG IDEA
+══════════════════════════════════════════════════════════════
+
+Usually:
+
+User opens page.
+
+Everything starts empty.
+
+User makes choices.
+
+But sometimes:
+
+We already know a reasonable choice.
+
+HTML can pre-select it.
+
+Examples:
+
+Country = India
+
+Gender = Male
+
+Newsletter = Yes
+
+Language = English
+
+This is where checked and selected
+become useful.
+
+══════════════════════════════════════════════════════════════
+CHECKED
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+checked
+
+Purpose:
+
+Starts a radio button
+or checkbox selected.
+
+Example:
+
+<input
+type="checkbox"
+checked>
+
+Result:
+
+Checkbox already contains a tick.
+
+══════════════════════════════════════════════════════════════
+CHECKED WITH CHECKBOX
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<label>
+
+Cricket
+
+</label>
+
+<input
+type="checkbox"
+checked>
+
+Result:
+
+Cricket starts selected.
+
+User can still remove the tick.
+
+══════════════════════════════════════════════════════════════
+ANOTHER CHECKBOX EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<label>
+
+Receive Newsletter
+
+</label>
+
+<input
+type="checkbox"
+checked>
+
+Result:
+
+Newsletter option starts enabled.
+
+══════════════════════════════════════════════════════════════
+WHY CHECKED EXISTS
+══════════════════════════════════════════════════════════════
+
+Sometimes most users choose
+the same thing.
+
+Instead of forcing everyone
+to click:
+
+HTML can start with it selected.
+
+Example:
+
+Remember Me
+
+Accept Terms
+
+Receive Updates
+
+══════════════════════════════════════════════════════════════
+CHECKED WITH RADIO BUTTONS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<label>
+
+Male
+
+</label>
+
+<input
+type="radio"
+name="gender"
+checked>
+
+<label>
+
+Female
+
+</label>
+
+<input
+type="radio"
+name="gender">
+
+Result:
+
+Male starts selected.
+
+══════════════════════════════════════════════════════════════
+RADIO BUTTON RULE
+══════════════════════════════════════════════════════════════
+
+Radio buttons with the same name
+form a group.
+
+Example:
+
+Male
+
+Female
+
+Other
+
+Only one may be selected.
+
+If one is selected:
+
+Others are deselected.
+
+══════════════════════════════════════════════════════════════
+CHECKED AND RADIO GROUPS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+Male checked
+
+Female unchecked
+
+Other unchecked
+
+Page loads:
+
+Male selected.
+
+══════════════════════════════════════════════════════════════
+WHAT IF MULTIPLE RADIOS
+ARE CHECKED?
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<input
+type="radio"
+checked>
+
+<input
+type="radio"
+checked>
+
+Browser normally keeps only one.
+
+Avoid this.
+
+Use checked once.
+
+══════════════════════════════════════════════════════════════
+CHECKED SUMMARY
+══════════════════════════════════════════════════════════════
+
+Works on:
+
+checkbox
+
+radio
+
+Purpose:
+
+Starts selected.
+
+══════════════════════════════════════════════════════════════
+SELECTED
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+selected
+
+Purpose:
+
+Pre-selects an option
+inside a dropdown.
+
+══════════════════════════════════════════════════════════════
+SELECT EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<select>
+
+<option>
+
+India
+
+</option>
+
+<option selected>
+
+Japan
+
+</option>
+
+<option>
+
+USA
+
+</option>
+
+</select>
+
+Result:
+
+Japan appears immediately.
+
+══════════════════════════════════════════════════════════════
+WHAT IS ACTUALLY SELECTED?
+══════════════════════════════════════════════════════════════
+
+Important:
+
+selected belongs to:
+
+<option>
+
+NOT:
+
+<select>
+
+Correct:
+
+<option selected>
+
+Wrong:
+
+<select selected>
+
+══════════════════════════════════════════════════════════════
+WHY SELECTED EXISTS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+School in India.
+
+Most users choose India.
+
+Instead of:
+
+Click
+Open menu
+Find India
+
+HTML already chooses it.
+
+══════════════════════════════════════════════════════════════
+COUNTRY EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<select>
+
+<option selected>
+
+India
+
+</option>
+
+<option>
+
+USA
+
+</option>
+
+<option>
+
+Japan
+
+</option>
+
+</select>
+
+Result:
+
+India appears first.
+
+══════════════════════════════════════════════════════════════
+ANOTHER EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<select>
+
+<option>
+
+Windows
+
+</option>
+
+<option selected>
+
+Linux
+
+</option>
+
+<option>
+
+MacOS
+
+</option>
+
+</select>
+
+Result:
+
+Linux is chosen.
+
+══════════════════════════════════════════════════════════════
+SELECTED SUMMARY
+══════════════════════════════════════════════════════════════
+
+Works on:
+
+option
+
+Purpose:
+
+Starts selected.
+
+══════════════════════════════════════════════════════════════
+CHECKED VS SELECTED
+══════════════════════════════════════════════════════════════
+
+checked
+
+Used for:
+
+radio
+checkbox
+
+selected
+
+Used for:
+
+option
+
+Dropdowns
+
+══════════════════════════════════════════════════════════════
+MEMORY TRICK
+══════════════════════════════════════════════════════════════
+
+checked
+
+Ticked circle
+or box.
+
+selected
+
+Chosen option
+inside menu.
+
+══════════════════════════════════════════════════════════════
+MULTIPLE
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+multiple
+
+Purpose:
+
+Allows many selections.
+
+══════════════════════════════════════════════════════════════
+NORMAL SELECT
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<select>
+
+<option>
+
+HTML
+
+</option>
+
+<option>
+
+CSS
+
+</option>
+
+<option>
+
+JavaScript
+
+</option>
+
+</select>
+
+Result:
+
+Only one choice.
+
+══════════════════════════════════════════════════════════════
+MULTIPLE SELECT
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<select multiple>
+
+<option>
+
+HTML
+
+</option>
+
+<option>
+
+CSS
+
+</option>
+
+<option>
+
+JavaScript
+
+</option>
+
+</select>
+
+Result:
+
+Many choices possible.
+
+══════════════════════════════════════════════════════════════
+WHY MULTIPLE EXISTS
+══════════════════════════════════════════════════════════════
+
+Some questions need
+more than one answer.
+
+Example:
+
+Languages Known
+
+Hindi
+
+English
+
+French
+
+German
+
+User may know:
+
+Hindi and English.
+
+One answer is not enough.
+
+══════════════════════════════════════════════════════════════
+SKILLS EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<select multiple>
+
+<option>
+
+HTML
+
+</option>
+
+<option>
+
+CSS
+
+</option>
+
+<option>
+
+JavaScript
+
+</option>
+
+<option>
+
+Python
+
+</option>
+
+</select>
+
+Result:
+
+Several skills can be selected.
+
+══════════════════════════════════════════════════════════════
+MULTIPLE DOES NOT BELONG TO
+RADIO BUTTONS
+══════════════════════════════════════════════════════════════
+
+Wrong thinking:
+
+multiple on radio.
+
+Radio already allows:
+
+ONE choice.
+
+Use:
+
+checkboxes
+
+or
+
+select multiple
+
+══════════════════════════════════════════════════════════════
+MULTIPLE AND SELECTED
+══════════════════════════════════════════════════════════════
+
+Can be combined.
+
+Example:
+
+<select multiple>
+
+<option selected>
+
+HTML
+
+</option>
+
+<option selected>
+
+CSS
+
+</option>
+
+<option>
+
+JavaScript
+
+</option>
+
+</select>
+
+Result:
+
+HTML selected.
+
+CSS selected.
+
+User can add more.
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 1
+══════════════════════════════════════════════════════════════
+
+<option checked>
+
+India
+
+</option>
+
+Wrong.
+
+Option uses:
+
+selected
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 2
+══════════════════════════════════════════════════════════════
+
+<input
+type="radio"
+selected>
+
+Wrong.
+
+Radio uses:
+
+checked
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 3
+══════════════════════════════════════════════════════════════
+
+Thinking multiple
+means multiple radios.
+
+Wrong.
+
+multiple belongs to:
+
+select
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE 4
+══════════════════════════════════════════════════════════════
+
+Thinking checked
+works on dropdowns.
+
+Wrong.
+
+Dropdowns use:
+
+selected
+
+══════════════════════════════════════════════════════════════
+REAL WORLD EXAMPLES
+══════════════════════════════════════════════════════════════
+
+Remember Me
+
+checked
+
+Country
+
+selected
+
+Skills
+
+multiple
+
+══════════════════════════════════════════════════════════════
+KEYWORDS
+══════════════════════════════════════════════════════════════
+
+checked
+
+selected
+
+multiple
+
+══════════════════════════════════════════════════════════════
+DAY 16 SUMMARY
+══════════════════════════════════════════════════════════════
+
+checked
+
+Used on:
+
+radio
+checkbox
+
+Starts selected.
+
+selected
+
+Used on:
+
+option
+
+Starts selected.
+
+multiple
+
+Used on:
+
+select
+
+Allows many selections.
+
+Big Idea:
+
+HTML can choose defaults
+before the user interacts.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 16
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16</title>
+</head>
+<body>
+    <form>
+        <input type = "text" value = "Gender" readonly>
+        <br />
+        <label for = "male">Male</label>
+        <input id = "male" type = "radio" checked>
+        <br />
+        <label for = "female">Female</label>
+        <input id = "female" type = "radio">
+        <br />
+        <label for = "other">Others</label>
+        <input id = "other" type = "radio">
+        <br />
+        <input type = "text" value = "Sports" readonly>
+        <br />
+        <label for = "cricket">Cricket</label>
+        <input type = "checkbox" id = "cricket" checked>
+        <br />
+        <label for = "football">Football</label>
+        <input type = "checkbox" id = "football">
+        <br />
+        <label for = "chess">Chess</label>
+        <input type = "checkbox" id = "chess">
+        <br />
+        <input type = "text" value = "Country" readonly>
+        <br />
+        <select>
+            <option>India</option>
+            <option selected>Japan</option>
+            <option>USA</option>
+        </select>
+        <br />
+        <input type = "text" value = "Skills" readonly>
+        <br />
+        <select multiple>
+            <option selected>HTML</option>
+            <option selected>CSS</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select>
+        <br />
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,534 @@
+/*==================
+         DAY 5
+====================*/
+
+/*
+DISPLAY
+
+Display controls how an element behaves in the layout.
+
+Think:
+
+"How should this element behave?"
+*/
+
+/*
+THE BIG 5
+
+display: block;
+display: inline;
+display: inline-block;
+display: none;
+display: flex;
+
+Flex is a separate topic later.
+*/
+
+/*
+1. BLOCK
+
+Common examples:
+
+<div>
+<h1>
+<p>
+<section>
+
+Behavior:
+
+- Starts on a new line
+- Takes full available width
+- Width works
+- Height works
+
+Example:
+
+display: block;
+*/
+
+/*
+2. INLINE
+
+Common examples:
+
+<span>
+<a>
+<strong>
+
+Behavior:
+
+- Stays on same line
+- Takes only needed space
+- Width does NOT work
+- Height does NOT work
+
+Example:
+
+display: inline;
+*/
+
+/*
+3. INLINE-BLOCK
+
+Hybrid of block and inline.
+
+Behavior:
+
+- Stays on same line
+- Width works
+- Height works
+
+Example:
+
+display: inline-block;
+
+Very common for:
+
+- Buttons
+- Navigation links
+- Small cards
+*/
+
+/*
+4. NONE
+
+Behavior:
+
+- Element disappears
+- Element is removed from layout
+- Browser acts like it does not exist
+
+Example:
+
+display: none;
+
+Other elements move into its space.
+*/
+
+/*
+DISPLAY VS VISIBILITY
+
+display: none;
+
+- Invisible
+- No space kept
+
+visibility: hidden;
+
+- Invisible
+- Space still kept
+
+Think:
+
+display: none;
+= Gone
+
+visibility: hidden;
+= Invisible ghost
+*/
+
+/*
+COMPARISON
+
+BLOCK
+
+- New line      : YES
+- Width works   : YES
+- Height works  : YES
+
+INLINE
+
+- New line      : NO
+- Width works   : NO
+- Height works  : NO
+
+INLINE-BLOCK
+
+- New line      : NO
+- Width works   : YES
+- Height works  : YES
+
+NONE
+
+- Removed completely
+*/
+
+/*
+COMMON BUG
+
+span{
+    width:200px;
+}
+
+Why doesn't it work?
+
+Because span is inline by default.
+
+Fix:
+
+span{
+    display:inline-block;
+    width:200px;
+}
+*/
+
+/*
+MEMORY TRICKS
+
+block
+= Own line
+
+inline
+= Same line
+
+inline-block
+= Same line + width/height
+
+none
+= Gone
+*/
+
+/*==================
+         DAY 6
+====================*/
+
+/*
+POSITION
+
+Position controls where an element is placed.
+
+The 5 values:
+
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+*/
+
+/*
+1. STATIC (default)
+
+Every element starts as static.
+
+Behavior:
+
+- Normal document flow
+- top, right, bottom, left do NOT work
+
+Example:
+
+position: static;
+*/
+
+/*
+2. RELATIVE
+
+Moves relative to its ORIGINAL position.
+
+Example:
+
+position: relative;
+left: 50px;
+
+The element moves 50px right.
+
+IMPORTANT:
+
+The original space is still reserved.
+
+Think:
+
+"Move me from where I started."
+*/
+
+/*
+3. ABSOLUTE
+
+Removes element from normal flow.
+
+Example:
+
+position: absolute;
+top: 0;
+right: 0;
+
+Behavior:
+
+- Original space disappears
+- Other elements act like it isn't there
+- Positioned using nearest positioned ancestor
+
+Think:
+
+"Teleport me."
+*/
+
+/*
+4. FIXED
+
+Sticks to the screen.
+
+Example:
+
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+Behavior:
+
+- Stays in same screen position
+- Does not move when scrolling
+
+Common uses:
+
+- Chat button
+- Back to top button
+*/
+
+/*
+5. STICKY
+
+Starts normal.
+
+Becomes fixed-like when scrolling reaches it.
+
+Example:
+
+position: sticky;
+top: 0;
+
+Common uses:
+
+- Navigation bars
+- Table headers
+*/
+
+/*
+TOP RIGHT BOTTOM LEFT
+
+Used with positioned elements.
+
+top
+right
+bottom
+left
+
+Example:
+
+position: relative;
+top: 20px;
+left: 10px;
+
+Result:
+
+20px down
+10px right
+*/
+
+/*
+COMPARISON
+
+STATIC
+- Normal flow
+- Default
+
+RELATIVE
+- Normal flow
+- Original space kept
+
+ABSOLUTE
+- Leaves normal flow
+- Original space removed
+
+FIXED
+- Leaves normal flow
+- Glued to screen
+
+STICKY
+- Normal at first
+- Glued while scrolling
+*/
+
+/*
+MEMORY TRICKS
+
+static
+= default
+
+relative
+= move from original place
+
+absolute
+= teleport
+
+fixed
+= glued to screen
+
+sticky
+= sticks while scrolling
+*/
+
+/*==================
+       DAY 7
+ FLEXBOX PART 1
+====================
+
+FLEXBOX
+
+Used to arrange items inside a container.
+
+Before Flexbox:
+
+- inline-block
+- float
+- position tricks
+
+Flexbox made layouts easier.
+*/
+
+/*
+CREATE FLEX CONTAINER
+
+display: flex;
+
+Example:
+
+.container{
+    display: flex;
+}
+
+FLEX CONTAINER
+
+The parent.
+
+Example:
+
+<div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+
+display:flex;
+= make flex container
+
+children
+= flex items
+
+main axis
+= flex-direction direction
+
+cross axis
+= perpendicular
+
+/*
+justify-content
+
+Moves items ALONG the flex-direction.
+
+row    -> left/right
+column -> up/down
+
+MAIN AXIS
+
+align-items
+
+Moves items ACROSS the flex-direction.
+row    -> up/down
+column -> left/right
+
+CROSS AXIS
+
+row
+= 1 2 3
+
+row-reverse
+= 3 2 1
+
+column
+= 
+1
+2
+3
+
+column-reverse
+=
+3
+2
+1
+*/
+
+/*==================
+       DAY 8
+ FLEXBOX PART 2
+====================
+
+flex-wrap
+
+Controls whether items stay
+on one line or move to
+the next line.
+
+nowrap
+= default
+
+wrap
+= move to next line if needed
+
+wrap-reverse
+= wrap in reverse direction
+
+------------------
+
+gap
+
+Space between flex items.
+
+gap: 20px;
+
+------------------
+
+row-gap
+
+Space between rows.
+
+row-gap: 20px;
+
+------------------
+
+column-gap
+
+Space between columns.
+
+column-gap: 20px;
+
+------------------
+
+align-content
+
+Works only when there are
+multiple rows or columns.
+
+Controls spacing between
+those rows/columns.
+
+Values:
+
+flex-start
+center
+flex-end
+space-between
+space-around
+space-evenly
+
+------------------
+
+REMEMBER
+
+align-items
+= items
+
+align-content
+= rows/columns
+*/

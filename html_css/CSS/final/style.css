@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+:root{
+    --Color: whitesmoke;
+    --BackgroundColor: rgb(60, 60, 60);
+}
+
+#a{
+    height: 10rem;
+    width: 10rem;
+    border: 1px dotted crimson;
+    position: relative;
+    background-color: var(--BackgroundColor);
+}
+
+#light{
+    position: absolute;
+    top: 10px;
+    transition: 0.3s;
+}
+
+#dark{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.3s;
+}
+
+#pa{
+    position: absolute;
+    top: 25px;
+    color: var(--Color);
+}
+
+#light:active{
+    transform: scale(0.9);
+}
+
+#dark:active{
+    transform: scale(0.9);
+}
+
+#b{
+    height: 7.5rem;
+    width: 7.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: conic-gradient(red, yellow, green, cyan, blue, magenta, red)    ;
+    box-shadow: 10px 5px 5px white;
+    transition: 0.3s;
+}
+
+#b:active{
+    transform: scale(0.9);
+}
+
+#b:hover{
+    transform: translateY(-10px) scale(0.9);
+    box-shadow: 5px 10px 10px orchid;
+}

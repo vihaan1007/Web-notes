@@ -1,0 +1,22 @@
+#heading {
+    color: black;
+    text-align: center;
+}
+
+.b {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #eaf8f8;
+    font-size: 50px;
+}
+
+#tab {
+    position: relative;
+    top: 10px;
+    left: 425px;
+}
+
+body {
+    background-color: dodgerblue;
+}

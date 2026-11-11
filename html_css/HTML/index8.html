@@ -1,0 +1,599 @@
+<!--
+========================================
+DAY 8 - TABLES PART 2
+========================================
+
+Today we learn:
+
+<caption>
+<thead>
+<tbody>
+<tfoot>
+
+These tags organize a table.
+
+Think:
+
+Title
+Header
+Body
+Footer
+
+========================================
+WHY DO WE NEED THEM?
+========================================
+
+In Day 7 we made tables using:
+
+<table>
+<tr>
+<th>
+<td>
+
+The browser can understand them.
+
+But today we make the structure clearer.
+
+This is similar to:
+
+<header>
+<main>
+<footer>
+
+for webpages.
+
+========================================
+1. CAPTION
+========================================
+
+<caption>
+
+</caption>
+
+Purpose:
+
+Provides a title for the table.
+
+Example:
+
+<table>
+    <caption>
+        Student Marks
+    </caption>
+</table>
+
+Visual idea:
+
+Student Marks
+
++------+-------+
+| Name | Marks |
++------+-------+
+
+========================================
+WHY USE CAPTION?
+========================================
+
+Without caption:
+
+What is this table?
+
+With caption:
+
+This table is about student marks.
+
+Benefits:
+
+- Better understanding
+- Better accessibility
+- Better semantics
+
+========================================
+2. THEAD
+========================================
+
+<thead>
+
+</thead>
+
+Meaning:
+
+Table Head
+
+Purpose:
+
+Contains heading rows.
+
+Example:
+
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+</thead>
+
+Think:
+
+I contain column headings.
+
+========================================
+3. TBODY
+========================================
+
+<tbody>
+
+</tbody>
+
+Meaning:
+
+Table Body
+
+Purpose:
+
+Contains the main information.
+
+Example:
+
+<tbody>
+    <tr>
+        <td>Alex</td>
+        <td>95</td>
+    </tr>
+
+    <tr>
+        <td>Sam</td>
+        <td>88</td>
+    </tr>
+</tbody>
+
+Think:
+
+I contain the actual data.
+
+========================================
+4. TFOOT
+========================================
+
+<tfoot>
+
+</tfoot>
+
+Meaning:
+
+Table Foot
+
+Purpose:
+
+Contains summaries,
+totals,
+conclusions.
+
+Example:
+
+<tfoot>
+    <tr>
+        <td>Total</td>
+        <td>183</td>
+    </tr>
+</tfoot>
+
+Think:
+
+I contain final information.
+
+========================================
+FULL STRUCTURE
+========================================
+
+<table>
+
+    <caption>
+        Student Marks
+    </caption>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Alex</td>
+            <td>95</td>
+        </tr>
+
+        <tr>
+            <td>Sam</td>
+            <td>88</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>183</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+========================================
+HIERARCHY
+========================================
+
+table
+ ├─ caption
+ ├─ thead
+ ├─ tbody
+ └─ tfoot
+
+Inside:
+
+thead
+ └─ tr
+     └─ th
+
+tbody
+ └─ tr
+     └─ td
+
+tfoot
+ └─ tr
+     └─ td
+
+========================================
+WEBPAGE ANALOGY
+========================================
+
+Webpage:
+
+<header>
+<main>
+<footer>
+
+Table:
+
+<thead>
+<tbody>
+<tfoot>
+
+Relationship:
+
+header -> thead
+
+main -> tbody
+
+footer -> tfoot
+
+Both organize information.
+
+One organizes a webpage.
+
+One organizes a table.
+
+========================================
+LETTER ANALOGY
+========================================
+
+Letter:
+
+Greeting
+
+Body
+
+Ending
+
+Table:
+
+Header
+
+Body
+
+Footer
+
+Information is divided into sections.
+
+========================================
+GLOBE ANALOGY
+========================================
+
+DAY SIDE (Visual)
+
+caption
+
+Because users see it directly.
+
+NIGHT SIDE (Semantic)
+
+thead
+tbody
+tfoot
+
+Because they mostly organize structure.
+
+MIDDLE
+
+caption
+
+Helps both users and meaning.
+
+========================================
+COMMON MISTAKE #1
+========================================
+
+WRONG:
+
+<thead>
+    <tr>
+        <td>Alex</td>
+        <td>95</td>
+    </tr>
+</thead>
+
+Reason:
+
+Alex and 95 are data.
+
+Not headings.
+
+CORRECT:
+
+<tbody>
+    <tr>
+        <td>Alex</td>
+        <td>95</td>
+    </tr>
+</tbody>
+
+========================================
+COMMON MISTAKE #2
+========================================
+
+WRONG:
+
+<tfoot>
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+</tfoot>
+
+Reason:
+
+Headers belong in thead.
+
+CORRECT:
+
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+</thead>
+
+========================================
+COMMON MISTAKE #3
+========================================
+
+Using all table data
+without organization.
+
+Works:
+
+<table>
+    ...
+</table>
+
+Better:
+
+<table>
+    <caption></caption>
+    <thead></thead>
+    <tbody></tbody>
+    <tfoot></tfoot>
+</table>
+
+========================================
+QUICK REVISION
+========================================
+
+caption = table title
+
+thead = table headings
+
+tbody = main table data
+
+tfoot = totals and summaries
+
+caption is most visible
+
+thead tbody tfoot are mostly semantic
+
+header : main : footer
+
+is similar to
+
+thead : tbody : tfoot
+
+========================================
+DAY 8 KEYWORDS
+========================================
+
+caption
+
+thead
+
+tbody
+
+tfoot
+
+Table Title
+
+Table Head
+
+Table Body
+
+Table Foot
+
+Summary
+
+Total
+
+Semantic Structure
+
+========================================
+END OF DAY 8
+========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+</head>
+<body>
+    <!--Student Marks-->
+    <table>
+        <caption>Student-marks table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alex</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>91</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>274</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--Proggramming Languages Table-->
+    <table>
+        <caption>Proggramming-Languages Table</caption>
+        <thead>
+            <tr>
+                <th>Language</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Markup</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Style</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Logic</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Proggramming</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total Languages</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--Project Table-->
+    <table>
+        <caption>My-projects table</caption>
+        <thead>
+            <tr>
+                <th>Project</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Calculator</td>
+                <td>Complete</td>
+            </tr>
+            <tr>
+                <td>Weather App</td>
+                <td>Complete</td>
+            </tr>
+            <tr>
+                <td>Todo list App</td>
+                <td>Complete</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total Projects</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--Bonus-1-->
+    <table>
+        <caption>my-typing-score table</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>WPM</th>
+                <th>Acc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>47</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>49</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>52</td>
+                <td>97%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>52</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>64</td>
+                <td>100%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>WPM: 52.8wpm(ave)</td>
+                <td>Acc: 99.4%(ave)</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

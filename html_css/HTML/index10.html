@@ -1,0 +1,237 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 10 - TABLES PART 4
+══════════════════════════════════════════════════════════════
+
+Topics:
+
+border
+cellpadding
+cellspacing
+
+These are old HTML table attributes.
+
+Modern websites usually use CSS instead, but these
+attributes are still important because they appear in:
+
+- Old websites
+- School projects
+- Tutorials
+- Legacy code
+
+══════════════════════════════════════════════════════════════
+BORDER
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Adds visible borders to a table.
+
+Example:
+
+<table border="1">
+
+Result:
+
+Lines become visible around cells.
+
+Without border:
+
+Name   Age
+Alex   15
+
+With border:
+
++------+------+
+| Name | Age  |
++------+------+
+| Alex | 15   |
++------+------+
+
+══════════════════════════════════════════════════════════════
+BORDER VALUES
+══════════════════════════════════════════════════════════════
+
+Example:
+
+border="1"
+
+Thin border.
+
+Example:
+
+border="5"
+
+Thicker border.
+
+Larger number = thicker border.
+
+══════════════════════════════════════════════════════════════
+CELLPADDING
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Creates space INSIDE a cell.
+
+Think:
+
+Text ↔ Border
+
+Example:
+
+<table cellpadding="10">
+
+Without cellpadding:
+
++----+
+|Alex|
++----+
+
+With cellpadding:
+
++--------+
+|  Alex  |
++--------+
+
+Text gets breathing room.
+
+══════════════════════════════════════════════════════════════
+CELLSPACING
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Creates space BETWEEN cells.
+
+Think:
+
+Cell ↔ Cell
+
+Example:
+
+<table cellspacing="5">
+
+Without cellspacing:
+
++----+----+
+| A  | B  |
++----+----+
+
+With cellspacing:
+
++----+  +----+
+| A  |  | B  |
++----+  +----+
+
+Cells move apart.
+
+══════════════════════════════════════════════════════════════
+CELLPADDING VS CELLSPACING
+══════════════════════════════════════════════════════════════
+
+CELLPADDING
+
+- Inside the cell
+- Text ↔ Border
+- Similar to CSS padding
+
+CELLSPACING
+
+- Outside the cell
+- Cell ↔ Cell
+- Similar to CSS margin spacing
+
+Memory Trick:
+
+Padding = Inside
+
+Spacing = Between
+
+══════════════════════════════════════════════════════════════
+FULL EXAMPLE
+══════════════════════════════════════════════════════════════
+
+<table border="1"
+       cellpadding="10"
+       cellspacing="5">
+
+Meaning:
+
+border      = visible lines
+cellpadding = inside space
+cellspacing = outside space
+
+══════════════════════════════════════════════════════════════
+MODERN CSS EQUIVALENTS
+══════════════════════════════════════════════════════════════
+
+Old HTML:
+
+<table border="1">
+
+Modern CSS:
+
+table{
+    border:1px solid black;
+}
+
+Old HTML:
+
+cellpadding="10"
+
+Modern CSS:
+
+td, th{
+    padding:10px;
+}
+
+Old HTML:
+
+cellspacing="5"
+
+Modern CSS:
+
+table{
+    border-spacing:5px;
+}
+
+══════════════════════════════════════════════════════════════
+WHY LEARN THIS?
+══════════════════════════════════════════════════════════════
+
+Because you will still find these attributes in:
+
+- Old code
+- Tutorials
+- School assignments
+- Legacy projects
+
+Knowing them also helps understand the CSS versions.
+
+══════════════════════════════════════════════════════════════
+DAY 10 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+border
+cellpadding
+cellspacing
+padding
+border-spacing
+legacy HTML
+
+══════════════════════════════════════════════════════════════
+DAY 10 SUMMARY
+══════════════════════════════════════════════════════════════
+
+- border adds visible table lines.
+- cellpadding adds space inside cells.
+- cellspacing adds space between cells.
+- cellpadding is similar to CSS padding.
+- cellspacing is similar to CSS border-spacing.
+- Modern projects usually use CSS instead.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 10
+══════════════════════════════════════════════════════════════
+-->

@@ -1,0 +1,399 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 11 - FORMS PART 1
+══════════════════════════════════════════════════════════════
+
+Forms allow users to send information to a website.
+
+Examples:
+
+- Login Form
+- Signup Form
+- Contact Form
+- Search Bar
+- Survey Form
+- Registration Form
+
+Before forms:
+
+Website → User
+
+After forms:
+
+Website ↔ User
+
+══════════════════════════════════════════════════════════════
+FORM TAG
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<form>
+
+Purpose:
+
+Acts as a container for form elements.
+
+Example:
+
+<form>
+
+</form>
+
+Think:
+
+Form = Box that holds inputs.
+
+══════════════════════════════════════════════════════════════
+INPUT TAG
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input>
+
+Purpose:
+
+Receives information from the user.
+
+Example:
+
+<input type="text">
+
+Result:
+
+[____________]
+
+══════════════════════════════════════════════════════════════
+TYPE ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+Purpose:
+
+Tells the browser what type of input
+the user will enter.
+
+Example:
+
+<input type="text">
+
+Meaning:
+
+User enters text.
+
+More types will be learned later.
+
+══════════════════════════════════════════════════════════════
+LABEL TAG
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<label>
+
+Purpose:
+
+Tells users what an input is for.
+
+Example:
+
+<label>Name</label>
+<input type="text">
+
+Result:
+
+Name
+
+[____________]
+
+Without a label:
+
+[____________]
+
+User must guess.
+
+══════════════════════════════════════════════════════════════
+WHY LABELS ARE IMPORTANT
+══════════════════════════════════════════════════════════════
+
+Labels help:
+
+- Users
+- Screen readers
+- Accessibility
+- Professional design
+
+Bad:
+
+[____________]
+
+Good:
+
+Name
+
+[____________]
+
+══════════════════════════════════════════════════════════════
+ID ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+id
+
+Purpose:
+
+Gives an element a unique identifier.
+
+Example:
+
+<input id="name" type="text">
+
+Think:
+
+Every id should be unique.
+
+══════════════════════════════════════════════════════════════
+FOR ATTRIBUTE
+══════════════════════════════════════════════════════════════
+
+Attribute:
+
+for
+
+Used inside:
+
+<label>
+
+Purpose:
+
+Connects a label to an input.
+
+Example:
+
+<label for="name">
+
+══════════════════════════════════════════════════════════════
+FOR + ID CONNECTION
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<label for="name">Name</label>
+
+<input id="name" type="text">
+
+Rule:
+
+for value
+and
+id value
+
+must match.
+
+Correct:
+
+for="name"
+
+id="name"
+
+══════════════════════════════════════════════════════════════
+CLICKING LABELS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<label for="name">Name</label>
+
+<input id="name" type="text">
+
+Result:
+
+Clicking:
+
+Name
+
+automatically focuses the input.
+
+Benefits:
+
+- Faster
+- Easier to use
+- More accessible
+
+══════════════════════════════════════════════════════════════
+MULTIPLE INPUTS
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<label for="name">Name</label>
+<input id="name" type="text">
+
+<label for="city">City</label>
+<input id="city" type="text">
+
+Result:
+
+Name
+[________]
+
+City
+[________]
+
+══════════════════════════════════════════════════════════════
+COMMON MISTAKE
+══════════════════════════════════════════════════════════════
+
+Wrong:
+
+<label for="name">Name</label>
+
+<input id="city" type="text">
+
+Problem:
+
+for and id do not match.
+
+Correct:
+
+<label for="name">Name</label>
+
+<input id="name" type="text">
+
+══════════════════════════════════════════════════════════════
+FORM STRUCTURE
+══════════════════════════════════════════════════════════════
+
+Example:
+
+<form>
+
+<label for="name">Name</label>
+
+<input id="name" type="text">
+
+</form>
+
+Structure:
+
+form
+│
+├── label
+│
+└── input
+
+══════════════════════════════════════════════════════════════
+ID IS NOT ONLY FOR FORMS
+══════════════════════════════════════════════════════════════
+
+id can also connect:
+
+HTML ↔ CSS
+
+HTML ↔ JavaScript
+
+Example CSS:
+
+#name{
+    color:red;
+}
+
+Example JavaScript:
+
+document.querySelector("#name")
+
+Forms are only one use of id.
+
+══════════════════════════════════════════════════════════════
+ACCESSIBILITY
+══════════════════════════════════════════════════════════════
+
+Accessibility means:
+
+Making websites easier for everyone.
+
+Labels help:
+
+- Screen readers
+- Keyboard users
+- People with disabilities
+
+Proper labels improve accessibility.
+
+══════════════════════════════════════════════════════════════
+DAY 11 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+form
+input
+type
+text
+label
+for
+id
+accessibility
+
+══════════════════════════════════════════════════════════════
+DAY 11 SUMMARY
+══════════════════════════════════════════════════════════════
+
+- form collects user data.
+- input receives user data.
+- label tells users what to enter.
+- id gives an element a unique identifier.
+- for connects a label to an input.
+- for and id should match.
+- Clicking a connected label focuses the input.
+- Labels improve accessibility.
+- id can also be used with CSS and JavaScript.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 11
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11</title>
+</head>
+<body>
+    <h3>Personal Information</h3>
+    <form>
+        <label for = "name">Name</label>
+        <input type = "text" id = "name">
+        <label for = "city">City</label>
+        <input type = "text" id = "city">
+    </form>
+    <h3>School Information</h3>
+    <form>
+        <label for = "sName">Student name</label>
+        <input type = "text" id = "sName">
+        <label for = "class">Class</label>
+        <input type = "text" id = "class">
+        <label for = "school">School name</label>
+        <input type = "text" id = "school">
+    </form>
+    <h3>Typing Competition</h3>
+    <form>
+        <label for = "tName">Name</label>
+        <input type = "text" id = "tName">
+        <label for = "wpm">Best WPM</label>
+        <input type = "text" id = "wpm">
+        <label for = "acc">Accuracy</label>
+        <input type = "text" id = "acc">
+    </form>
+    <h3>Contact form</h3>
+    <form>
+        <label for = "cName">Name</label>
+        <input type = "text" id = "cName">
+        <label for = "cCity">City</label>
+        <input type = "text" id = "cCity">
+        <label for = "progg">Favourite Proggramming Langiage</label>
+        <input type = "text" id = "progg">
+    </form>
+</body>
+</html>

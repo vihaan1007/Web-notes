@@ -1,0 +1,637 @@
+/*========================
+        DAY 9
+ FLEXBOX PART 3
+ ITEM CONTROL PROPERTIES
+==========================
+
+Now we move from CONTAINER rules
+to INDIVIDUAL ITEM rules.
+
+==========================
+
+1. flex-grow
+
+Controls how much an item grows
+when extra space is available.
+
+Example:
+item can expand to fill space.
+
+default = 0 (no growth)
+
+--------------------------
+
+2. flex-shrink
+
+Controls how much an item shrinks
+when space is too small.
+
+default = 1 (can shrink)
+
+--------------------------
+
+3. flex-basis
+
+Initial size of an item
+before space distribution.
+
+Example:
+flex-basis: 200px;
+
+means start from 200px.
+
+--------------------------
+
+4. flex (shorthand)
+
+flex: grow shrink basis;
+
+Example:
+flex: 1 1 200px;
+
+--------------------------
+
+5. order
+
+Controls visual order of items.
+
+default = 0
+
+lower number appears first.
+
+Example:
+order: 1;
+order: -1;
+
+--------------------------
+
+6. align-self
+
+Overrides align-items
+for a SINGLE item.
+
+Example:
+.container { align-items: center; }
+
+.item {
+    align-self: flex-start;
+}
+
+--------------------------
+
+CORE IDEA OF DAY 9
+
+Container controls layout direction.
+Day 9 controls individual item behavior.
+
+/*==================
+       DAY 9
+ FLEXBOX PART 3
+====================
+
+ITEM CONTROL
+
+These properties are
+applied on items.
+
+--------------------
+
+flex-grow
+
+Uses extra space.
+
+0
+= no growth
+
+higher value
+= grows more
+
+--------------------
+
+flex-shrink
+
+Shrinks when space
+is insufficient.
+
+0
+= don't shrink
+
+higher value
+= shrink more
+
+default = 1
+
+--------------------
+
+flex-basis
+
+Starting size before
+grow/shrink.
+
+Example:
+
+flex-basis: 200px;
+
+--------------------
+
+flex
+
+Shorthand.
+
+flex:
+grow shrink basis
+
+Example:
+
+flex: 1 1 200px;
+
+--------------------
+
+order
+
+Changes display order.
+
+default = 0
+
+smaller value
+= earlier
+
+larger value
+= later
+
+HTML order
+does not change.
+
+--------------------
+
+align-self
+
+Personal align-items.
+
+Overrides container's
+align-items rule.
+
+Applied on one item.
+
+--------------------
+
+MEMORY SHEET
+
+flex-grow
+= take extra space
+
+flex-shrink
+= give up space
+
+flex-basis
+= starting size
+
+order
+= display position
+
+align-self
+= personal alignment
+*/
+
+/*==================
+       DAY 10
+   CSS GRID PART 1
+====================
+
+CSS GRID
+
+2D layout system
+
+Works with:
+rows + columns together
+
+--------------------
+
+ENABLE GRID
+
+display: grid;
+
+Example:
+
+.container{
+    display: grid;
+}
+
+--------------------
+
+GRID CONTAINER
+
+Parent = container
+Children = grid items
+
+--------------------
+
+COLUMNS
+
+grid-template-columns
+
+Example:
+
+grid-template-columns:
+100px 100px 100px;
+
+= 3 columns
+
+--------------------
+
+ROWS
+
+grid-template-rows
+
+Example:
+
+grid-template-rows:
+100px 100px;
+
+= 2 rows
+
+--------------------
+
+GAP
+
+gap: 10px;
+
+Space between rows and columns
+
+--------------------
+
+FILL ORDER (VERY IMPORTANT)
+
+Default flow:
+
+Row → Column
+
+Means:
+
+LEFT → RIGHT first
+then next row
+
+Example:
+
+1 2 3
+4 5 6
+
+--------------------
+
+GRID IDEA
+
+Flexbox = 1 direction (row OR column)
+
+Grid = full structure (row AND column)
+
+--------------------
+
+CORE SUMMARY
+
+grid-template-columns
+= create columns
+
+grid-template-rows
+= create rows
+
+gap
+= spacing
+
+display: grid
+= activate grid system
+*/
+
+/*==================
+       DAY 11
+   CSS GRID PART 2
+====================
+
+NEW POWER FEATURES
+
+--------------------
+
+1. fr UNIT
+
+Fraction of available space
+
+Example:
+
+grid-template-columns:
+1fr 1fr 1fr;
+
+= equal 3 parts
+
+--------------------
+
+UNEQUAL LAYOUT
+
+Example:
+
+grid-template-columns:
+1fr 2fr 1fr;
+
+Meaning:
+middle column is bigger
+
+--------------------
+
+2. repeat()
+
+Shortcut for repeating columns/rows
+
+Example:
+
+grid-template-columns:
+repeat(3, 1fr);
+
+Same as:
+1fr 1fr 1fr
+
+--------------------
+
+ANOTHER EXAMPLE
+
+repeat(4, 100px);
+
+= 4 columns of 100px
+
+--------------------
+
+KEY IDEA
+
+fr = flexible space
+repeat = shortcut writing
+
+--------------------
+
+COMPARISON
+
+Manual:
+1fr 1fr 1fr 1fr
+
+Shortcut:
+repeat(4, 1fr)
+
+--------------------
+
+GRID MINDSET
+
+Flexbox = direction control
+
+Grid Part 2 =
+space distribution + shortcuts
+*/
+
+/*
+===========================
+DAY 13 - CSS TRANSITIONS
+      Part 1
+      Motion
+===========================
+
+Transition makes property changes happen smoothly.
+
+transition: 1s;
+
+All changing properties transition for 1 second.
+
+transition-duration: 1s;
+
+Controls how long the transition lasts.
+
+transition-property: width;
+
+Only width transitions.
+
+transition-delay: 2s;
+
+Wait 2 seconds before starting.
+
+transition-timing-function: linear;
+
+Same speed throughout.
+
+transition-timing-function: ease;
+
+Slow → Fast → Slow.
+
+transition-timing-function: ease-in;
+
+Slow start, fast finish.
+
+transition-timing-function: ease-out;
+
+Fast start, slow finish.
+
+transition-timing-function: ease-in-out;
+
+Slow → Fast → Slow.
+
+Shorthand:
+
+transition: width 1s ease 0.5s;
+
+Order:
+property duration timing-function delay
+
+Multiple transitions:
+
+transition:
+width 1s,
+background-color 2s;
+
+Most common trigger:
+
+:hover
+
+Transition belongs on the normal state.
+
+.box{
+    transition: 1s;
+}
+
+NOT:
+
+.box:hover{
+    transition: 1s;
+}
+
+Transition does not create effects.
+
+It makes existing changes happen smoothly.
+
+SUMMARY
+
+transition
+transition-duration
+transition-property
+transition-delay
+transition-timing-function
+transition shorthand
+multiple transitions
+:hover trigger
+
+*/
+
+/*
+=========================================
+DAY 14 - CSS TRANSFORMS
+    MOTION
+        Part-2
+=========================================
+
+Transforms change an element's appearance
+without changing the normal document flow.
+
+Main property:
+
+transform:
+
+SCALE
+
+Makes an element bigger or smaller.
+
+transform: scale(2);
+
+2 times bigger.
+
+transform: scale(0.5);
+
+Half size.
+
+transform: scale(1.1);
+
+10% bigger.
+
+Common use:
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+Creates a zoom effect.
+
+ROTATE
+
+Rotates an element.
+
+transform: rotate(45deg);
+
+Rotate 45 degrees.
+
+transform: rotate(90deg);
+
+Quarter turn.
+
+transform: rotate(180deg);
+
+Upside down.
+
+transform: rotate(360deg);
+
+One full rotation.
+
+TRANSLATE
+
+Moves an element.
+
+transform: translate(50px);
+
+Move right 50px.
+
+transform: translateX(50px);
+
+Move horizontally.
+
+transform: translateY(50px);
+
+Move vertically.
+
+transform: translate(-50px);
+
+Move left 50px.
+
+SKEW
+
+Tilts an element.
+
+transform: skew(20deg);
+
+Slants the shape.
+
+transform: skewX(20deg);
+
+Horizontal tilt.
+
+transform: skewY(20deg);
+
+Vertical tilt.
+
+Less common than scale and rotate.
+
+MULTIPLE TRANSFORMS
+
+Wrong:
+
+transform: scale(1.2);
+transform: rotate(20deg);
+
+Second transform replaces first.
+
+Correct:
+
+transform:
+scale(1.2)
+rotate(20deg);
+
+Both effects apply.
+
+Another example:
+
+transform:
+translateX(50px)
+rotate(45deg)
+scale(1.1);
+
+TRANSFORM + TRANSITION
+
+Most common real-world combination.
+
+.card{
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+Creates a smooth zoom effect.
+
+IMPORTANT
+
+Transforms change appearance.
+
+Transforms do NOT change
+the normal layout flow.
+
+Other elements do not move away
+when a transform happens.
+
+SUMMARY
+
+transform
+
+scale()
+rotate()
+translate()
+translateX()
+translateY()
+skew()
+skewX()
+skewY()
+
+Multiple transforms can be combined.
+
+Transforms are commonly used
+together with transitions.
+*/

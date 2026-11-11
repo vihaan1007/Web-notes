@@ -1,0 +1,686 @@
+/*
+Shadow
+
+=
+Depth
+
+-----------------------------------------
+
+Glow
+
+=
+Light
+
+-----------------------------------------
+
+Opacity
+
+=
+Transparency
+
+-----------------------------------------
+
+Brightness
+
+=
+Lighter
+
+-----------------------------------------
+
+Image Zoom
+
+=
+Scale Image
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #4 — IMAGE EFFECTS
+PART 1
+=========================================
+
+<<<<0-WHAT-ARE-IMAGE-EFFECTS+0>>>>
+
+Image Effects
+
+=
+Techniques that improve the
+appearance and behavior of images.
+
+-----------------------------------------
+
+Without Effects:
+
+Plain Image
+
+-----------------------------------------
+
+With Effects:
+
+Rounded Corners
+
+Shadows
+
+Hover Effects
+
+Filters
+
+Overlays
+
+-----------------------------------------
+
+Professional websites almost
+never leave images completely
+unstyled.
+
+=========================================
+
+<<<<0-WHY-IMAGE-STYLING-MATTERS+0>>>>
+
+Images often take up a large
+part of the screen.
+
+-----------------------------------------
+
+A bad image presentation can
+make the entire website feel
+unfinished.
+
+-----------------------------------------
+
+Good image styling can make
+a simple website feel premium.
+
+=========================================
+
+<<<<0-BASIC-IMAGE-STYLING+0>>>>
+
+Most websites begin with:
+
+img{
+    width:100%;
+}
+
+-----------------------------------------
+
+Purpose:
+
+Prevent image overflow.
+
+-----------------------------------------
+
+Image scales according to
+its parent container.
+
+=========================================
+
+<<<<0-WIDTH-100-PERCENT+0>>>>
+
+Example:
+
+img{
+    width:100%;
+}
+
+-----------------------------------------
+
+Meaning:
+
+Image fills the width
+of its parent.
+
+-----------------------------------------
+
+Very common in responsive
+websites.
+
+=========================================
+
+<<<<0-HEIGHT-AUTO+0>>>>
+
+Example:
+
+img{
+    width:100%;
+    height:auto;
+}
+
+-----------------------------------------
+
+Purpose:
+
+Maintain aspect ratio.
+
+-----------------------------------------
+
+Without height:auto
+
+Image may stretch.
+
+=========================================
+
+<<<<0-ROUNDED-CORNERS+0>>>>
+
+One of the most common
+image effects.
+
+-----------------------------------------
+
+Example:
+
+img{
+    border-radius:10px;
+}
+
+-----------------------------------------
+
+Result:
+
+Corners become rounded.
+
+-----------------------------------------
+
+Popular Values:
+
+5px
+
+10px
+
+15px
+
+20px
+
+=========================================
+
+<<<<0-WHAT-IS-BORDER-RADIUS+0>>>>
+
+Border Radius
+
+=
+Controls corner curvature.
+
+-----------------------------------------
+
+0px
+
+=
+Sharp Corner
+
+-----------------------------------------
+
+Large Radius
+
+=
+Softer Corner
+
+=========================================
+
+<<<<0-WHEN-TO-USE-ROUNDED-CORNERS+0>>>>
+
+Good For:
+
+Cards
+
+Gallery Images
+
+Product Images
+
+Blog Images
+
+Portfolio Images
+
+-----------------------------------------
+
+Rarely looks bad.
+
+=========================================
+
+<<<<0-CIRCULAR-IMAGES+0>>>>
+
+Create profile-style images.
+
+-----------------------------------------
+
+Example:
+
+img{
+    border-radius:50%;
+}
+
+-----------------------------------------
+
+Result:
+
+Circle
+
+-----------------------------------------
+
+Condition:
+
+Width and Height should
+be equal.
+
+=========================================
+
+<<<<0-WHY-50-PERCENT+0>>>>
+
+50%
+
+=
+Half of width and height.
+
+-----------------------------------------
+
+This causes the image to
+curve completely into a circle.
+
+=========================================
+
+<<<<0-PROFILE-PICTURES+0>>>>
+
+Most profile images use:
+
+border-radius:50%;
+
+-----------------------------------------
+
+Often combined with:
+
+Border
+
+Shadow
+
+Hover Effect
+
+=========================================
+
+<<<<0-IMAGE-BORDERS+0>>>>
+
+Borders help separate an image
+from the background.
+
+-----------------------------------------
+
+Example:
+
+img{
+    border:2px solid white;
+}
+
+=========================================
+
+<<<<0-BORDER-THICKNESS+0>>>>
+
+Common Values:
+
+1px
+
+2px
+
+3px
+
+5px
+
+-----------------------------------------
+
+Large borders can become
+distracting.
+
+=========================================
+
+<<<<0-BORDER-COLOR+0>>>>
+
+Examples:
+
+white
+
+black
+
+cyan
+
+gold
+
+lime
+
+-----------------------------------------
+
+Border color should match
+the website theme.
+
+=========================================
+
+<<<<0-DOUBLE-BORDERS+0>>>>
+
+Possible Using:
+
+outline
+
++
+
+border
+
+-----------------------------------------
+
+Creates stronger emphasis.
+
+=========================================
+
+<<<<0-IMAGE-SHADOWS+0>>>>
+
+One of the most powerful
+image effects.
+
+-----------------------------------------
+
+Example:
+
+img{
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.3);
+}
+
+-----------------------------------------
+
+Creates depth.
+
+=========================================
+
+<<<<0-WHY-SHADOWS-WORK+0>>>>
+
+Shadow
+
+=
+Visual Separation
+
+-----------------------------------------
+
+Image appears above
+the background.
+
+-----------------------------------------
+
+Creates hierarchy.
+
+=========================================
+
+<<<<0-SHADOW-PARTS+0>>>>
+
+box-shadow:
+
+Horizontal Offset
+
+Vertical Offset
+
+Blur
+
+Color
+
+-----------------------------------------
+
+Example:
+
+0 10px 25px black
+
+=========================================
+
+<<<<0-SUBTLE-SHADOWS+0>>>>
+
+Example:
+
+0 5px 10px rgba(...)
+
+-----------------------------------------
+
+Professional
+
+Clean
+
+Modern
+
+=========================================
+
+<<<<0-HEAVY-SHADOWS+0>>>>
+
+Example:
+
+0 20px 50px rgba(...)
+
+-----------------------------------------
+
+Dramatic
+
+Attention Grabbing
+
+=========================================
+
+<<<<0-GLOW-EFFECTS+0>>>>
+
+Glow
+
+=
+Shadow with little or
+no offset.
+
+-----------------------------------------
+
+Example:
+
+0 0 20px cyan
+
+-----------------------------------------
+
+Common In:
+
+Dark Themes
+
+Gaming Sites
+
+=========================================
+
+<<<<0-IMAGE-CONTAINERS+0>>>>
+
+Often images are placed
+inside containers.
+
+-----------------------------------------
+
+Container controls:
+
+Width
+
+Height
+
+Overflow
+
+Spacing
+
+=========================================
+
+<<<<0-OVERFLOW-HIDDEN+0>>>>
+
+Very important.
+
+-----------------------------------------
+
+Example:
+
+.container{
+    overflow:hidden;
+}
+
+-----------------------------------------
+
+Purpose:
+
+Hide zoomed image overflow.
+
+-----------------------------------------
+
+Used constantly with
+hover zoom effects.
+
+=========================================
+
+<<<<0-OBJECT-FIT+0>>>>
+
+Extremely important property.
+
+-----------------------------------------
+
+Controls how an image fits
+inside its box.
+
+=========================================
+
+<<<<0-OBJECT-FIT-FILL+0>>>>
+
+Default behavior.
+
+-----------------------------------------
+
+Image stretches to fit.
+
+-----------------------------------------
+
+Can distort image.
+
+=========================================
+
+<<<<0-OBJECT-FIT-CONTAIN+0>>>>
+
+Example:
+
+object-fit:contain;
+
+-----------------------------------------
+
+Entire image remains visible.
+
+-----------------------------------------
+
+No cropping.
+
+-----------------------------------------
+
+May leave empty space.
+
+=========================================
+
+<<<<0-OBJECT-FIT-COVER+0>>>>
+
+Most important value.
+
+-----------------------------------------
+
+Example:
+
+object-fit:cover;
+
+-----------------------------------------
+
+Image fills entire box.
+
+-----------------------------------------
+
+Maintains aspect ratio.
+
+-----------------------------------------
+
+Excess parts get cropped.
+
+=========================================
+
+<<<<0-WHY-COVER-IS-KING+0>>>>
+
+Most professional galleries
+use:
+
+object-fit:cover;
+
+-----------------------------------------
+
+Reason:
+
+No stretching.
+
+No ugly distortion.
+
+Consistent appearance.
+
+=========================================
+
+<<<<0-OBJECT-FIT-NONE+0>>>>
+
+Example:
+
+object-fit:none;
+
+-----------------------------------------
+
+Image keeps original size.
+
+-----------------------------------------
+
+Rarely used.
+
+=========================================
+
+<<<<0-OBJECT-FIT-SCALE-DOWN+0>>>>
+
+Acts like:
+
+none
+
+or
+
+contain
+
+-----------------------------------------
+
+Whichever is smaller.
+
+=========================================
+
+<<<<0-COMMON-GALLERY-SETUP+0>>>>
+
+Typical Gallery Formula:
+
+Fixed Height
+
++
+
+object-fit:cover
+
++
+
+Rounded Corners
+
++
+
+Shadow
+
+-----------------------------------------
+
+Produces professional results.
+
+=========================================
+
+<<<<0-MOST-IMPORTANT-IMAGE-FOUNDATION+0>>>>
+
+If you remember only five:
+
+width:100%
+
+height:auto
+
+border-radius
+
+box-shadow
+
+object-fit:cover
+
+=========================================
+NEXT FILE
+*/

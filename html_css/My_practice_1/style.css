@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(30,30,30);
+    font-family: Arial;
+    color: white;
+}
+
+#avatar{
+    height: 120px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 60px;
+    
+}
+
+#card {
+    Width: 300px;
+    Height: 100px;
+    Border: 2px solid white;
+    text-align: Center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#Name{
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+}
+
+#Proffesion{
+    font-size: 12px;
+    color: rgb(200,200,200);
+    font-weight: 500;
+}
+
+#Follow{
+    Width: 50px;
+    Height: 50px;
+    Color: rgb(200,200,200);
+    Border: 1px solid white;
+    Border-radius: 40%;
+}

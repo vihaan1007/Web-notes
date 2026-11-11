@@ -1,0 +1,689 @@
+/*
+<<<<0-MEMORY-TRICK+0>>>>
+
+width:100%
+
+=
+Responsive Width
+
+-----------------------------------------
+
+height:auto
+
+=
+Keep Ratio
+
+-----------------------------------------
+
+border-radius
+
+=
+Rounded Corners
+
+-----------------------------------------
+
+50%
+
+=
+Circle
+
+-----------------------------------------
+
+border
+
+=
+Separation
+
+-----------------------------------------
+
+box-shadow
+
+=
+Depth
+
+-----------------------------------------
+
+Glow
+
+=
+Light Shadow
+
+-----------------------------------------
+
+object-fit:contain
+
+=
+Show Everything
+
+-----------------------------------------
+
+object-fit:cover
+
+=
+Fill Box
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #4 — IMAGE EFFECTS
+PART 2
+=========================================
+
+<<<<0-WHY-HOVER-IMAGES+0>>>>
+
+Images are one of the best
+elements to animate.
+
+-----------------------------------------
+
+Reason:
+
+Users naturally look at images.
+
+-----------------------------------------
+
+Small animations make images
+feel interactive.
+
+=========================================
+
+<<<<0-TRANSITION-FIRST+0>>>>
+
+Most image hover effects
+require transitions.
+
+-----------------------------------------
+
+Example:
+
+img{
+    transition:0.3s;
+}
+
+-----------------------------------------
+
+Without transition:
+
+Instant Jump
+
+-----------------------------------------
+
+With transition:
+
+Smooth Movement
+
+=========================================
+
+<<<<0-HOVER-ZOOM+0>>>>
+
+Most popular image effect.
+
+-----------------------------------------
+
+Example:
+
+img:hover{
+    transform:scale(1.1);
+}
+
+-----------------------------------------
+
+Result:
+
+Image becomes larger.
+
+=========================================
+
+<<<<0-WHY-HOVER-ZOOM-WORKS+0>>>>
+
+Creates:
+
+Movement
+
+Focus
+
+Interaction
+
+-----------------------------------------
+
+User attention is drawn
+towards the image.
+
+=========================================
+
+<<<<0-SAFE-ZOOM-VALUES+0>>>>
+
+Common Values:
+
+1.05
+
+1.1
+
+1.15
+
+-----------------------------------------
+
+Very large values may look bad.
+
+=========================================
+
+<<<<0-OVERFLOW-HIDDEN-WITH-ZOOM+0>>>>
+
+Extremely important.
+
+-----------------------------------------
+
+When image grows:
+
+Parts may leave container.
+
+-----------------------------------------
+
+Solution:
+
+overflow:hidden;
+
+-----------------------------------------
+
+Container hides extra parts.
+
+=========================================
+
+<<<<0-GALLERY-ZOOM-EFFECT+0>>>>
+
+Common Formula:
+
+Container
+
++
+
+overflow:hidden
+
++
+
+scale(1.1)
+
+-----------------------------------------
+
+Seen on:
+
+Portfolios
+
+Photography Sites
+
+Product Pages
+
+=========================================
+
+<<<<0-HOVER-LIFT+0>>>>
+
+Example:
+
+img:hover{
+    transform:
+    translateY(-10px);
+}
+
+-----------------------------------------
+
+Result:
+
+Image moves upward.
+
+=========================================
+
+<<<<0-WHY-LIFT-WORKS+0>>>>
+
+Creates:
+
+Floating Effect
+
+-----------------------------------------
+
+Makes image appear elevated.
+
+=========================================
+
+<<<<0-HOVER-DOWN+0>>>>
+
+Example:
+
+translateY(10px)
+
+-----------------------------------------
+
+Moves image downward.
+
+-----------------------------------------
+
+Rarely used.
+
+=========================================
+
+<<<<0-HOVER-LEFT+0>>>>
+
+Example:
+
+translateX(-10px)
+
+-----------------------------------------
+
+Image moves left.
+
+=========================================
+
+<<<<0-HOVER-RIGHT+0>>>>
+
+Example:
+
+translateX(10px)
+
+-----------------------------------------
+
+Image moves right.
+
+=========================================
+
+<<<<0-HOVER-ROTATE+0>>>>
+
+Example:
+
+rotate(5deg)
+
+-----------------------------------------
+
+Result:
+
+Image tilts.
+
+-----------------------------------------
+
+Common For:
+
+Creative Websites
+
+Personal Portfolios
+
+=========================================
+
+<<<<0-SMALL-ROTATIONS+0>>>>
+
+Good Values:
+
+2deg
+
+3deg
+
+5deg
+
+-----------------------------------------
+
+Large rotations usually
+look unprofessional.
+
+=========================================
+
+<<<<0-COMBINING-SCALE-AND-ROTATE+0>>>>
+
+Example:
+
+scale(1.1)
+rotate(3deg)
+
+-----------------------------------------
+
+Creates energetic movement.
+
+=========================================
+
+<<<<0-COMBINING-SCALE-AND-LIFT+0>>>>
+
+Very common.
+
+-----------------------------------------
+
+Example:
+
+scale(1.05)
+translateY(-10px)
+
+-----------------------------------------
+
+Professional look.
+
+=========================================
+
+<<<<0-HOVER-SHADOW+0>>>>
+
+Example:
+
+img:hover{
+    box-shadow:
+    0 15px 30px rgba(...);
+}
+
+-----------------------------------------
+
+Image gains depth.
+
+=========================================
+
+<<<<0-LIFT-PLUS-SHADOW+0>>>>
+
+Very common combination.
+
+-----------------------------------------
+
+Lift
+
++
+
+Shadow
+
+-----------------------------------------
+
+Creates:
+
+Floating Card Effect
+
+=========================================
+
+<<<<0-GLOW-HOVER+0>>>>
+
+Example:
+
+0 0 20px cyan
+
+-----------------------------------------
+
+Creates:
+
+Glow Effect
+
+-----------------------------------------
+
+Works best on dark themes.
+
+=========================================
+
+<<<<0-HOVER-BORDER-COLOR+0>>>>
+
+Example:
+
+White Border
+
+↓
+
+Cyan Border
+
+-----------------------------------------
+
+Subtle but effective.
+
+=========================================
+
+<<<<0-HOVER-BRIGHTNESS+0>>>>
+
+Example:
+
+brightness(120%)
+
+-----------------------------------------
+
+Image becomes brighter.
+
+=========================================
+
+<<<<0-HOVER-DARKEN+0>>>>
+
+Example:
+
+brightness(80%)
+
+-----------------------------------------
+
+Image becomes darker.
+
+=========================================
+
+<<<<0-HOVER-CONTRAST+0>>>>
+
+Example:
+
+contrast(120%)
+
+-----------------------------------------
+
+Stronger difference between
+lights and darks.
+
+=========================================
+
+<<<<0-HOVER-BLUR+0>>>>
+
+Example:
+
+blur(3px)
+
+-----------------------------------------
+
+Image becomes blurry.
+
+-----------------------------------------
+
+Rarely applied directly.
+
+=========================================
+
+<<<<0-HOVER-GRAYSCALE+0>>>>
+
+Example:
+
+grayscale(100%)
+
+-----------------------------------------
+
+Image becomes black and white.
+
+=========================================
+
+<<<<0-GRAYSCALE-TO-COLOR+0>>>>
+
+Popular Effect.
+
+-----------------------------------------
+
+Normal:
+
+grayscale(100%)
+
+-----------------------------------------
+
+Hover:
+
+grayscale(0%)
+
+-----------------------------------------
+
+Result:
+
+Black & White
+
+↓
+
+Color
+
+=========================================
+
+<<<<0-HOVER-SEPIA+0>>>>
+
+Example:
+
+sepia(100%)
+
+-----------------------------------------
+
+Old photo appearance.
+
+=========================================
+
+<<<<0-MULTIPLE-FILTERS+0>>>>
+
+Filters can be combined.
+
+-----------------------------------------
+
+Example:
+
+grayscale(100%)
+
+brightness(80%)
+
+-----------------------------------------
+
+Creates dark black and white.
+
+=========================================
+
+<<<<0-IMAGE-CARDS+0>>>>
+
+Very common layout.
+
+-----------------------------------------
+
+Card contains:
+
+Image
+
+Title
+
+Description
+
+Button
+
+=========================================
+
+<<<<0-CARD-HOVER-FORMULA+0>>>>
+
+Typical Formula:
+
+Scale
+
++
+
+Lift
+
++
+
+Shadow
+
+-----------------------------------------
+
+Creates professional cards.
+
+=========================================
+
+<<<<0-GALLERY-IMAGES+0>>>>
+
+Gallery images often use:
+
+Rounded Corners
+
+Shadow
+
+Hover Zoom
+
+=========================================
+
+<<<<0-PRODUCT-IMAGES+0>>>>
+
+Most product sites use:
+
+Hover Zoom
+
+-----------------------------------------
+
+Reason:
+
+Allows users to inspect details.
+
+=========================================
+
+<<<<0-PHOTOGRAPHY-PORTFOLIOS+0>>>>
+
+Very common effects:
+
+Scale
+
+Shadow
+
+Dark Overlay
+
+=========================================
+
+<<<<0-HERO-IMAGE-HOVER+0>>>>
+
+Rarely used.
+
+-----------------------------------------
+
+Hero images are usually
+already large.
+
+-----------------------------------------
+
+Small brightness effects
+are preferred.
+
+=========================================
+
+<<<<0-COMMON-MISTAKES+0>>>>
+
+Too Much Zoom
+
+-----------------------------------------
+
+Huge Rotations
+
+-----------------------------------------
+
+No Transition
+
+-----------------------------------------
+
+Multiple Extreme Effects
+
+-----------------------------------------
+
+Overly Bright Glows
+
+=========================================
+
+<<<<0-GOOD-PRACTICES+0>>>>
+
+Keep image effects:
+
+Smooth
+
+Subtle
+
+Fast
+
+Consistent
+
+-----------------------------------------
+
+The image should remain
+the focus.
+
+=========================================
+
+<<<<0-MOST-IMPORTANT-IMAGE-HOVERS+0>>>>
+
+Scale
+
+-----------------------------------------
+next file
+*/

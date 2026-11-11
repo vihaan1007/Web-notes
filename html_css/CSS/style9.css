@@ -1,0 +1,697 @@
+/*
+Looks Like:
+
+Circle
+
+Spotlight
+
+Glow
+
+=========================================
+
+<<<<0-CONIC-GRADIENT+0>>>>
+
+Conic
+
+=
+Rotates Around Center
+
+-----------------------------------------
+
+Syntax:
+
+conic-gradient(
+red,
+yellow,
+green,
+blue
+)
+
+-----------------------------------------
+
+Looks Similar To:
+
+Pie Charts
+
+Color Wheels
+
+=========================================
+
+<<<<0-ALPHA-IN-GRADIENTS+0>>>>
+
+Gradients can use transparency.
+
+-----------------------------------------
+
+Example:
+
+Transparent
+
+↓
+
+Black
+
+-----------------------------------------
+
+Useful For:
+
+Image Overlays
+
+Hero Sections
+
+Darkening Images
+
+=========================================
+
+<<<<0-GRADIENT-BUTTONS+0>>>>
+
+Example Idea:
+
+Blue
+
+↓
+
+Purple
+
+-----------------------------------------
+
+Purpose:
+
+More Modern Buttons
+
+More Depth
+
+-----------------------------------------
+
+Common On:
+
+Landing Pages
+
+Portfolios
+
+=========================================
+
+<<<<0-GRADIENT-BACKGROUNDS+0>>>>
+
+Instead Of:
+
+One Flat Color
+
+-----------------------------------------
+
+Use:
+
+Dark Color
+
+↓
+
+Slightly Different Dark Color
+
+-----------------------------------------
+
+Result:
+
+Background feels alive
+without being distracting.
+
+=========================================
+
+<<<<0-GRADIENT-TEXT+0>>>>
+
+Text itself contains
+the gradient.
+
+-----------------------------------------
+
+Common For:
+
+Logos
+
+Headings
+
+Hero Titles
+
+-----------------------------------------
+
+Very popular in
+modern websites.
+
+=========================================
+
+<<<<0-GOOD-GRADIENT-PAIRS+0>>>>
+
+For Dark Backgrounds:
+
+Blue → Purple
+
+-----------------------------------------
+
+Purple → Pink
+
+-----------------------------------------
+
+Green → Cyan
+
+-----------------------------------------
+
+Cyan → Blue
+
+-----------------------------------------
+
+These combinations
+usually work well.
+
+=========================================
+
+<<<<0-BAD-GRADIENTS+0>>>>
+
+Too Many Colors
+
+-----------------------------------------
+
+Low Contrast
+
+-----------------------------------------
+
+Random Color Combinations
+
+-----------------------------------------
+
+Extremely Bright Colors
+Everywhere
+
+-----------------------------------------
+
+Can make designs
+look messy.
+
+=========================================
+
+<<<<0-WHEN-TO-USE-GRADIENTS+0>>>>
+
+Best Places:
+
+Buttons
+
+Hero Sections
+
+Cards
+
+Backgrounds
+
+Large Headings
+
+-----------------------------------------
+
+Avoid:
+
+Every Single Element
+
+-----------------------------------------
+
+Too many gradients
+become distracting.
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Gradient
+
+=
+Color Transition
+
+-----------------------------------------
+
+Linear
+
+=
+Straight Line
+
+-----------------------------------------
+
+Radial
+
+=
+From Center
+
+-----------------------------------------
+
+Conic
+
+=
+Around Center
+
+-----------------------------------------
+
+Degrees
+
+=
+Direction
+
+-----------------------------------------
+
+Color Stops
+
+=
+Position Markers
+
+-----------------------------------------
+
+20%
+
+=
+Position
+
+NOT
+
+=
+Amount Of Color
+
+-----------------------------------------
+
+Alpha
+
+=
+Transparency
+
+=========================================
+*/
+
+/*
+=========================================
+TRICK DAY #3 — HOVER EFFECTS
+=========================================
+
+<<<<0-WHAT-IS-HOVER+0>>>>
+
+Hover
+
+=
+Mouse is currently
+over an element.
+
+-----------------------------------------
+
+CSS Uses:
+
+:hover
+
+-----------------------------------------
+
+Purpose:
+
+Provide Feedback
+
+Improve UX
+
+Make Website Feel Alive
+
+=========================================
+
+<<<<0-WHY-HOVER-EFFECTS+0>>>>
+
+Without Hover Effects:
+
+Website feels static.
+
+-----------------------------------------
+
+With Hover Effects:
+
+Interactive
+
+Modern
+
+Professional
+
+=========================================
+
+<<<<0-TRANSITION-FIRST+0>>>>
+
+Most hover effects should use:
+
+transition
+
+-----------------------------------------
+
+Without Transition:
+
+Instant Jump
+
+-----------------------------------------
+
+With Transition:
+
+Smooth Animation
+
+-----------------------------------------
+
+Usually:
+
+transition:0.3s;
+
+transition:0.5s;
+
+=========================================
+
+<<<<0-HOVER-COLOR-CHANGE+0>>>>
+
+Change background color.
+
+-----------------------------------------
+
+Common For:
+
+Buttons
+
+Links
+
+Cards
+
+=========================================
+
+<<<<0-HOVER-TEXT-COLOR+0>>>>
+
+Change text color.
+
+-----------------------------------------
+
+Common For:
+
+Navigation
+
+Menus
+
+Links
+
+=========================================
+
+<<<<0-HOVER-SCALE+0>>>>
+
+Scale
+
+=
+Grow Or Shrink
+
+-----------------------------------------
+
+Example:
+
+scale(1.1)
+
+-----------------------------------------
+
+Result:
+
+Element grows.
+
+-----------------------------------------
+
+Popular Values:
+
+1.05
+
+1.1
+
+1.15
+
+=========================================
+
+<<<<0-HOVER-SHRINK+0>>>>
+
+Example:
+
+scale(0.95)
+
+-----------------------------------------
+
+Result:
+
+Element becomes smaller.
+
+=========================================
+
+<<<<0-HOVER-LIFT+0>>>>
+
+Example:
+
+translateY(-10px)
+
+-----------------------------------------
+
+Result:
+
+Element moves upward.
+
+-----------------------------------------
+
+Creates:
+
+Floating Effect
+
+=========================================
+
+<<<<0-HOVER-DOWN+0>>>>
+
+Example:
+
+translateY(10px)
+
+-----------------------------------------
+
+Result:
+
+Element moves downward.
+
+-----------------------------------------
+
+Less common.
+
+=========================================
+
+<<<<0-HOVER-LEFT+0>>>>
+
+Example:
+
+translateX(-10px)
+
+-----------------------------------------
+
+Moves Left.
+
+=========================================
+
+<<<<0-HOVER-RIGHT+0>>>>
+
+Example:
+
+translateX(10px)
+
+-----------------------------------------
+
+Moves Right.
+
+=========================================
+
+<<<<0-HOVER-ROTATE+0>>>>
+
+Example:
+
+rotate(5deg)
+
+-----------------------------------------
+
+Element rotates.
+
+-----------------------------------------
+
+Useful For:
+
+Creative Designs
+
+Portfolios
+
+=========================================
+
+<<<<0-HOVER-SHADOW+0>>>>
+
+Uses:
+
+box-shadow
+
+-----------------------------------------
+
+Creates:
+
+Depth
+
+Elevation
+
+Professional Look
+
+=========================================
+
+<<<<0-HOVER-GLOW+0>>>>
+
+Example:
+
+box-shadow:
+0 0 20px blue;
+
+-----------------------------------------
+
+Creates:
+
+Glow Effect
+
+-----------------------------------------
+
+Works Best On:
+
+Dark Backgrounds
+
+=========================================
+
+<<<<0-HOVER-BORDER-COLOR+0>>>>
+
+Change border color
+on hover.
+
+-----------------------------------------
+
+Subtle
+
+Professional
+
+=========================================
+
+<<<<0-HOVER-OPACITY+0>>>>
+
+Example:
+
+opacity:0.8;
+
+-----------------------------------------
+
+Makes element
+slightly transparent.
+
+=========================================
+
+<<<<0-HOVER-BRIGHTNESS+0>>>>
+
+Example:
+
+filter:brightness(120%);
+
+-----------------------------------------
+
+Makes element brighter.
+
+=========================================
+
+<<<<0-HOVER-DARKEN+0>>>>
+
+Example:
+
+filter:brightness(80%);
+
+-----------------------------------------
+
+Makes element darker.
+
+=========================================
+
+<<<<0-HOVER-IMAGE-ZOOM+0>>>>
+
+Example:
+
+scale(1.1)
+
+-----------------------------------------
+
+Applied To:
+
+Images
+
+Cards
+
+Products
+
+Portfolios
+
+=========================================
+
+<<<<0-HOVER-UNDERLINE+0>>>>
+
+Very common on links.
+
+-----------------------------------------
+
+No Underline
+
+↓
+
+Hover
+
+↓
+
+Underline Appears
+
+=========================================
+
+<<<<0-COMBINING-EFFECTS+0>>>>
+
+Multiple hover effects
+can be combined.
+
+-----------------------------------------
+
+Example:
+
+Scale
+
++
+
+Lift
+
++
+
+Shadow
+
++
+
+Border Color
+
+-----------------------------------------
+
+Result:
+
+Professional Hover
+
+=========================================
+
+<<<<0-REAL-WORLD-BUTTON-EXAMPLE+0>>>>
+
+Example:
+
+Circular Button
+
+-----------------------------------------
+
+Features:
+
+Conic Gradient
+
+Hover Scale
+
+Glow
+
+Border Color Change
+
+Active Press Effect
+
+-----------------------------------------
+NEXT FILE
+*/

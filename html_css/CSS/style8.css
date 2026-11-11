@@ -1,0 +1,690 @@
+/*
+<<<<0-OUTLINE-BUTTONS+0>>>>
+
+Outline Button
+
+=
+Border Focused Design
+
+-----------------------------------------
+
+Often Similar To:
+
+Ghost Buttons
+
+-----------------------------------------
+
+Used When:
+
+A Button Needs Less Attention
+Than The Primary Button
+
+=========================================
+
+<<<<0-ICON-BUTTONS+0>>>>
+
+Button Contains Only An Icon
+
+Examples:
+
+🔍
+
+❤️
+
+⚙️
+
+🗑️
+
+-----------------------------------------
+
+Advantages:
+
+Compact
+
+Recognizable
+
+=========================================
+
+<<<<0-ICON-TEXT-BUTTONS+0>>>>
+
+Examples:
+
+🔍 Search
+
+❤️ Like
+
+⚙️ Settings
+
+-----------------------------------------
+
+Advantages:
+
+Easy To Understand
+
+Better UX
+
+=========================================
+
+<<<<0-LOADING-BUTTONS+0>>>>
+
+When A Button Is Processing:
+
+Show:
+
+Loading...
+
+Spinner
+
+Progress Indicator
+
+-----------------------------------------
+
+Purpose:
+
+User Knows
+Something Is Happening
+
+=========================================
+
+<<<<0-DISABLED-BUTTONS+0>>>>
+
+Disabled
+
+=
+Cannot Be Clicked
+
+-----------------------------------------
+
+Typical Appearance:
+
+Lower Opacity
+
+Muted Colors
+
+Not Allowed Cursor
+
+-----------------------------------------
+
+Purpose:
+
+Prevent Invalid Actions
+
+=========================================
+
+<<<<0-ELEVATED-BUTTONS+0>>>>
+
+Uses Shadows
+
+-----------------------------------------
+
+Creates:
+
+Depth
+
+Importance
+
+Visibility
+
+-----------------------------------------
+
+Often Used For:
+
+Primary Buttons
+
+=========================================
+
+<<<<0-GLASSMORPHISM-BUTTONS+0>>>>
+
+Glass Effect
+
+-----------------------------------------
+
+Features:
+
+Transparency
+
+Blur
+
+Soft Borders
+
+-----------------------------------------
+
+Common In:
+
+Modern Dashboards
+
+Portfolios
+
+=========================================
+
+<<<<0-NEUMORPHISM-BUTTONS+0>>>>
+
+Uses:
+
+Soft Shadows
+
+Soft Highlights
+
+-----------------------------------------
+
+Creates:
+
+Pressed Surface Look
+
+-----------------------------------------
+
+Can Look Beautiful
+
+But Often Reduces Accessibility
+
+=========================================
+
+<<<<0-BUTTON-COLOR-THEORY+0>>>>
+
+For Background:
+
+rgb(30,30,30)
+
+-----------------------------------------
+
+Safe Primary Colors:
+
+Blue
+
+Cyan
+
+Green
+
+Purple
+
+-----------------------------------------
+
+Danger:
+
+Red
+
+-----------------------------------------
+
+Success:
+
+Green
+
+-----------------------------------------
+
+Avoid:
+
+Many Random Colors
+
+=========================================
+
+<<<<0-GOOD-BUTTON-RULES+0>>>>
+
+A Button Should:
+
+Look Clickable
+
+Provide Feedback
+
+Have Good Contrast
+
+Have Clear Purpose
+
+Have Comfortable Padding
+
+=========================================
+
+<<<<0-MOST-USEFUL-BUTTON-TRICKS+0>>>>
+
+Hover Effects
+
+Active Effects
+
+Transitions
+
+Rounded Buttons
+
+Icon Buttons
+
+Loading States
+
+Focus States
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Hover
+
+=
+Mouse Over
+
+-----------------------------------------
+
+Active
+
+=
+Pressed
+
+-----------------------------------------
+
+Focus
+
+=
+Keyboard Selected
+
+-----------------------------------------
+
+Ghost
+
+=
+Transparent
+
+-----------------------------------------
+
+Outline
+
+=
+Border Focused
+
+-----------------------------------------
+
+Loading
+
+=
+Processing
+
+-----------------------------------------
+
+Disabled
+
+=
+Cannot Click
+
+-----------------------------------------
+
+Icon Button
+
+=
+Visual Meaning
+
+=========================================
+*/
+
+/*
+=========================================
+DAY 21 — GRADIENTS
+=========================================
+
+<<<<0-WHAT-IS-A-GRADIENT+0>>>>
+
+A Gradient
+
+=
+A smooth transition
+between two or more colors.
+
+-----------------------------------------
+
+Normal Color:
+
+background:red;
+
+-----------------------------------------
+
+Gradient:
+
+Red
+↓
+Orange
+↓
+Yellow
+
+-----------------------------------------
+
+Purpose:
+
+More Depth
+
+More Visual Interest
+
+More Modern Designs
+
+=========================================
+
+<<<<0-WHY-USE-GRADIENTS+0>>>>
+
+Gradients can make:
+
+Buttons
+
+Cards
+
+Backgrounds
+
+Hero Sections
+
+Text
+
+look much more attractive.
+
+-----------------------------------------
+
+Many modern websites use
+gradients somewhere.
+
+=========================================
+
+<<<<0-LINEAR-GRADIENT+0>>>>
+
+Most Common Gradient Type.
+
+-----------------------------------------
+
+Syntax:
+
+linear-gradient(
+red,
+blue
+)
+
+-----------------------------------------
+
+Result:
+
+Red smoothly changes
+into Blue.
+
+-----------------------------------------
+
+Linear
+
+=
+Straight Line Transition
+
+=========================================
+
+<<<<0-DIRECTION-KEYWORDS+0>>>>
+
+Default Direction:
+
+Top → Bottom
+
+-----------------------------------------
+
+to right
+
+=
+Left → Right
+
+-----------------------------------------
+
+to left
+
+=
+Right → Left
+
+-----------------------------------------
+
+to bottom
+
+=
+Top → Bottom
+
+-----------------------------------------
+
+to top
+
+=
+Bottom → Top
+
+-----------------------------------------
+
+Example:
+
+linear-gradient(
+to right,
+red,
+blue
+)
+
+Result:
+
+Red Left
+
+Blue Right
+
+=========================================
+
+<<<<0-DEGREES+0>>>>
+
+Degrees also control direction.
+
+-----------------------------------------
+
+Think:
+
+Direction Arrow
+
+-----------------------------------------
+
+0deg
+
+=
+Bottom → Top
+
+-----------------------------------------
+
+90deg
+
+=
+Left → Right
+
+-----------------------------------------
+
+180deg
+
+=
+Top → Bottom
+
+-----------------------------------------
+
+270deg
+
+=
+Right → Left
+
+-----------------------------------------
+
+45deg
+
+=
+Diagonal
+
+-----------------------------------------
+
+Example:
+
+linear-gradient(
+90deg,
+red,
+blue
+)
+
+Result:
+
+Red Left
+
+Blue Right
+
+-----------------------------------------
+
+Example:
+
+linear-gradient(
+180deg,
+red,
+blue
+)
+
+Result:
+
+Red Top
+
+Blue Bottom
+
+=========================================
+
+<<<<0-MULTIPLE-COLORS+0>>>>
+
+A Gradient is not limited
+to two colors.
+
+-----------------------------------------
+
+Example:
+
+linear-gradient(
+red,
+yellow,
+green
+)
+
+-----------------------------------------
+
+Result:
+
+Red
+↓
+Yellow
+↓
+Green
+
+=========================================
+
+<<<<0-COLOR-STOPS+0>>>>
+
+Color Stops
+
+=
+Position Markers
+
+-----------------------------------------
+
+Most Important Rule:
+
+A Color Stop
+
+≠
+
+Amount Of Color
+
+-----------------------------------------
+
+A Color Stop
+
+=
+
+Position Of Color
+
+-----------------------------------------
+
+Example:
+
+linear-gradient(
+red 20%,
+blue 80%
+)
+
+-----------------------------------------
+
+Meaning:
+
+Red reaches its stop
+at 20%
+
+Blue reaches its stop
+at 80%
+
+-----------------------------------------
+
+Browser creates a transition
+between those points.
+
+-----------------------------------------
+
+Think:
+
+20%
+
+=
+Marker
+
+NOT
+
+=
+Red occupies 20%
+
+=========================================
+
+<<<<0-SHARP-SPLITS+0>>>>
+
+Example:
+
+linear-gradient(
+red 0%,
+red 50%,
+blue 50%,
+blue 100%
+)
+
+-----------------------------------------
+
+Result:
+
+50% Red
+
+50% Blue
+
+-----------------------------------------
+
+Almost no transition.
+
+-----------------------------------------
+
+Useful For:
+
+Flags
+
+Stripes
+
+Sections
+
+=========================================
+
+<<<<0-RADIAL-GRADIENT+0>>>>
+
+Radial
+
+=
+Starts From Center
+
+-----------------------------------------
+
+Syntax:
+
+radial-gradient(
+red,
+blue
+)
+
+-----------------------------------------
+
+Result:
+
+Red Center
+
+Blue Outside
+
+-----------------------------------------
+        NEXT FILE
+*/

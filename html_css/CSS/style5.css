@@ -1,0 +1,673 @@
+/*
+=========================================
+DAY 16 - PSEUDO CLASSES
+=========================================
+
+Pseudo classes represent
+a special state of an element.
+
+Syntax:
+
+selector:pseudo-class
+
+Example:
+
+button:hover
+
+=========================================
+
+>>> :hover <<<
+
+Applies styles when
+the mouse is over
+an element.
+
+Most commonly used.
+
+Examples:
+
+Buttons
+
+Cards
+
+Images
+
+Links
+
+=========================================
+
+>>> :active <<<
+
+Applies styles while
+an element is being clicked.
+
+Usually lasts for a very
+short time.
+
+Example:
+
+button:active
+
+=========================================
+
+>>> :focus <<<
+
+Applies styles when
+an element receives input.
+
+Most common with:
+
+input
+
+textarea
+
+select
+
+Example:
+
+input:focus
+
+=========================================
+
+>>> :visited <<<
+
+Targets links that
+have already been visited.
+
+Example:
+
+a:visited
+
+Typical browser behavior:
+
+Visited = Purple
+
+=========================================
+
+>>> :link <<<
+
+Targets links that
+have never been visited.
+
+Example:
+
+a:link
+
+=========================================
+
+>>> :first-child <<<
+
+Targets the first child
+inside a parent.
+
+Example:
+
+li:first-child
+
+Only the first li
+will be selected.
+
+=========================================
+
+>>> :last-child <<<
+
+Targets the last child
+inside a parent.
+
+Example:
+
+li:last-child
+
+Only the last li
+will be selected.
+
+=========================================
+
+>>> :nth-child() <<<
+
+Targets a specific position.
+
+Example:
+
+li:nth-child(3)
+
+Selects:
+
+Third li
+
+-----------------------------------------
+
+Useful values:
+
+nth-child(even)
+
+Selects:
+
+2nd
+4th
+6th
+8th
+
+-----------------------------------------
+
+nth-child(odd)
+
+Selects:
+
+1st
+3rd
+5th
+7th
+
+=========================================
+
+>>> :checked <<<
+
+Works with:
+
+checkboxes
+
+radio buttons
+
+Targets elements that
+are checked.
+
+Example:
+
+input:checked
+
+Very useful for
+interactive CSS projects.
+
+=========================================
+
+>>> Difference <<<
+
+Pseudo Class
+
+:hover
+
+Represents a state.
+
+-----------------------------------------
+
+Pseudo Element
+
+::before
+
+Creates a virtual element.
+
+=========================================
+
+>>> Most Important <<<
+
+:hover
+
+:active
+
+:focus
+
+:checked
+
+:nth-child()
+
+=========================================
+
+>>> Summary <<<
+
+Pseudo classes represent
+special states.
+
+Common pseudo classes:
+
+:hover
+
+:active
+
+:focus
+
+:visited
+
+:link
+
+:first-child
+
+:last-child
+
+:nth-child()
+
+:checked
+
+Useful for:
+
+Interactions
+
+Forms
+
+Links
+
+Lists
+
+CSS-only projects
+
+=========================================
+*/
+
+/*
+=========================================
+RESPONSIVE DESIGN
+DAY 18
+=========================================
+Responsive Design means:
+
+One website
+
+Many screen sizes
+
+The website should work on:
+
+Phone
+
+Tablet
+
+Laptop
+
+Desktop
+
+Ultra-wide monitor
+
+without breaking.
+
+The Goal
+
+Instead of forcing
+the screen to fit
+the website
+
+We make the website
+fit the screen.
+
+Common Problems
+
+Content overflowing
+
+Horizontal scrolling
+
+Tiny text
+
+Huge text
+
+Images escaping containers
+
+Cards becoming unusable
+
+Layouts breaking
+
+The Responsive Mindset
+
+Before writing CSS ask:
+
+What happens if the screen
+becomes smaller?
+
+What happens if the screen
+becomes larger?
+
+Will content overflow?
+
+Will cards wrap?
+
+Will images overflow?
+
+Will text remain readable?
+
+Responsive Design Tools
+
+Responsive Units
+
+Wrapping
+
+Fluid Layouts
+
+Responsive Images
+
+Min / Max Constraints
+
+clamp()
+
+@media
+
+RESPONSIVE UNITS
+
+Responsive units adapt
+automatically.
+
+Most useful:
+
+%
+
+rem
+
+vw
+
+vh
+
+-----------------------------------------
+
+%
+
+Based on parent.
+
+-----------------------------------------
+
+rem
+
+Based on root font size.
+
+-----------------------------------------
+
+vw
+
+Based on viewport width.
+
+-----------------------------------------
+
+vh
+
+Based on viewport height.
+
+WRAPPING
+
+One of the easiest fixes.
+
+Example:
+
+flex-wrap: wrap;
+
+-----------------------------------------
+
+Without wrapping:
+
+[Card][Card][Card][Card]
+
+May overflow.
+
+-----------------------------------------
+
+With wrapping:
+
+[Card][Card]
+
+[Card][Card]
+
+No overflow.
+
+FLUID LAYOUTS
+
+Fluid layouts grow
+and shrink naturally.
+
+Bad:
+
+width:1000px;
+
+-----------------------------------------
+
+Better:
+
+width:80%;
+
+-----------------------------------------
+
+Even Better:
+
+width:80%;
+max-width:1200px;
+
+RESPONSIVE IMAGES
+
+Bad:
+
+img{
+    width:800px;
+}
+
+-----------------------------------------
+
+Good:
+
+img{
+    max-width:100%;
+}
+
+Meaning:
+
+Image never becomes
+larger than its parent.
+
+MIN / MAX CONSTRAINTS
+
+Useful safety limits.
+
+Examples:
+
+min-width
+
+max-width
+
+min-height
+
+max-height
+
+-----------------------------------------
+
+Example:
+
+width:80%;
+max-width:1200px;
+
+Meaning:
+
+Grow until 1200px
+
+Then stop.
+
+CLAMP()
+
+Automatically scales
+a value but keeps
+it inside limits.
+
+Syntax:
+
+clamp(minimum, preferred, maximum)
+
+-----------------------------------------
+
+Example:
+
+font-size: clamp(1rem, 5vw, 3rem);
+
+Meaning:
+
+Never smaller than 1rem
+
+Try to be 5vw
+
+Never larger than 3rem
+
+-----------------------------------------
+
+Best Uses:
+
+Headings
+
+Buttons
+
+Cards
+
+Padding
+
+Margins
+
+Gap
+
+-----------------------------------------
+
+Memory:
+
+clamp()
+
+=
+
+Automatic scaling
+with limits
+
+@MEDIA
+
+Used when the layout itself
+must change.
+
+Syntax:
+
+@media(condition){
+
+    CSS
+
+}
+
+-----------------------------------------
+
+Example:
+
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+
+}
+
+Meaning:
+
+If screen width
+is 768px or less
+
+Use column layout
+
+>>> max-width <<<
+
+Targets:
+
+768px and below
+
+Usually:
+
+Tablet
+
+Phone
+
+>>> min-width <<<
+
+Targets:
+
+768px and above
+
+Usually:
+
+Tablet
+
+Laptop
+
+Desktop
+
+Good Uses:
+
+Navbar layout
+
+Sidebar visibility
+
+Grid columns
+
+Flex direction
+
+Card arrangement
+
+-----------------------------------------
+
+Bad Use:
+
+Rewriting the entire CSS file
+
+DESKTOP FIRST
+
+Build desktop first.
+
+Then shrink.
+
+-----------------------------------------
+
+Common in older websites.
+
+MOBILE FIRST
+
+Build phone first.
+
+Then expand.
+
+-----------------------------------------
+
+Preferred in modern development.
+
+Responsive Design Checklist
+
+✓ No horizontal scrolling
+
+✓ Images scale
+
+✓ Text remains readable
+
+✓ Cards wrap correctly
+
+✓ Layout adapts
+
+✓ Works on phone
+
+✓ Works on desktop
+
+Difference
+
+Responsive Units
+
+=
+
+Small automatic adjustments
+
+-----------------------------------------
+
+clamp()
+
+=
+
+Automatic scaling
+
+-----------------------------------------
+
+@media
+
+=
+
+Layout changes
+
+Golden Rule
+
+Use responsive units first.
+
+Use wrapping second.
+
+Use clamp() third.
+
+Use @media when
+the layout itself
+must change.
+*/

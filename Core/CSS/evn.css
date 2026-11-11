@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(30, 30, 30);
+}
+
+#box {
+    color: greenyellow;
+    background-color: slateblue;
+    height: 100px;
+    width: 100px;
+}
+
+#box:hover {
+    background-color: greenyellow;
+    color: slateblue;
+}
+
+#w{
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+}

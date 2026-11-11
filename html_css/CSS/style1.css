@@ -1,0 +1,493 @@
+/*========
+Day 1
+==========*/
+
+/*Selectors id class and tag
+tagName
+.className
+#idName
+*/
+
+/*Colors*/
+
+/*RGB*/
+
+/*
+color: rgb(30, 30, 30);
+       rgb(red, green, blue);
+       each 0 to 255
+*/
+
+/*HEX*/
+
+/*
+color: #000000;
+        rrggbb;
+
+HEXADECIMAL NUMBERS
+0 : 0 
+1 : 1
+2 : 2 
+3 : 3
+4 : 4 
+5 : 5
+6 : 6
+7 : 7
+8 : 8
+9 : 9
+a : 10
+b : 11
+c : 12
+d : 13
+e : 14
+f : 15
+*/
+
+/*HSL*/
+
+/*
+hsl(hue, saturation, lightness)
+Hue: color on a wheel (0–360°)
+Saturation: how colorful it is (0%–100%)
+Lightness: brightness (0%–100%)
+*/
+
+/*RGBA*/
+
+/*Same as rgba just a extra perimeter alpha to control opacity from 0 to 1*/
+
+/*HSLA*/
+
+/*Mix of HSL and RGBA also used in HSL as hsl(hue, saturation, lightness / alpha)*/
+
+/*
+DAY 1 - BACKGROUNDS
+
+1. background-color
+   - Sets the background color of an element.
+
+2. background-image
+   - Adds an image as the background.
+
+3. background-repeat
+   - Controls whether the image repeats.
+   - Values: repeat, no-repeat, repeat-x, repeat-y
+
+4. background-size
+   - Controls image size.
+   - cover: fills the area
+   - contain: shows the entire image
+
+5. background-position
+   - Controls image placement.
+   - Examples: center, top, bottom, left, right
+
+6. background-attachment
+   - scroll: moves with the page
+   - fixed: stays in place while scrolling
+
+7. background (shorthand)
+   - Combines multiple background properties in one line.
+*/
+
+/*==================
+         DAY 2
+====================*/
+
+/*
+
+BOX MODEL
+
+-Margin
+-Border
+-Padding
+-Content(Height and Width)
+
+-Content is the height and width of the content in the middle of the box height and width are calculated on box sizing
+
+-Margin is the space between two elements you can set different values to each top bottom left and right as margin-top margin-right margin-bottom margin-left
+
+-Padding is the space between border and Content you can add different values just like margin just margin-top becomes padding-top same for all
+
+-Border is the line between Padding and Margin it has 4 commonly used values Border-width controls how big the line is or how much width border-style, border style has 4 commonly used values Solid fills the whole line Dotted fills in uing dots Dashed fills in using underscores(_) or dashes Double does solid border two times Border-color decides the color of the border line Border-radius tells how round the cornrs should be
+
+Border-radius has two very common tricks border-radius: 50%; it makes a circle also, height and width must be same otherwise you will end up with a oval border-radius: 999px; it makes the left and right a semicircle.
+
+SHORTHANDS
+
+A shorthand is a short form
+
+in Margin and Padding same rules are followed
+
+Margin: 10px 20px 30px 40px;
+first value is Top
+Second value is Right
+Third value is Bottom
+Fourth value is Left
+
+so TRBL
+
+if four values are given, apply TRBL
+if three are given: first is Top second is for both Left and Right and third is for bottom
+if two are given: first is for both Top and Bottom and second is for both Left and right
+if one is given: the value is for all
+
+in Border
+
+Border: 1px solid black;
+first is border-width
+second is border-style
+third is border-color
+
+remember f"{border-width} of {border style} {border color}"
+so "1 pixel of solid black"
+
+Box sizing
+
+1. content-box (default)
+it is height + padding + border
+or width + padding + border
+
+2. border-box (best)
+It is height or width
+
+3.Inherit
+Takes the value from its parent
+*/
+
+/*==================
+         DAY 3
+====================*/
+
+/*
+TEXT STYLING
+
+-color
+-font-size
+-font-family
+-font-weight
+-font-style
+-text-align
+-text-decoration
+-text-transform
+-line-height
+-letter-spacing
+-word-spacing
+-text-shadow
+
+-color changes the color of the text.
+
+-font-size changes how big or small the text is.
+
+-font-family changes the font of the text.
+You can also provide fallback fonts.
+
+-font-weight controls how thick the text is.
+
+Common values:
+400 = normal
+700 = bold
+
+-font-style is commonly used to make text italic.
+
+-text-align controls horizontal alignment of text.
+
+Common values:
+left
+center
+right
+justify
+
+-text-decoration adds decorations to text.
+
+Common values:
+underline
+overline
+line-through
+none
+
+-text-transform changes capitalization.
+
+Common values:
+uppercase
+lowercase
+capitalize
+
+-line-height controls the space between lines of text.
+
+-letter-spacing controls the space between letters.
+
+-word-spacing controls the space between words.
+
+-text-shadow adds a shadow to text.
+
+Syntax:
+
+text-shadow: x-offset y-offset blur color;
+
+Example:
+
+text-shadow: 2px 2px 5px black;
+
+2px = move shadow right
+2px = move shadow down
+5px = blur amount
+black = shadow color
+
+Glow effect:
+
+text-shadow: 0 0 10px red;
+
+Multiple shadows can be added using commas.
+
+Example:
+
+text-shadow:
+    0 0 5px red,
+    0 0 10px red,
+    0 0 20px red;
+*/
+
+/*==================
+         DAY 4
+====================*/
+
+/*
+UNITS
+
+-px
+-%
+-em
+-rem
+-vw
+-vh
+-vmin
+-vmax
+-auto
+
+1. px (Pixels)
+
+The most common unit.
+
+1in = 96px
+
+Historically:
+
+1px = 1/96 inch
+
+px is a fixed unit.
+
+Example:
+
+width: 200px;
+
+The element will try to be exactly 200 pixels wide.
+
+----------------------------------
+
+2. % (Percentage)
+
+Relative to the parent element.
+
+Example:
+
+.parent{
+    width: 400px;
+}
+
+.child{
+    width: 50%;
+}
+
+Result:
+
+Child width = 200px
+
+because 50% of 400px = 200px
+
+----------------------------------
+
+3. em
+
+Relative to the parent's font size.
+
+Example:
+
+.parent{
+    font-size: 20px;
+}
+
+.child{
+    font-size: 2em;
+}
+
+Result:
+
+40px
+
+because 2 × 20px = 40px
+
+em can compound through nesting and become difficult to track.
+
+----------------------------------
+
+4. rem
+
+Relative to the root(html) font size.
+
+Browser default:
+
+html{
+    font-size: 16px;
+}
+
+Example:
+
+font-size: 2rem;
+
+Result:
+
+32px
+
+because 2 × 16px = 32px
+
+rem is predictable because it always uses the root font size.
+
+----------------------------------
+
+5. vw (Viewport Width)
+
+Relative to browser width.
+
+Example:
+
+width: 50vw;
+
+Browser width = 1000px
+
+Result:
+
+500px
+
+because 50% of viewport width = 500px
+
+----------------------------------
+
+6. vh (Viewport Height)
+
+Relative to browser height.
+
+Example:
+
+height: 100vh;
+
+100% of the viewport height.
+
+Often used for full screen sections.
+
+----------------------------------
+
+7. vmin
+
+Uses the smaller viewport dimension.
+
+Example:
+
+Viewport:
+1200px × 800px
+
+Smaller dimension = 800px
+
+width: 50vmin;
+
+Result:
+
+400px
+
+because 50% of 800px = 400px
+
+----------------------------------
+
+8. vmax
+
+Uses the larger viewport dimension.
+
+Example:
+
+Viewport:
+1200px × 800px
+
+Larger dimension = 1200px
+
+width: 50vmax;
+
+Result:
+
+600px
+
+because 50% of 1200px = 600px
+
+----------------------------------
+
+9. auto
+
+Lets the browser decide.
+
+Example:
+
+width: auto;
+
+Very common.
+
+----------------------------------
+
+RANKING
+
+S Tier
+
+px
+%
+rem
+vw
+vh
+
+B Tier
+
+em
+
+C Tier
+
+vmin
+vmax
+
+D Tier (mostly printing)
+
+cm
+mm
+in
+pt
+pc
+
+----------------------------------
+
+QUICK MEMORY
+
+px   -> Fixed
+
+%    -> Parent
+
+em   -> Parent font size
+
+rem  -> Root(html) font size
+
+vw   -> Viewport width
+
+vh   -> Viewport height
+
+vmin -> Smaller viewport dimension
+
+vmax -> Larger viewport dimension
+
+auto -> Browser decides
+*/
+

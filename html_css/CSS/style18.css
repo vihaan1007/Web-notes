@@ -1,0 +1,265 @@
+/*
+<<<<0-MAINTENANCE+0>>>>
+
+Large Project
+
+↓
+
+Many Files
+
+↓
+
+Many Components
+
+-----------------------------------------
+
+Variables reduce maintenance.
+
+=========================================
+
+<<<<0-WHY-PROFESSIONALS-LOVE-VARIABLES+0>>>>
+
+Large projects may contain:
+
+-----------------------------------------
+
+Thousands Of Lines
+
+-----------------------------------------
+
+Variables save huge amounts
+of time.
+
+=========================================
+
+<<<<0-FALLBACK-VALUES+0>>>>
+
+Variables can have backups.
+
+-----------------------------------------
+
+Example Idea:
+
+Use variable.
+
+If missing
+
+↓
+
+Use another value.
+
+-----------------------------------------
+
+Useful safety feature.
+
+=========================================
+
+<<<<0-COMMON-MISTAKE-1+0>>>>
+
+Forgetting:
+
+-----------------------------------------
+
+--
+
+-----------------------------------------
+
+Example:
+
+main-color: cyan;
+
+-----------------------------------------
+
+Wrong.
+
+=========================================
+
+<<<<0-COMMON-MISTAKE-2+0>>>>
+
+Forgetting:
+
+-----------------------------------------
+
+var(...)
+
+-----------------------------------------
+
+Example:
+
+color: --main-color;
+
+-----------------------------------------
+
+Wrong.
+
+=========================================
+
+<<<<0-COMMON-MISTAKE-3+0>>>>
+
+Misspelling variable names.
+
+-----------------------------------------
+
+--main-color
+
+-----------------------------------------
+
+is different from:
+
+-----------------------------------------
+
+--maincolour
+
+=========================================
+
+<<<<0-COMMON-MISTAKE-4+0>>>>
+
+Using variable before creating it.
+
+-----------------------------------------
+
+Browser cannot find it.
+
+=========================================
+
+<<<<0-VARIABLES-AND-RESPONSIVE-DESIGN+0>>>>
+
+Variables work well with:
+
+-----------------------------------------
+
+rem
+
+clamp
+
+media queries
+
+-----------------------------------------
+
+Useful for scalable designs.
+
+=========================================
+
+<<<<0-WHEN-TO-USE-VARIABLES+0>>>>
+
+Use variables when:
+
+-----------------------------------------
+
+Value repeats
+
+-----------------------------------------
+
+Theme exists
+
+-----------------------------------------
+
+Large project exists
+
+=========================================
+
+<<<<0-WHEN-NOT-TO-USE-VARIABLES+0>>>>
+
+Single-use values.
+
+-----------------------------------------
+
+Tiny experiments.
+
+-----------------------------------------
+
+Very small files.
+
+=========================================
+
+<<<<0-MEMORY-TRICK+0>>>>
+
+Create
+
+=
+
+--name
+
+-----------------------------------------
+
+Use
+
+=
+
+var(--name)
+
+-----------------------------------------
+
+Global
+
+=
+
+:root
+
+-----------------------------------------
+
+Main Benefit
+
+=
+
+Change Once
+
+Use Everywhere
+
+=========================================
+
+<<<<0-FINAL-SUMMARY+0>>>>
+
+CSS Variables
+
+=
+
+Stored CSS Values
+
+-----------------------------------------
+
+Created With:
+
+--name
+
+-----------------------------------------
+
+Used With:
+
+var(--name)
+
+-----------------------------------------
+
+Global Variables:
+
+:root
+
+-----------------------------------------
+
+Best Uses:
+
+Themes
+
+Colors
+
+Spacing
+
+Fonts
+
+Shadows
+
+Sizes
+
+-----------------------------------------
+
+Biggest Benefit:
+
+Change Once
+
+Use Everywhere
+
+=========================================
+*/
+
+
+/*OVER*/

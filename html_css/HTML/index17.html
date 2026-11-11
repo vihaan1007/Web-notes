@@ -1,0 +1,733 @@
+<!-- ========================================================== -->
+<!-- DAY 17 NOTES -->
+<!-- FORMS PART 7 -->
+<!-- ACTION AND METHOD -->
+<!-- ========================================================== -->
+
+<!-- Until now we have been learning how to CREATE forms. -->
+
+<!-- We learned: -->
+
+<!-- input -->
+<!-- label -->
+<!-- radio -->
+<!-- checkbox -->
+<!-- select -->
+<!-- option -->
+<!-- textarea -->
+<!-- button -->
+
+<!-- We learned how to COLLECT data from users. -->
+
+<!-- Example: -->
+
+<!-- Name -->
+<!-- Email -->
+<!-- Password -->
+<!-- Country -->
+<!-- Feedback -->
+
+<!-- But today we ask a new question. -->
+
+<!-- ========================================================== -->
+
+<!-- WHAT HAPPENS AFTER SUBMIT? -->
+
+<!-- User fills the form. -->
+
+<!-- User clicks Submit. -->
+
+<!-- Then what? -->
+
+<!-- Where does the data go? -->
+
+<!-- How does the data travel? -->
+
+<!-- These are the two questions of Day 17. -->
+
+<!-- ========================================================== -->
+
+<!-- QUESTION 1 -->
+
+<!-- WHERE DOES THE DATA GO? -->
+
+<!-- Answer: -->
+
+<!-- action -->
+
+<!-- ========================================================== -->
+
+<!-- QUESTION 2 -->
+
+<!-- HOW DOES THE DATA TRAVEL? -->
+
+<!-- Answer: -->
+
+<!-- method -->
+
+<!-- ========================================================== -->
+
+<!-- DAY 17 KEYWORDS -->
+
+<!-- form -->
+<!-- action -->
+<!-- method -->
+<!-- get -->
+<!-- post -->
+
+<!-- These are the important words of today's lesson. -->
+
+<!-- ========================================================== -->
+
+<!-- THE FORM TAG -->
+
+<!-- We already know: -->
+
+<!-- <form> -->
+
+<!-- </form> -->
+
+<!-- Purpose: -->
+
+<!-- Groups form controls together. -->
+
+<!-- Example: -->
+
+<!-- input -->
+<!-- textarea -->
+<!-- select -->
+<!-- button -->
+
+<!-- can all live inside a form. -->
+
+<!-- ========================================================== -->
+
+<!-- ACTION -->
+
+<!-- Syntax: -->
+
+<!-- <form action=""> -->
+
+<!-- Purpose: -->
+
+<!-- Tells the browser WHERE the form data should go. -->
+
+<!-- Think of action as a destination address. -->
+
+<!-- ========================================================== -->
+
+<!-- REAL LIFE EXAMPLE -->
+
+<!-- You write a letter. -->
+
+<!-- The letter contains information. -->
+
+<!-- But where should it go? -->
+
+<!-- You need an address. -->
+
+<!-- Without an address the letter goes nowhere. -->
+
+<!-- Forms work the same way. -->
+
+<!-- Data is the letter. -->
+
+<!-- action is the address. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <form action="thanks.html"> -->
+
+<!-- When Submit is clicked -->
+
+<!-- Browser goes to thanks.html -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <form action="welcome.html"> -->
+
+<!-- User submits -->
+
+<!-- Browser goes to welcome.html -->
+
+<!-- ========================================================== -->
+
+<!-- Important -->
+
+<!-- action belongs to form. -->
+
+<!-- NOT input. -->
+
+<!-- NOT textarea. -->
+
+<!-- NOT button. -->
+
+<!-- ========================================================== -->
+
+<!-- WRONG -->
+
+<!-- <input action="abc.html"> -->
+
+<!-- ========================================================== -->
+
+<!-- CORRECT -->
+
+<!-- <form action="abc.html"> -->
+
+<!-- ========================================================== -->
+
+<!-- METHOD -->
+
+<!-- Syntax -->
+
+<!-- <form method=""> -->
+
+<!-- Purpose -->
+
+<!-- Tells the browser HOW the data should travel. -->
+
+<!-- ========================================================== -->
+
+<!-- MAIN VALUES -->
+
+<!-- get -->
+
+<!-- post -->
+
+<!-- ========================================================== -->
+
+<!-- GET -->
+
+<!-- Syntax -->
+
+<!-- <form method="get"> -->
+
+<!-- GET means data becomes visible in the URL. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- User enters: -->
+
+<!-- Alex -->
+
+<!-- Browser may show: -->
+
+<!-- page.html?name=Alex -->
+
+<!-- Notice -->
+
+<!-- Alex is visible. -->
+
+<!-- ========================================================== -->
+
+<!-- GET IS GOOD FOR -->
+
+<!-- Search bars -->
+
+<!-- Filters -->
+
+<!-- Non-sensitive information -->
+
+<!-- Simple queries -->
+
+<!-- ========================================================== -->
+
+<!-- Memory Trick -->
+
+<!-- GET -->
+
+<!-- Visible -->
+
+<!-- ========================================================== -->
+
+<!-- POST -->
+
+<!-- Syntax -->
+
+<!-- <form method="post"> -->
+
+<!-- POST means data does not appear in the URL. -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- Login Form -->
+
+<!-- Username -->
+
+<!-- Password -->
+
+<!-- You do not want passwords inside the URL. -->
+
+<!-- Therefore POST is commonly used. -->
+
+<!-- ========================================================== -->
+
+<!-- POST IS GOOD FOR -->
+
+<!-- Passwords -->
+
+<!-- Login Forms -->
+
+<!-- Registration Forms -->
+
+<!-- Sensitive Information -->
+
+<!-- ========================================================== -->
+
+<!-- Memory Trick -->
+
+<!-- POST -->
+
+<!-- Hidden -->
+
+<!-- ========================================================== -->
+
+<!-- GET VS POST -->
+
+<!-- GET -->
+
+<!-- Visible -->
+
+<!-- Shows data in URL -->
+
+<!-- Usually for simple information -->
+
+<!-- ========================================================== -->
+
+<!-- POST -->
+
+<!-- Hidden -->
+
+<!-- Does not show data in URL -->
+
+<!-- Usually for sensitive information -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <form -->
+<!-- action="welcome.html" -->
+<!-- method="get"> -->
+
+<!-- User enters data -->
+
+<!-- Clicks Submit -->
+
+<!-- Browser goes to welcome.html -->
+
+<!-- ========================================================== -->
+
+<!-- WHY IS ACTION IMPORTANT? -->
+
+<!-- Without action -->
+
+<!-- Browser knows there is data -->
+
+<!-- But browser does not know where to go -->
+
+<!-- ========================================================== -->
+
+<!-- Taxi Analogy -->
+
+<!-- Driver asks: -->
+
+<!-- Where? -->
+
+<!-- Passenger says nothing -->
+
+<!-- Driver cannot move -->
+
+<!-- ========================================================== -->
+
+<!-- Form Analogy -->
+
+<!-- Form has data -->
+
+<!-- But no action -->
+
+<!-- Browser asks: -->
+
+<!-- Where? -->
+
+<!-- ========================================================== -->
+
+<!-- WHY IS METHOD IMPORTANT? -->
+
+<!-- Browser also needs to know HOW to transport data. -->
+
+<!-- That is the job of method. -->
+
+<!-- ========================================================== -->
+
+<!-- Package Analogy -->
+
+<!-- You want to send a package. -->
+
+<!-- Normal delivery? -->
+
+<!-- Special delivery? -->
+
+<!-- The delivery method matters. -->
+
+<!-- ========================================================== -->
+
+<!-- FORM ANALOGY -->
+
+<!-- action -->
+
+<!-- Destination -->
+
+<!-- method -->
+
+<!-- Transport style -->
+
+<!-- ========================================================== -->
+
+<!-- MOST IMPORTANT MEMORY TRICK OF DAY 17 -->
+
+<!-- action -->
+
+<!-- WHERE? -->
+
+<!-- ========================================================== -->
+
+<!-- method -->
+
+<!-- HOW? -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 1 -->
+
+<!-- Thinking action is a tag. -->
+
+<!-- Wrong. -->
+
+<!-- action is an attribute. -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 2 -->
+
+<!-- Thinking method is a tag. -->
+
+<!-- Wrong. -->
+
+<!-- method is an attribute. -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 3 -->
+
+<!-- Thinking GET and POST are input types. -->
+
+<!-- Wrong. -->
+
+<!-- They are method values. -->
+
+<!-- ========================================================== -->
+
+<!-- WRONG -->
+
+<!-- <input type="get"> -->
+
+<!-- ========================================================== -->
+
+<!-- WRONG -->
+
+<!-- <input type="post"> -->
+
+<!-- ========================================================== -->
+
+<!-- CORRECT -->
+
+<!-- <form method="get"> -->
+
+<!-- ========================================================== -->
+
+<!-- CORRECT -->
+
+<!-- <form method="post"> -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 4 -->
+
+<!-- <form method="email"> -->
+
+<!-- Wrong. -->
+
+<!-- email is not a valid method value. -->
+
+<!-- ========================================================== -->
+
+<!-- Day 17 Valid Values -->
+
+<!-- get -->
+
+<!-- post -->
+
+<!-- ========================================================== -->
+
+<!-- COMMON MISTAKE 5 -->
+
+<!-- Thinking action sends data. -->
+
+<!-- Not exactly. -->
+
+<!-- action answers WHERE. -->
+
+<!-- ========================================================== -->
+
+<!-- Thinking method sends data. -->
+
+<!-- Not exactly. -->
+
+<!-- method answers HOW. -->
+
+<!-- ========================================================== -->
+
+<!-- THE TWO QUESTIONS -->
+
+<!-- action -->
+
+<!-- WHERE? -->
+
+<!-- ========================================================== -->
+
+<!-- method -->
+
+<!-- HOW? -->
+
+<!-- ========================================================== -->
+
+<!-- RELATIONSHIP -->
+
+<!-- action -->
+
+<!-- Destination -->
+
+<!-- ========================================================== -->
+
+<!-- method -->
+
+<!-- Transportation -->
+
+<!-- ========================================================== -->
+
+<!-- Together -->
+
+<!-- Destination + Transportation -->
+
+<!-- ========================================================== -->
+
+<!-- Example -->
+
+<!-- <form -->
+<!-- action="welcome.html" -->
+<!-- method="post"> -->
+
+<!-- Meaning -->
+
+<!-- Go to welcome.html -->
+
+<!-- Use POST -->
+
+<!-- ========================================================== -->
+
+<!-- BROWSER LOGIC -->
+
+<!-- Browser sees action -->
+
+<!-- Browser sees method -->
+
+<!-- User clicks Submit -->
+
+<!-- Browser follows instructions -->
+
+<!-- ========================================================== -->
+
+<!-- JAVASCRIPT CONNECTION -->
+
+<!-- This is where things get interesting. -->
+
+<!-- Modern projects often use JavaScript directly. -->
+
+<!-- ========================================================== -->
+
+<!-- Example Projects -->
+
+<!-- Calculator -->
+
+<!-- BMI Calculator -->
+
+<!-- Todo List -->
+
+<!-- Timer -->
+
+<!-- Guess The Number -->
+
+<!-- ========================================================== -->
+
+<!-- In these projects -->
+
+<!-- JavaScript reads values directly. -->
+
+<!-- Example -->
+
+<!-- input.value -->
+
+<!-- ========================================================== -->
+
+<!-- Therefore -->
+
+<!-- action is often unnecessary -->
+
+<!-- method is often unnecessary -->
+
+<!-- for simple client-side projects -->
+
+<!-- ========================================================== -->
+
+<!-- Calculator Example -->
+
+<!-- Input -->
+
+<!-- Input -->
+
+<!-- Button -->
+
+<!-- JavaScript -->
+
+<!-- Answer -->
+
+<!-- ========================================================== -->
+
+<!-- No page change needed -->
+
+<!-- No destination needed -->
+
+<!-- No transport method needed -->
+
+<!-- ========================================================== -->
+
+<!-- This is why many beginner JavaScript projects -->
+
+<!-- do not use action -->
+
+<!-- and do not use method -->
+
+<!-- ========================================================== -->
+
+<!-- DAY 17 GOLDEN RULE -->
+
+<!-- action -->
+
+<!-- WHERE? -->
+
+<!-- ========================================================== -->
+
+<!-- method -->
+
+<!-- HOW? -->
+
+<!-- ========================================================== -->
+
+<!-- QUICK REVISION -->
+
+<!-- form -->
+
+<!-- Groups controls -->
+
+<!-- ========================================================== -->
+
+<!-- action -->
+
+<!-- Where data goes -->
+
+<!-- ========================================================== -->
+
+<!-- method -->
+
+<!-- How data travels -->
+
+<!-- ========================================================== -->
+
+<!-- GET -->
+
+<!-- Visible in URL -->
+
+<!-- ========================================================== -->
+
+<!-- POST -->
+
+<!-- Not visible in URL -->
+
+<!-- ========================================================== -->
+
+<!-- FINAL SUMMARY -->
+
+<!-- Before Day 17 -->
+
+<!-- We knew how to collect data -->
+
+<!-- ========================================================== -->
+
+<!-- After Day 17 -->
+
+<!-- We know -->
+
+<!-- How to collect data -->
+
+<!-- Where it goes -->
+
+<!-- How it travels -->
+
+<!-- ========================================================== -->
+
+<!-- END OF DAY 17 -->
+
+<!-- Keywords -->
+
+<!-- form -->
+<!-- action -->
+<!-- method -->
+<!-- get -->
+<!-- post -->
+
+<!-- ========================================================== --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17</title>
+</head>
+<body>
+    <form action = "index5.html" method="get">
+        <label for = "aName">Name</label>
+        <input id = "aName" type = "text" placeholder = "Alex">
+        <button type = "submit">Submit</button>
+    </form>
+    <form action = "index1.html" method = "post">
+        <label for = "bName">Name</label>
+        <input id = "bName" type = "text" placeholder = "Alex">
+        <button type = "submit">Submit</button>
+    </form>
+    <form action = "index10.html" method = "get">
+        <label for = "cName">Name</label>
+        <input id = "cName" type = "text" placeholder = "Alex">
+        <button type = "submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!--
+══════════════════════════════════════════════════════════════
+DAY 12 - FORMS PART 2
+══════════════════════════════════════════════════════════════
+
+Yesterday:
+
+form
+input
+label
+for
+id
+
+Today:
+
+Input Types
+
+Purpose:
+
+Tell the browser what kind of data
+the user will enter.
+
+Instead of using:
+
+<input type="text">
+
+for everything.
+
+══════════════════════════════════════════════════════════════
+WHY INPUT TYPES EXIST
+══════════════════════════════════════════════════════════════
+
+Without input types:
+
+Everything is text.
+
+Examples:
+
+Name
+Email
+Password
+Age
+Phone Number
+Date
+
+All use:
+
+<input type="text">
+
+Browser gets no information.
+
+With input types:
+
+Browser understands what data
+the user is entering.
+
+══════════════════════════════════════════════════════════════
+TEXT
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="text">
+
+Purpose:
+
+General text input.
+
+Examples:
+
+- Name
+- City
+- Country
+- School
+- Company
+
+Example:
+
+<label for="name">Name</label>
+
+<input id="name" type="text">
+
+══════════════════════════════════════════════════════════════
+PASSWORD
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="password">
+
+Purpose:
+
+Hide sensitive information.
+
+Example:
+
+<label for="pass">Password</label>
+
+<input id="pass" type="password">
+
+Result:
+
+••••••••
+
+Instead of:
+
+mypassword123
+
+Used For:
+
+- Login
+- Signup
+- Accounts
+
+══════════════════════════════════════════════════════════════
+EMAIL
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="email">
+
+Purpose:
+
+Email addresses.
+
+Example:
+
+<label for="email">Email</label>
+
+<input id="email" type="email">
+
+Example Data:
+
+user@example.com
+
+Browser can detect
+invalid email formats.
+
+══════════════════════════════════════════════════════════════
+NUMBER
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="number">
+
+Purpose:
+
+Numeric input.
+
+Examples:
+
+- Age
+- Marks
+- Quantity
+- Price
+
+Example:
+
+<label for="age">Age</label>
+
+<input id="age" type="number">
+
+══════════════════════════════════════════════════════════════
+TEL
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="tel">
+
+Purpose:
+
+Phone numbers.
+
+Example:
+
+<label for="phone">Phone</label>
+
+<input id="phone" type="tel">
+
+Example Data:
+
+9876543210
+
+Note:
+
+Phone numbers are identifiers.
+
+HTML provides a special type.
+
+══════════════════════════════════════════════════════════════
+DATE
+══════════════════════════════════════════════════════════════
+
+Tag:
+
+<input type="date">
+
+Purpose:
+
+Date selection.
+
+Example:
+
+<label for="dob">Birth Date</label>
+
+<input id="dob" type="date">
+
+Usually displays:
+
+📅 Calendar Picker
+
+Uses:
+
+- Birth Date
+- Appointment
+- Booking
+- Event
+
+══════════════════════════════════════════════════════════════
+TEXT VS NUMBER
+══════════════════════════════════════════════════════════════
+
+Text:
+
+<input type="text">
+
+Accepts:
+
+- Letters
+- Numbers
+- Symbols
+
+Number:
+
+<input type="number">
+
+Designed for numbers.
+
+Choose the correct type.
+
+══════════════════════════════════════════════════════════════
+EMAIL VS TEXT
+══════════════════════════════════════════════════════════════
+
+Works:
+
+<input type="text">
+
+Better:
+
+<input type="email">
+
+Reason:
+
+Browser understands
+the expected data.
+
+══════════════════════════════════════════════════════════════
+EXAMPLE FORM
+══════════════════════════════════════════════════════════════
+
+<form>
+
+<label for="name">Name</label>
+<input id="name" type="text">
+
+<label for="email">Email</label>
+<input id="email" type="email">
+
+<label for="age">Age</label>
+<input id="age" type="number">
+
+</form>
+
+══════════════════════════════════════════════════════════════
+COMMON BEGINNER MISTAKE
+══════════════════════════════════════════════════════════════
+
+Wrong Thinking:
+
+Everything can use:
+
+<input type="text">
+
+Reality:
+
+Use the type that matches
+the information.
+
+Examples:
+
+Name          → text
+Password      → password
+Email         → email
+Age           → number
+Phone Number  → tel
+Birth Date    → date
+
+══════════════════════════════════════════════════════════════
+FORM EVOLUTION
+══════════════════════════════════════════════════════════════
+
+Day 11:
+
+<input type="text">
+
+for everything.
+
+Day 12:
+
+text
+password
+email
+number
+tel
+date
+
+Browser now understands
+the data better.
+
+══════════════════════════════════════════════════════════════
+DAY 12 KEYWORDS
+══════════════════════════════════════════════════════════════
+
+text
+password
+email
+number
+tel
+date
+input types
+
+══════════════════════════════════════════════════════════════
+DAY 12 SUMMARY
+══════════════════════════════════════════════════════════════
+
+- Input types describe expected data.
+- text is general-purpose input.
+- password hides entered characters.
+- email is for email addresses.
+- number is for numeric values.
+- tel is for phone numbers.
+- date provides date selection.
+- Use the most appropriate type.
+- Do not use text for everything.
+
+══════════════════════════════════════════════════════════════
+END OF DAY 12
+══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12</title>
+</head>
+<body>
+    <h3>Login form</h3>
+    <form>
+        <label for = "email">E-mail</label>
+        <input type = "email" id = "email">
+        <br />
+        <label for = "password">Password</label>
+        <input type = "password" id = "password">
+    </form>
+    <h3>Student Registration</h3>
+    <form>
+        <label for = "sName">Student Name</label>
+        <input type = "text" id = "sName">
+        <br />
+        <label for = "age">Age</label>
+        <input type = "number" id = "age">
+        <br />
+        <label for = "birth">Birth Date</label>
+        <input type = "date" id = "birth">
+    </form>
+    <h3>Contact Information</h3>
+    <form>
+        <label for = "cName">Name</label>
+        <input type = "text" id = "cName">
+        <br />
+        <label for = "pNumber">Phone Number</label>
+        <input type = "tel" id = "pNumber">
+        <br />
+        <label for = "cEmail">Email</label>
+        <input type = "email" id = "cEmail">
+    </form>
+    <h3>Typing Competition Registration</h3>
+    <form>
+        <label for = "tName">Name</label>
+        <input type = "text" id = "tName">
+        <br />
+        <label for = "tEmail">Email</label>
+        <input type = "email" id = "tEmail">
+        <br />
+        <label for = "tPNumber">Phone Number</label>
+        <input type = "tel" id = "tPNumber">
+        <br />
+        <label for = "WPM">Best WPM</label>
+        <input type = "number" id = "WPM">
+        <br />
+        <label for = "tBDate">Birth Date</label>
+        <input type = "date" id = "tBDate">
+        <br />
+        <label for = "tPassword">Password</label>
+        <input type = "password" id = "tPassword">
+    </form>
+</body>
+</html>

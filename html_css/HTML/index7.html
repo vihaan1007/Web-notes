@@ -1,0 +1,488 @@
+<!--
+========================================
+DAY 7 - TABLES PART 1
+========================================
+
+WHAT IS A TABLE?
+
+A table is used to display structured data in rows and columns.
+
+Examples:
+- Student marks
+- Timetables
+- Product prices
+- Employee records
+- Cricket scorecards
+
+Think:
+
+Name      Marks
+Alex      95
+Sam       88
+
+This is structured data.
+
+========================================
+THE 4 KINGS OF TABLES
+========================================
+
+<table>
+<tr>
+<td>
+<th>
+
+Remember:
+
+table -> contains everything
+
+tr -> creates a row
+
+td -> normal data cell
+
+th -> heading cell
+
+========================================
+1. TABLE
+========================================
+
+<table>
+
+</table>
+
+Think:
+
+"I am the entire table."
+
+Everything belongs inside me.
+
+========================================
+2. TR
+========================================
+
+<tr>
+
+</tr>
+
+Meaning:
+
+Table Row
+
+Think:
+
+"I create a horizontal row."
+
+Example:
+
+<tr>
+    ...
+</tr>
+
+========================================
+3. TD
+========================================
+
+<td>
+
+</td>
+
+Meaning:
+
+Table Data
+
+Think:
+
+"I am normal data."
+
+Example:
+
+<td>95</td>
+
+<td>HTML</td>
+
+<td>Jabalpur</td>
+
+========================================
+4. TH
+========================================
+
+<th>
+
+</th>
+
+Meaning:
+
+Table Header
+
+Think:
+
+"I describe this column or row."
+
+Examples:
+
+<th>Name</th>
+
+<th>Marks</th>
+
+<th>City</th>
+
+========================================
+FIRST TABLE
+========================================
+
+<table>
+    <tr>
+        <td>HTML</td>
+        <td>CSS</td>
+    </tr>
+</table>
+
+Mental picture:
+
++------+------+
+| HTML | CSS  |
++------+------+
+
+========================================
+MULTIPLE ROWS
+========================================
+
+<table>
+    <tr>
+        <td>HTML</td>
+        <td>CSS</td>
+    </tr>
+
+    <tr>
+        <td>JS</td>
+        <td>Python</td>
+    </tr>
+</table>
+
+Picture:
+
++------+--------+
+| HTML | CSS    |
++------+--------+
+| JS   | Python |
++------+--------+
+
+========================================
+TABLE WITH HEADERS
+========================================
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+
+    <tr>
+        <td>Alex</td>
+        <td>95</td>
+    </tr>
+
+    <tr>
+        <td>Sam</td>
+        <td>88</td>
+    </tr>
+</table>
+
+Picture:
+
++------+-------+
+| Name | Marks |
++------+-------+
+| Alex | 95    |
++------+-------+
+| Sam  | 88    |
++------+-------+
+
+========================================
+WHY TH IS BETTER THAN TD
+========================================
+
+Visual Side:
+
+- Usually bold
+- Usually centered
+
+Semantic Side:
+
+- Announces header information
+- Helps screen readers understand the table
+- Describes what the data below means
+
+Think:
+
+th is to td
+
+like
+
+h1 is to p
+
+Header vs Data
+
+Heading vs Content
+
+========================================
+GLOBE ANALOGY
+========================================
+
+DAY SIDE (Visual)
+
+- Bold text
+- Centered text
+
+NIGHT SIDE (Semantic)
+
+- Header information
+- Better accessibility
+
+TH sits in the middle because
+it helps both sides.
+
+========================================
+COMMON MISTAKE #1
+========================================
+
+WRONG:
+
+<table>
+    <td>HTML</td>
+</table>
+
+Reason:
+
+td must live inside tr.
+
+CORRECT:
+
+<table>
+    <tr>
+        <td>HTML</td>
+    </tr>
+</table>
+
+========================================
+COMMON MISTAKE #2
+========================================
+
+WRONG:
+
+<tr>
+    <th>Alex</th>
+    <th>95</th>
+</tr>
+
+Reason:
+
+Alex and 95 are data.
+
+Not headings.
+
+CORRECT:
+
+<tr>
+    <td>Alex</td>
+    <td>95</td>
+</tr>
+
+========================================
+ROWS VS COLUMNS
+========================================
+
+ROW:
+
+Horizontal
+
+Example:
+
+Name | Age | City
+
+COLUMN:
+
+Vertical
+
+Example:
+
+Name
+Alex
+Sam
+
+========================================
+MENTAL TREE
+========================================
+
+table
+ └─ tr
+     ├─ th
+     ├─ th
+     └─ th
+
+table
+ └─ tr
+     ├─ td
+     ├─ td
+     └─ td
+
+Remember:
+
+table
+  ↓
+rows
+  ↓
+cells
+
+========================================
+DAY 7 KEYWORDS
+========================================
+
+table
+tr
+td
+th
+
+Table
+Row
+Column
+Cell
+Header
+
+Structured Data
+
+========================================
+QUICK REVISION
+========================================
+
+table = whole table
+
+tr = table row
+
+td = normal data
+
+th = heading data
+
+td must be inside tr
+
+th should only be used for headings
+
+Rows are horizontal
+
+Columns are vertical
+
+th helps both visual appearance
+and semantics
+
+========================================
+END OF DAY 7 PART 1
+========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+</head>
+<body>
+    <h1>
+        Day 7 practical
+    </h1>
+    <!------Marks------>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>91</td>
+        </tr>
+    </table>
+    <!------Language------>
+    <table>
+        <tr>
+            <th>Language</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Markup</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Stylesheet</td>
+        </tr>
+        <tr>
+            <td>JS</td>
+            <td>Logic</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Proggramming</td>
+        </tr>
+    </table>
+    <!------City------>
+    <table>
+        <tr>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+        <tr>
+            <td>Jabalpur</td>
+            <td>Madhya Pradesh</td>
+        </tr>
+        <tr>
+            <td>Mumbai</td>
+            <td>Maharashtra</td>
+        </tr>
+        <tr>
+            <td>Delhi</td>
+            <td>Delhi</td>
+        </tr>
+    </table>
+    <!------Bonus-1------>
+    <table>
+        <tr>
+            <th>Project</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Calculator</td>
+            <td>Complete</td>
+        </tr>
+        <tr>
+            <td>Weather App</td>
+            <td>Complete</td>
+        </tr>
+        <tr>
+            <td>ToDo List</td>
+            <td>Complete</td>
+        </tr>
+    </table>
+    <!------Comments------>
+    <!--
+    Why should we not use th everywhere?
+    It is wrong to use th everywhere, as it is only for headers which are not data in semantic terms or SEO. To keep a better SEO use them but only in headers like Name, Age, for top of columns to tell this column has this and also not for everything like Sam, 23, for reasons mentioned above.
+    
+    Why is th similar to h1 while td is similar to p?
+    lets take th and td I have already done everything I had for th above. In td it is the data I told you should not use th for Sam, 23, but now a question arises then what to use. It is td to fill the spaces th cant. It tells the screen reader I am just a data of a header so, the screen readers distinguish that this is a header and this is a data. Now on h1 and p they are the same, "that this is a header and this is a data", h1 takes the header spot and, p takes the data spot and previously header was th and data was td. So, they are same h1 = th and, p = td.
+    
+    BONUS 2
+    
+    In the above tables there was one thing common. The top was table then in it tr then in it th or td so this is a heirarchy, table then tr then td/th.
+
+    Compare between HTML table and CSS grid?
+    The HTML table can become a grid if you add borders and height and width to the td and th  they can recreate each other both have pros and cons The HTML table is in clean code and less CSS and he CSS Grid dosent have clean code but it is more predefined then HTML if CSS has more area to one cell then HTML also does. if you want to make a 5 x 5 table  but only the middle one has text then in html copy/paste some empty td and tr then go on the third tr's third td and write in it then its some CSS but in CSS grid you have to make many divs in HTML then do gap, rows, columns and then copy the CSS of the HTML Table. But I was in favor of HTML table  CSS wll also have a case where HTML sucks so both are useful and we should know both of them just CSS is a bit more advanced and modern but harder.  
+    -->
+</body>
+</html>
